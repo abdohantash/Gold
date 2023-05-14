@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/img/logo.svg" rel="shortcut icon" type="image/png">
+    <title>Gold</title>
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/Linearicons/Font/demo-files/demo.css">
+    <link rel="stylesheet" href="assets/plugins/bootstrap4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/plugins/owl-carousel/assets/owl.carousel.css">
+    <link rel="stylesheet" href="assets/plugins/slick/slick/slick.css">
+    <link rel="stylesheet" href="assets/plugins/lightGallery/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="assets/plugins/jquery-bar-rating/dist/themes/fontawesome-stars.css">
+    <link rel="stylesheet" href="assets/plugins/select2/dist/css/select2.min.css">
+    <link rel="stylesheet" href="assets/plugins/noUiSlider/nouislider.css">
+    <link rel="stylesheet" href="assets/plugins/daterangepicker/daterangepicker.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="ps-page">
+        <header class="ps-header ps-header--1">
+            <div class="ps-noti">
+                <div class="container-fluid">
+                    <p class="m-0">Free Shipping On Orders Above 200 EGP </p>
+                </div><a class="ps-noti__close"><i class="icon-cross"></i></a>
+            </div>
+            <div class="ps-header__middle">
+                <div class="container-fluid">
+                    <div class="flex-header">
+                        <div class="ps-logo">
+                            <a href="index.html">
+                                <img src="assets/img/logo.svg" alt>
+                            </a>
+                        </div>
+                        <a class="ps-menu--sticky" href="#"><i class="fa fa-bars"></i></a>
+                        <div class="ps-header__right">
+                            <div class="ps-header__search">
+                                <form action="http://nouthemes.net/html/mymedi/do_action" method="post">
+                                    <div class="ps-search-table">
+                                        <div class="input-group">
+                                            <input class="form-control ps-input" type="text"
+                                                placeholder="Search for products">
+                                            <div class="input-group-append"><a href="#"><i class="fa fa-search"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="ps-language-currency"><a class="ps-dropdown-value" href="javascript:void(0);"
+                                    data-toggle="modal" data-target="#popupLanguage">English</a>
+                            </div>
+                            <ul class="ps-header__icons">
+                                <li>
+                                    <a class="ps-header__item account-btn" href="login.html">
+                                        <i class="icon-user"></i>
+                                        <div class="log-acc">
+                                            <span>Login / Sign up</span>
+                                            <p>My account</p>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <!-- <li>
+                                    <a class="ps-header__item account-btn" href="#" id="login-modal">
+                                        <i class="icon-user"></i>
+                                        <div class="log-acc">
+                                            <span>Hello abdelrahman</span>
+                                            <p>My account
+                                                <svg class="icon icon--arrow-bottom" viewBox="0 0 12 8"
+                                                    role="presentation">
+                                                    <path stroke="currentColor" stroke-width="2" d="M10 2L6 6 2 2"
+                                                        fill="none" stroke-linecap="square"></path>
+                                                </svg>
+                                            </p>
+                                        </div>
+                                    </a>
+                                    <div class="ps-login--modal">
+                                        <ul class="drop-menu-profile">
+                                            <li>
+                                                <a href="my-account.html">
+                                                    <i class="icon-user"></i>
+                                                    My account</a>
+                                            </li>
+                                            <li>
+                                                <a href="orders.html">
+                                                    <i class="icon-bag2"></i>
+                                                    My orders</a>
+                                            </li>
+                                            <li>
+                                                <a href="addresses.html" class="active">
+                                                    <i class="icon-map-marker"></i>
+                                                    My addresses</a>
+                                            </li>
+                                            <li>
+                                                <a href="index.html">
+                                                    <i class="icon-exit"></i>
+                                                    Logout</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li> -->
+
+                                <li><a class="ps-header__item cart-btn-header" href="cart.html" id="cart-mini"><i
+                                            class="icon-cart-empty"></i>
+                                        <p>Cart</p>
+                                        <span class="badge">2</span>
+                                    </a>
+                                    <div class="ps-cart--mini">
+                                        <ul class="ps-cart__items">
+                                            <li class="ps-cart__item">
+                                                <div class="ps-product--mini-cart"><a class="ps-product__thumbnail"
+                                                        href="product-details.html"><img src="assets/img/products/1.jpg"
+                                                            alt="alt" /></a>
+                                                    <div class="ps-product__content"><a class="ps-product__name"
+                                                            href="product-details.html">Mix Super Deluxe</a>
+                                                        <p class="ps-product__meta"> <span
+                                                                class="ps-product__price">400.000 EGP</span></p>
+                                                    </div><a class="ps-product__remove" href="javascript: void(0)"><i
+                                                            class="icon-cross"></i></a>
+                                                </div>
+                                            </li>
+                                            <li class="ps-cart__item">
+                                                <div class="ps-product--mini-cart"><a class="ps-product__thumbnail"
+                                                        href="product-details.html"><img src="assets/img/products/3.jpg"
+                                                            alt="alt" /></a>
+                                                    <div class="ps-product__content"><a class="ps-product__name"
+                                                            href="product-details.html">Mix Kernels Extra</a>
+                                                        <p class="ps-product__meta"> <span
+                                                                class="ps-product__sale">70.000 EGP</span><span
+                                                                class="ps-product__is-price">80.000 EGP</span></p>
+                                                    </div><a class="ps-product__remove" href="javascript: void(0)"><i
+                                                            class="icon-cross"></i></a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="ps-cart__total"><span>Subtotal </span><span>470 EGP</span></div>
+                                        <div class="ps-cart__footer"><a class="ps-btn ps-btn--outline"
+                                                href="cart.html">View Cart</a><a class="ps-btn ps-btn--warning"
+                                                href="checkout.html">Checkout</a></div>
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ps-navigation">
+                <div class="container-fluid">
+                    <div class="ps-navigation__left">
+                        <nav class="ps-main-menu">
+                            <ul class="menu">
+                                <li class="has-mega-menu"><a href="products.html">Nut Mixes</a></li>
+                                <li class="has-mega-menu">
+                                    <a href="products.html">Nuts & Kernels
+                                        <span class="sub-toggle">
+                                            <i class="fa fa-chevron-down"></i>
+                                        </span>
+                                    </a>
+                                    <div class="mega-menu">
+                                        <ul class="sub-menu--mega">
+                                            <li><a href="products.html">Nuts & Seeds</a></li>
+                                            <li><a href="products.html">Raw Nuts & Seeds</a></li>
+                                            <li><a href="products.html">Lifestyle Mixes</a></li>
+                                            <li><a href="products.html">Fruits & Nuts Mixes</a></li>
+                                            <li><a href="products.html">Sugared Nuts & Kernels</a></li>
+                                            <li><a href="products.html">Nuts Dragées</a></li>
+                                            <li><a href="products.html">Prepacks</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="has-mega-menu">
+                                    <a href="products.html">Confectionery
+                                        <span class="sub-toggle">
+                                            <i class="fa fa-chevron-down"></i>
+                                        </span>
+                                    </a>
+                                    <div class="mega-menu">
+                                        <ul class="sub-menu--mega">
+                                            <li><a href="products.html">Chocolates</a></li>
+                                            <li><a href="products.html">Malban & Nougat</a></li>
+                                            <li><a href="products.html">Marzipan</a></li>
+                                            <li><a href="products.html">Man Wa Salwa</a></li>
+                                            <li><a href="products.html">Gifts</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="has-mega-menu">
+                                    <a href="products.html">Fruits
+                                        <span class="sub-toggle">
+                                            <i class="fa fa-chevron-down"></i>
+                                        </span>
+                                    </a>
+                                    <div class="mega-menu">
+                                        <ul class="sub-menu--mega">
+                                            <li><a href="products.html">Dried Fruits</a></li>
+                                            <li><a href="products.html">Fruits & Nuts Mixes</a></li>
+                                            <li><a href="products.html">Dates</a></li>
+                                            <li><a href="products.html">Fruit Paste</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="has-mega-menu">
+                                    <a href="products.html">Healthy Choice
+                                        <span class="sub-toggle">
+                                            <i class="fa fa-chevron-down"></i>
+                                        </span>
+                                    </a>
+                                    <div class="mega-menu">
+                                        <ul class="sub-menu--mega">
+                                            <li><a href="products.html">Sugar Free Nut Bars</a></li>
+                                            <li><a href="products.html">Healthy Mixes</a></li>
+                                            <li><a href="products.html">Nut Butters</a></li>
+                                            <li><a href="products.html">Nut Flours</a></li>
+                                            <li><a href="products.html">Protein</a></li>
+                                            <li><a href="products.html">Super Seeds & Grains</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="has-mega-menu">
+                                    <a href="products.html">Local & Traditional
+                                        <span class="sub-toggle">
+                                            <i class="fa fa-chevron-down"></i>
+                                        </span>
+                                    </a>
+                                    <div class="mega-menu">
+                                        <ul class="sub-menu--mega">
+                                            <li><a href="products.html">Oriental Sweets</a></li>
+                                            <li><a href="products.html">Thyme - Zaa'tar</a></li>
+                                            <li><a href="products.html">Aromatic Herbs & Spices</a></li>
+                                            <li><a href="products.html">Bakery</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="has-mega-menu"><a href="products.html">Coffee & Tea</a></li>
+                                <li class="has-mega-menu"><a href="products.html">Our Selection </a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <header class="ps-header ps-header--1 ps-header--mobile">
+            <div class="ps-noti">
+                <div class="container-fluid">
+                    <p class="m-0">Free Shipping On Orders Above 200 EGP</p>
+                </div><a class="ps-noti__close"><i class="icon-cross"></i></a>
+            </div>
+            <div class="ps-header__middle">
+                <div class="container-fluid">
+                    <div class="ps-logo"><a href="index.html"> <img src="assets/img/logo.svg" alt></a></div>
+                    <div class="ps-header__right">
+                        <ul class="ps-header__icons">
+                            <li><a class="ps-header__item open-search" href="#"><i class="fa fa-search"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+    <div class="ps-checkout">
+        <div class="container-fluid">
+            <div class="ps-checkout__content">
+                <ul class="ps-breadcrumb">
+                    <li class="ps-breadcrumb__item"><a href="cart.html">cart</a></li>
+                    <li class="ps-breadcrumb__item" aria-current="page">Information</li>
+                    <li class="ps-breadcrumb__item" aria-current="page">Shipping</li>
+                    <li class="ps-breadcrumb__item" aria-current="page">Payment</li>
+                </ul>
+                <h3 class="ps-page-name"> Checkout</h3>
+                <form  method="post">
+                    <div class="row flex-rev">
+                        <div class="col-12 col-lg-7 col-xl-8">
+                            <div class="ps-checkout__form shipping-address">
+                                <h3>Shipping Address</h3>
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <div class="ps-checkout__group">
+                                            <label class="ps-checkout__label">City</label>
+                                            <select name="zone" class="select2">
+                                                <option value="0" disabled selected>- Chosse -</option>
+                                                <option value="1">test</option>
+                                                <option value="2">test</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="ps-checkout__group">
+                                            <label class="ps-checkout__label">Area</label>
+                                            <select name="zone" class="select2">
+                                                <option value="0" disabled selected>- Chosse -</option>
+                                                <option value="1">test</option>
+                                                <option value="2">test</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="ps-checkout__group">
+                                            <label class="ps-checkout__label">Type</label>
+                                            <select name="zone" class="select2 select-type">
+                                                <option value="0" disabled selected>- Chosse -</option>
+                                                <option value="home">Home</option>
+                                                <option value="appartment">Appartment</option>
+                                                <option value="office">Office</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="home-sec col-12">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="ps-checkout__group">
+                                                    <label class="ps-checkout__label">Piece</label>
+                                                    <input class="ps-input" type="text">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="ps-checkout__group">
+                                                    <label class="ps-checkout__label">Street</label>
+                                                    <input class="ps-input" type="text">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="ps-checkout__group">
+                                                    <label class="ps-checkout__label">Avenue (Optional)</label>
+                                                    <input class="ps-input" type="text">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="ps-checkout__group">
+                                                    <label class="ps-checkout__label">House</label>
+                                                    <input class="ps-input" type="text">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="appartment-sec col-12">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="ps-checkout__group">
+                                                    <label class="ps-checkout__label">Piece</label>
+                                                    <input class="ps-input" type="text">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="ps-checkout__group">
+                                                    <label class="ps-checkout__label">Street</label>
+                                                    <input class="ps-input" type="text">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="ps-checkout__group">
+                                                    <label class="ps-checkout__label">Avenue (Optional)</label>
+                                                    <input class="ps-input" type="text">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="ps-checkout__group">
+                                                    <label class="ps-checkout__label">Building</label>
+                                                    <input class="ps-input" type="text">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="ps-checkout__group">
+                                                    <label class="ps-checkout__label">Floor</label>
+                                                    <input class="ps-input" type="text">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="ps-checkout__group">
+                                                    <label class="ps-checkout__label">Appartment</label>
+                                                    <input class="ps-input" type="text">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="office-sec col-12">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="ps-checkout__group">
+                                                    <label class="ps-checkout__label">Piece</label>
+                                                    <input class="ps-input" type="text">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="ps-checkout__group">
+                                                    <label class="ps-checkout__label">Street</label>
+                                                    <input class="ps-input" type="text">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="ps-checkout__group">
+                                                    <label class="ps-checkout__label">Avenue (Optional)</label>
+                                                    <input class="ps-input" type="text">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="ps-checkout__group">
+                                                    <label class="ps-checkout__label">Building</label>
+                                                    <input class="ps-input" type="text">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="ps-checkout__group">
+                                                    <label class="ps-checkout__label">Floor</label>
+                                                    <input class="ps-input" type="text">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="ps-checkout__group">
+                                                    <label class="ps-checkout__label">Office</label>
+                                                    <input class="ps-input" type="text">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="ps-checkout__group mb-0">
+                                            <label class="ps-checkout__label">Order notes (optional)</label>
+                                            <textarea class="ps-textarea" rows="4"
+                                                placeholder="Notes about your order, e.g. special notes for delivery."></textarea>
+                                        </div>
+                                        <hr>
+                                    </div>   
+                                    <div class="col-12 col-md-6">
+                                        <div class="ps-checkout__group">
+                                            <label class="ps-checkout__label">Full name</label>
+                                            <input class="ps-input" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="ps-checkout__group">
+                                            <label class="ps-checkout__label">Phone</label>
+                                            <input class="ps-input" type="number">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="ps-checkout__group">
+                                            <label class="ps-checkout__label">E-mail</label>
+                                            <input class="ps-input" type="email">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-2">
+                                        <div class="ps-checkout__group">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="create-account">
+                                                <label class="form-check-label" for="create-account">Register Now</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 ps-hidden" data-for="create-account">
+                                        <div class="ps-checkout__group">
+                                            <label class="ps-checkout__label">Create account password</label>
+                                            <input class="form-control ps-input" type="password" placeholder="Password">
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="button" class="ps-btn ps-btn--warning continue-shipping">Continue to shipping</button>
+                            </div>
+
+                            <div class="ps-checkout__form shipping-box-delivary">
+                                <ul class="shipping-box mb-5">
+                                    <li>
+                                        <span>Contact</span>
+                                        <p>abdohantash9999@gmail.com</p>
+                                        <a href="#">change</a>
+                                    </li>
+                                    <li>
+                                        <span>Ship to</span>
+                                        <p>elnady st, 123114 Al Jahra, Kuwiat</p>
+                                        <a href="#">change</a>
+                                    </li>
+                                </ul>
+                                <div class="delivery-time">
+                                    <h3>Delivery date</h3>
+                                    <div class="form-check mb-4">
+                                        <input class="form-check-input immediate-radio" name="delivery-time" type="radio" id="immediate">
+                                        <label class="form-check-label flex-label" for="immediate">Immediate delivery
+                                            <!-- <span>رسالة الخطأ او التنويه</span> -->
+                                        </label>
+                                    </div>
+                                    <div class="form-check mb-4">
+                                        <input class="form-check-input later-radio" name="delivery-time" type="radio" id="later">
+                                        <label class="form-check-label" for="later">Later delivery</label>
+                                    </div>
+                                    <div class="row ps-hidden" data-for="Date-Delivery">
+                                        <div class="col-12 col-md-6">
+                                            <div class="ps-checkout__group">
+                                                <label class="ps-checkout__label">Date</label>
+                                                <input class="ps-input datepicker" type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex-btn">
+                                    <span class="back-step">
+                                        <i class="icon-chevron-left"></i>
+                                        Return to information
+                                    </span>
+                                    <button type="button" class="ps-btn ps-btn--warning continue-payment">Continue to payment</button>
+                                </div>
+                            </div>
+
+                            <div class="ps-checkout__form payment-box-div">
+                                <h3>Payment</h3>
+                                <ul class="payment-box">
+                                    <li>
+                                        <div class="form-check">
+                                            <input class="form-check-input" name="Payment" type="radio" id="Cash">
+                                            <label class="form-check-label" for="Cash">Cash On Delivery</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="flex-div">
+                                            <div class="form-check">
+                                                <input class="form-check-input" name="Payment" type="radio" id="Credit"
+                                                    checked>
+                                                <label class="form-check-label" for="Credit">Debit/Credit Card</label>
+                                            </div>
+                                            <div class="payment-list">
+                                                <img src="assets/img/KNET.svg" alt="">
+                                                <img src="assets/img/visa.png" alt="">
+                                                <img src="assets/img/mastercard.png" alt="">
+                                            </div>
+                                        </div>
+
+                                        <div class="card-info">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="ps-checkout__group">
+                                                        <label class="ps-checkout__label">Card number</label>
+                                                        <input class="ps-input" type="text" placeholder="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="ps-checkout__group">
+                                                        <label class="ps-checkout__label">Cardholder name</label>
+                                                        <input class="ps-input" type="text" placeholder="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-6">
+                                                    <div class="ps-checkout__group">
+                                                        <label class="ps-checkout__label">Expiration date (MM /
+                                                            YY)</label>
+                                                        <input class="ps-input" type="text">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-6">
+                                                    <div class="ps-checkout__group">
+                                                        <label class="ps-checkout__label">Security code (CVV)</label>
+                                                        <input class="ps-input" type="password">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="flex-btn">
+                                    <span class="back-step">
+                                        <i class="icon-chevron-left"></i>
+                                        Return to shipping
+                                    </span>
+                                    <button type="button" class="ps-btn ps-btn--warning">Pay now</button>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-5 col-xl-4">
+                            <div class="ps-checkout__order">
+                                <h3 class="ps-checkout__heading">Review Your Order</h3>
+                                <div class="order--products">
+                                    <div class="ps-checkout__row">
+                                        <div class="ps-product__name">Mix Super Deluxe<span>1 killo</span>
+                                        </div>
+                                        <div class="ps-product__price">399.99 EGP</div>
+                                    </div>
+                                    <div class="ps-checkout__row">
+                                        <div class="ps-product__name">Mix Kernels Extra<span>1 killo</span></div>
+                                        <div class="ps-product__price">77.065 EGP</div>
+                                    </div>
+                                </div>
+                                <div class="ps-checkout__row">
+                                    <div class="ps-title">Subtotal</div>
+                                    <div class="ps-product__price">814.85 EGP</div>
+                                </div>
+                                <div class="ps-checkout__row">
+                                    <div class="ps-title">Discount</div>
+                                    <div class="ps-product__price">10.00 EGP</div>
+                                </div>
+                                <div class="ps-checkout__row">
+                                    <div class="ps-title">Shipping</div>
+                                    <div>next step</div>
+                                </div>
+                                <div class="ps-checkout__row bold">
+                                    <div class="ps-title">Total</div>
+                                    <div class="ps-product__price">804.85 EGP</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="ps-footer ps-footer--1">
+        <div class="ps-footer__middle">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-md-7">
+                    <div class="row">
+                        <div class="col-12 col-md-5">
+                            <div class="ps-footer--address">
+                                <div class="ps-logo">
+                                    <a href="index.html">
+                                        <img src="assets/img/logo.svg">
+                                    </a>
+                                </div>
+                                <div class="ps-footer__title">Our store</div>
+                                <p>Al-Rai- 5th Ring Road- Ghazali Street , Kuwait</p>
+                                <p><a target="_blank" href="https://goo.gl/maps/bib2Y4JwNpz6RWsD7">Show
+                                        on map</a></p>
+                                <ul class="ps-social">
+                                    <li><a class="ps-social__link facebook" href="#"><i class="fa fa-facebook">
+                                            </i><span class="ps-tooltip">Facebook</span></a></li>
+                                    <li><a class="ps-social__link instagram" href="#"><i class="fa fa-instagram"></i><span class="ps-tooltip">Instagram</span></a></li>
+                                    <li><a class="ps-social__link youtube" href="#"><i class="fa fa-youtube-play"></i><span class="ps-tooltip">Youtube</span></a></li>
+                                    <li><a class="ps-social__link pinterest" href="#"><i class="fa fa-pinterest-p"></i><span class="ps-tooltip">Pinterest</span></a></li>
+                                    <li><a class="ps-social__link linkedin" href="#"><i class="fa fa-linkedin"></i><span class="ps-tooltip">Linkedin</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-7">
+                            <div class="ps-footer--contact">
+                                <h5 class="ps-footer__title">Need help</h5>
+                                <a href="tel:55554444" class="ps-footer__fax"><i class="icon-telephone"></i>5555 4444</a>
+                                <p class="ps-footer__work">Monday – Friday: 9:00-20:00<br>Saturday: 11:00 –
+                                    15:00</p>
+                                <hr>
+                                <p>
+                                    <a class="ps-footer__email" href="mailto:contact@example.com"> <i class="icon-envelope"></i>contact@example.com </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-5">
+                    <div class="row">
+                        <div class="col-6 col-md-4">
+                            <div class="ps-footer--block">
+                                <h5 class="ps-block__title">Information</h5>
+                                <ul class="ps-block__list">
+                                    <li><a href="about.html">About us</a></li>
+                                    <li><a href="contact.html">Contact us</a></li>
+                                    <li><a href="static-page.html">Privacy Policy</a></li>
+                                    <li><a href="static-page.html">Sales</a></li>
+                                    <li><a href="static-page.html">Terms &amp; Conditions</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <div class="ps-footer--block">
+                                <h5 class="ps-block__title">Account</h5>
+                                <ul class="ps-block__list">
+                                    <li><a href="my-account.html">My account</a></li>
+                                    <li><a href="orders.html">My orders</a></li>
+                                    <li><a href="static-page.html">Returns</a></li>
+                                    <li><a href="static-page.html">Shipping</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <div class="ps-footer--block">
+                                <h5 class="ps-block__title">Store</h5>
+                                <ul class="ps-block__list">
+                                    <li><a href="products.html">Affiliate</a></li>
+                                    <li><a href="products.html">Bestsellers</a></li>
+                                    <li><a href="products.html">Discount</a></li>
+                                    <li><a href="products.html">Latest products</a></li>
+                                    <li><a href="products.html">Sale</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="ps-footer--bottom">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <p>Copyright © 2022 Gold. All Rights Reserved</p>
+                </div>
+                <div class="col-12 col-md-6 flex-payment">
+                    <img src="assets/img//KNET.svg" alt="">
+                    <img src="assets/img//visa.png" alt="">
+                    <img src="assets/img//mastercard.png" alt="">
+                    <img src="assets/img//cash.svg" alt="">
+                </div>
+            </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+    <script src="assets/plugins/jquery.min.js"></script>
+    <script src="assets/plugins/popper.min.js"></script>
+    <script src="assets/plugins/bootstrap4/js/bootstrap.min.js"></script>
+    <script src="assets/plugins/select2/dist/js/select2.full.min.js"></script>
+    <script src="assets/plugins/owl-carousel/owl.carousel.min.js"></script>
+    <script src="assets/plugins/jquery-bar-rating/dist/jquery.barrating.min.js"></script>
+    <script src="assets/plugins/lightGallery/dist/js/lightgallery-all.min.js"></script>
+    <script src="assets/plugins/slick/slick/slick.min.js"></script>
+    <script src="assets/plugins/noUiSlider/nouislider.min.js"></script>
+    <script src="assets/plugins/daterangepicker/moment.min.js"></script>
+    <script src="assets/plugins/daterangepicker/daterangepicker.js"></script>
+    <!-- custom code-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

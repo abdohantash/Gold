@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/img/logo.svg" rel="shortcut icon" type="image/png">
+    <title>Gold</title>
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/Linearicons/Font/demo-files/demo.css">
+    <link rel="stylesheet" href="assets/plugins/bootstrap4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/plugins/owl-carousel/assets/owl.carousel.css">
+    <link rel="stylesheet" href="assets/plugins/slick/slick/slick.css">
+    <link rel="stylesheet" href="assets/plugins/lightGallery/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="assets/plugins/jquery-bar-rating/dist/themes/fontawesome-stars.css">
+    <link rel="stylesheet" href="assets/plugins/select2/dist/css/select2.min.css">
+    <link rel="stylesheet" href="assets/plugins/lightGallery/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="assets/plugins/noUiSlider/nouislider.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="ps-page">
+        <header class="ps-header ps-header--1">
+            <div class="ps-noti">
+                <div class="container-fluid">
+                    <p class="m-0">Free Shipping On Orders Above 200 EGP </p>
+                </div><a class="ps-noti__close"><i class="icon-cross"></i></a>
+            </div>
+            <div class="ps-header__middle">
+                <div class="container-fluid">
+                    <div class="flex-header">
+                        <div class="ps-logo">
+                            <a href="index.html">
+                                <img src="assets/img/logo.svg" alt>
+                            </a>
+                        </div>
+                        <a class="ps-menu--sticky" href="#"><i class="fa fa-bars"></i></a>
+                        <div class="ps-header__right">
+                            <div class="ps-header__search">
+                                <form action="http://nouthemes.net/html/mymedi/do_action" method="post">
+                                    <div class="ps-search-table">
+                                        <div class="input-group">
+                                            <input class="form-control ps-input" type="text"
+                                                placeholder="Search for products">
+                                            <div class="input-group-append"><a href="#"><i class="fa fa-search"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="ps-language-currency"><a class="ps-dropdown-value" href="javascript:void(0);"
+                                    data-toggle="modal" data-target="#popupLanguage">English</a>
+                            </div>
+                            <ul class="ps-header__icons">
+                                <li>
+                                    <a class="ps-header__item account-btn" href="#" id="login-modal">
+                                        <i class="icon-user"></i>
+                                        <div class="log-acc">
+                                            <span>Login / Sign up</span>
+                                            <p>My account
+                                                <svg class="icon icon--arrow-bottom" viewBox="0 0 12 8"
+                                                    role="presentation">
+                                                    <path stroke="currentColor" stroke-width="2" d="M10 2L6 6 2 2"
+                                                        fill="none" stroke-linecap="square"></path>
+                                                </svg>
+                                            </p>
+                                        </div>
+                                    </a>
+                                    <div class="ps-login--modal">
+                                        <form method="get" action="http://nouthemes.net/html/mymedi/do_action">
+                                            <div class="form-group">
+                                                <label>Username or Email Address</label>
+                                                <input class="form-control" type="text">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Password</label>
+                                                <input class="form-control" type="password">
+                                            </div>
+                                            <button class="ps-btn ps-btn--warning" type="submit">Log In</button>
+                                        </form>
+                                    </div>
+                                </li>
+                                <li><a class="ps-header__item cart-btn-header" href="cart.html" id="cart-mini"><i
+                                            class="icon-cart-empty"></i>
+                                        <p>Cart</p>
+                                        <span class="badge">2</span>
+                                    </a>
+                                    <div class="ps-cart--mini">
+                                        <ul class="ps-cart__items">
+                                            <li class="ps-cart__item">
+                                                <div class="ps-product--mini-cart"><a class="ps-product__thumbnail"
+                                                        href="product-details.html"><img src="assets/img/products/1.jpg"
+                                                            alt="alt" /></a>
+                                                    <div class="ps-product__content"><a class="ps-product__name"
+                                                            href="product-details.html">Mix Super Deluxe</a>
+                                                        <p class="ps-product__meta"> <span
+                                                                class="ps-product__price">400.000 EGP</span></p>
+                                                    </div><a class="ps-product__remove" href="javascript: void(0)"><i
+                                                            class="icon-cross"></i></a>
+                                                </div>
+                                            </li>
+                                            <li class="ps-cart__item">
+                                                <div class="ps-product--mini-cart"><a class="ps-product__thumbnail"
+                                                        href="product-details.html"><img src="assets/img/products/3.jpg"
+                                                            alt="alt" /></a>
+                                                    <div class="ps-product__content"><a class="ps-product__name"
+                                                            href="product-details.html">Mix Kernels Extra</a>
+                                                        <p class="ps-product__meta"> <span
+                                                                class="ps-product__sale">70.000 EGP</span><span
+                                                                class="ps-product__is-price">80.000 EGP</span></p>
+                                                    </div><a class="ps-product__remove" href="javascript: void(0)"><i
+                                                            class="icon-cross"></i></a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="ps-cart__total"><span>Subtotal </span><span>470 EGP</span></div>
+                                        <div class="ps-cart__footer"><a class="ps-btn ps-btn--outline"
+                                                href="cart.html">View Cart</a><a class="ps-btn ps-btn--warning"
+                                                href="checkout.html">Checkout</a></div>
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ps-navigation">
+                <div class="container-fluid">
+                    <div class="ps-navigation__left">
+                        <nav class="ps-main-menu">
+                            <ul class="menu">
+                                <li class="has-mega-menu"><a href="products.html">Nut Mixes</a></li>
+                                <li class="has-mega-menu">
+                                    <a href="products.html">Nuts & Kernels
+                                        <span class="sub-toggle">
+                                            <i class="fa fa-chevron-down"></i>
+                                        </span>
+                                    </a>
+                                    <div class="mega-menu">
+                                        <ul class="sub-menu--mega">
+                                            <li><a href="products.html">Nuts & Seeds</a></li>
+                                            <li><a href="products.html">Raw Nuts & Seeds</a></li>
+                                            <li><a href="products.html">Lifestyle Mixes</a></li>
+                                            <li><a href="products.html">Fruits & Nuts Mixes</a></li>
+                                            <li><a href="products.html">Sugared Nuts & Kernels</a></li>
+                                            <li><a href="products.html">Nuts Dragées</a></li>
+                                            <li><a href="products.html">Prepacks</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="has-mega-menu">
+                                    <a href="products.html">Confectionery
+                                        <span class="sub-toggle">
+                                            <i class="fa fa-chevron-down"></i>
+                                        </span>
+                                    </a>
+                                    <div class="mega-menu">
+                                        <ul class="sub-menu--mega">
+                                            <li><a href="products.html">Chocolates</a></li>
+                                            <li><a href="products.html">Malban & Nougat</a></li>
+                                            <li><a href="products.html">Marzipan</a></li>
+                                            <li><a href="products.html">Man Wa Salwa</a></li>
+                                            <li><a href="products.html">Gifts</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="has-mega-menu">
+                                    <a href="products.html">Fruits
+                                        <span class="sub-toggle">
+                                            <i class="fa fa-chevron-down"></i>
+                                        </span>
+                                    </a>
+                                    <div class="mega-menu">
+                                        <ul class="sub-menu--mega">
+                                            <li><a href="products.html">Dried Fruits</a></li>
+                                            <li><a href="products.html">Fruits & Nuts Mixes</a></li>
+                                            <li><a href="products.html">Dates</a></li>
+                                            <li><a href="products.html">Fruit Paste</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="has-mega-menu">
+                                    <a href="products.html">Healthy Choice
+                                        <span class="sub-toggle">
+                                            <i class="fa fa-chevron-down"></i>
+                                        </span>
+                                    </a>
+                                    <div class="mega-menu">
+                                        <ul class="sub-menu--mega">
+                                            <li><a href="products.html">Sugar Free Nut Bars</a></li>
+                                            <li><a href="products.html">Healthy Mixes</a></li>
+                                            <li><a href="products.html">Nut Butters</a></li>
+                                            <li><a href="products.html">Nut Flours</a></li>
+                                            <li><a href="products.html">Protein</a></li>
+                                            <li><a href="products.html">Super Seeds & Grains</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="has-mega-menu">
+                                    <a href="products.html">Local & Traditional
+                                        <span class="sub-toggle">
+                                            <i class="fa fa-chevron-down"></i>
+                                        </span>
+                                    </a>
+                                    <div class="mega-menu">
+                                        <ul class="sub-menu--mega">
+                                            <li><a href="products.html">Oriental Sweets</a></li>
+                                            <li><a href="products.html">Thyme - Zaa'tar</a></li>
+                                            <li><a href="products.html">Aromatic Herbs & Spices</a></li>
+                                            <li><a href="products.html">Bakery</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="has-mega-menu"><a href="products.html">Coffee & Tea</a></li>
+                                <li class="has-mega-menu"><a href="products.html">Our Selection </a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <header class="ps-header ps-header--1 ps-header--mobile">
+            <div class="ps-noti">
+                <div class="container-fluid">
+                    <p class="m-0">Free Shipping On Orders Above 200 EGP</p>
+                </div><a class="ps-noti__close"><i class="icon-cross"></i></a>
+            </div>
+            <div class="ps-header__middle">
+                <div class="container-fluid">
+                    <div class="ps-logo"><a href="index.html"> <img src="assets/img/logo.svg" alt></a></div>
+                    <div class="ps-header__right">
+                        <ul class="ps-header__icons">
+                            <li><a class="ps-header__item open-search" href="#"><i class="fa fa-search"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="page-content">
+            <div class="container-fluid">
+                <ul class="ps-breadcrumb">
+                    <li class="ps-breadcrumb__item"><a href="index.html">Home</a></li>
+                    <li class="ps-breadcrumb__item active" aria-current="page">Privacy Policy</li>
+                </ul>
+                <h1 class="ps-page-name">Privacy Policy</h1>
+                <div class="content">
+                    <p>This Privacy Policy describes how your personal information is collected, used, and shared when
+                        you visit or make a purchase from https://store.Gold.com (the
+                        “Site”).<br><br><strong>PERSONAL INFORMATION WE COLLECT</strong><br><br>When you visit the Site,
+                        we automatically collect certain information about your device, including information about your
+                        web browser, IP address, time zone, and some of the cookies that are installed on your device.
+                        Additionally, as you browse the Site, we collect information about the individual web pages or
+                        products that you view, what websites or search terms referred you to the Site, and information
+                        about how you interact with the Site. We refer to this automatically-collected information as
+                        “Device Information.”<br><br>We collect Device Information using the following technologies:</p>
+                    <ul>
+                        <li>&nbsp;“Cookies” are data files that are placed on your device or computer and often include
+                            an anonymous unique identifier. For more information about cookies, and how to disable
+                            cookies, visit http://www.allaboutcookies.org.</li>
+                        <li>“Log files” track actions occurring on the Site, and collect data including your IP address,
+                            browser type, Internet service provider, referring/exit pages, and date/time stamps.</li>
+                        <li>“Web beacons,” “tags,” and “pixels” are electronic files used to record information about
+                            how you browse the Site.</li>
+                    </ul>
+                    <p>Additionally when you make a purchase or attempt to make a purchase through the Site, we collect
+                        certain information from you, including your name, billing address, shipping address, payment
+                        information, email address, and phone number. We refer to this information as “Order
+                        Information.”<br><br>When we talk about “Personal Information” in this Privacy Policy, we are
+                        talking both about Device Information and Order Information.<br><br><strong>HOW DO WE USE YOUR
+                            PERSONAL INFORMATION?</strong><br><br>We use the Order Information that we collect generally
+                        to fulfill any orders placed through the Site (including processing your payment information,
+                        arranging for shipping, and providing you with invoices and/or order confirmations).
+                        Additionally, we use this Order Information to:</p>
+                    <ul>
+                        <li>Communicate with you;</li>
+                        <li>Screen our orders for potential risk or fraud; and</li>
+                        <li>When in line with the preferences you have shared with us, provide you with information or
+                            advertising relating to our products or services.</li>
+                    </ul>
+                    <p>We use the Device Information that we collect to help us screen for potential risk and fraud (in
+                        particular, your IP address), and more generally to improve and optimize our Site (for example,
+                        by generating analytics about how our customers browse and interact with the Site, and to assess
+                        the success of our marketing and advertising campaigns).<br><br><strong>SHARING YOUR PERSONAL
+                            INFORMATION</strong><br><br>We share your Personal Information with third parties to help us
+                        use your Personal Information, as described above. For example, we use Shopify to power our
+                        online store--you can read more about how Shopify uses your Personal Information here:
+                        https://www.shopify.com/legal/privacy. We also use Google Analytics to help us understand how
+                        our customers use the Site--you can read more about how Google uses your Personal Information
+                        here: https://www.google.com/intl/en/policies/privacy/. You can also opt-out of Google Analytics
+                        here: https://tools.google.com/dlpage/gaoptout.<br><br>Finally, we may also share your Personal
+                        Information to comply with applicable laws and regulations, to respond to a subpoena, search
+                        warrant or other lawful request for information we receive, or to otherwise protect our
+                        rights.<br><br>As described above, we use your Personal Information to provide you with targeted
+                        advertisements or marketing communications we believe may be of interest to you. For more
+                        information about how targeted advertising works, you can visit the Network Advertising
+                        Initiative’s (“NAI”) educational page at
+                        http://www.networkadvertising.org/understanding-online-advertising/how-does-it-work.<br><br>You
+                        can opt out of targeted advertising by:<br><br></p>
+                    <ul>
+                        <li>FACEBOOK - https://www.facebook.com/settings/?tab=ads</li>
+                        <li>GOOGLE - https://www.google.com/settings/ads/anonymous</li>
+                        <li>BING - https://advertise.bingads.microsoft.com/en-us/resources/policies/personalized-ads
+                        </li>
+                    </ul>
+                    <p><br>Additionally, you can opt out of some of these services by visiting the Digital Advertising
+                        Alliance’s opt-out portal at: http://optout.aboutads.info/.<br><br><strong>DO NOT
+                            TRACK</strong><br>Please note that we do not alter our Site’s data collection and use
+                        practices when we see a Do Not Track signal from your browser.<br><br>If you are a European
+                        resident, you have the right to access personal information we hold about you and to ask that
+                        your personal information be corrected, updated, or deleted. If you would like to exercise this
+                        right, please contact us through the contact information below.<br><br>Additionally, if you are
+                        a European resident we note that we are processing your information in order to fulfill
+                        contracts we might have with you (for example if you make an order through the Site), or
+                        otherwise to pursue our legitimate business interests listed above. Additionally, please note
+                        that your information will be transferred outside of Europe, including to Canada and the United
+                        States.<br><br><strong>DATA RETENTION</strong><br>When you place an order through the Site, we
+                        will maintain your Order Information for our records unless and until you ask us to delete this
+                        information.<br><br><strong>MINORS</strong><br>The Site is not intended for individuals under
+                        the age of 16.<br><br><strong>CHANGES</strong><br>We may update this privacy policy from time to
+                        time in order to reflect, for example, changes to our practices or for other operational, legal
+                        or regulatory reasons.<br><br><strong>CONTACT US</strong><br>For more information about our
+                        privacy practices, if you have questions, or if you would like to make a complaint, please
+                        contact us by e-mail at help@Gold.com or by mail using the details provided below:<br><br>
+                        Al-Rai- 5th Ring Road- Ghazali Street , Kuwait</p>
+
+                </div>
+            </div>
+        </div>
+
+        <footer class="ps-footer ps-footer--1">
+            <div class="ps-footer__middle">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-md-7">
+                        <div class="row">
+                            <div class="col-12 col-md-5">
+                                <div class="ps-footer--address">
+                                    <div class="ps-logo">
+                                        <a href="index.html">
+                                            <img src="assets/img/logo.svg">
+                                        </a>
+                                    </div>
+                                    <div class="ps-footer__title">Our store</div>
+                                    <p>Al-Rai- 5th Ring Road- Ghazali Street , Kuwait</p>
+                                    <p><a target="_blank" href="https://goo.gl/maps/bib2Y4JwNpz6RWsD7">Show
+                                            on map</a></p>
+                                    <ul class="ps-social">
+                                        <li><a class="ps-social__link facebook" href="#"><i class="fa fa-facebook">
+                                                </i><span class="ps-tooltip">Facebook</span></a></li>
+                                        <li><a class="ps-social__link instagram" href="#"><i class="fa fa-instagram"></i><span class="ps-tooltip">Instagram</span></a></li>
+                                        <li><a class="ps-social__link youtube" href="#"><i class="fa fa-youtube-play"></i><span class="ps-tooltip">Youtube</span></a></li>
+                                        <li><a class="ps-social__link pinterest" href="#"><i class="fa fa-pinterest-p"></i><span class="ps-tooltip">Pinterest</span></a></li>
+                                        <li><a class="ps-social__link linkedin" href="#"><i class="fa fa-linkedin"></i><span class="ps-tooltip">Linkedin</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-7">
+                                <div class="ps-footer--contact">
+                                    <h5 class="ps-footer__title">Need help</h5>
+                                    <a href="tel:55554444" class="ps-footer__fax"><i class="icon-telephone"></i>5555 4444</a>
+                                    <p class="ps-footer__work">Monday – Friday: 9:00-20:00<br>Saturday: 11:00 –
+                                        15:00</p>
+                                    <hr>
+                                    <p>
+                                        <a class="ps-footer__email" href="mailto:contact@example.com"> <i class="icon-envelope"></i>contact@example.com </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-5">
+                        <div class="row">
+                            <div class="col-6 col-md-4">
+                                <div class="ps-footer--block">
+                                    <h5 class="ps-block__title">Information</h5>
+                                    <ul class="ps-block__list">
+                                        <li><a href="about.html">About us</a></li>
+                                        <li><a href="contact.html">Contact us</a></li>
+                                        <li><a href="static-page.html">Privacy Policy</a></li>
+                                        <li><a href="static-page.html">Sales</a></li>
+                                        <li><a href="static-page.html">Terms &amp; Conditions</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <div class="ps-footer--block">
+                                    <h5 class="ps-block__title">Account</h5>
+                                    <ul class="ps-block__list">
+                                        <li><a href="my-account.html">My account</a></li>
+                                        <li><a href="orders.html">My orders</a></li>
+                                        <li><a href="static-page.html">Returns</a></li>
+                                        <li><a href="static-page.html">Shipping</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <div class="ps-footer--block">
+                                    <h5 class="ps-block__title">Store</h5>
+                                    <ul class="ps-block__list">
+                                        <li><a href="products.html">Affiliate</a></li>
+                                        <li><a href="products.html">Bestsellers</a></li>
+                                        <li><a href="products.html">Discount</a></li>
+                                        <li><a href="products.html">Latest products</a></li>
+                                        <li><a href="products.html">Sale</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="ps-footer--bottom">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <p>Copyright © 2022 Gold. All Rights Reserved</p>
+                    </div>
+                    <div class="col-12 col-md-6 flex-payment">
+                        <img src="assets/img//KNET.svg" alt="">
+                        <img src="assets/img//visa.png" alt="">
+                        <img src="assets/img//mastercard.png" alt="">
+                        <img src="assets/img//cash.svg" alt="">
+                    </div>
+                </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div class="ps-search">
+        <div class="ps-search__content ps-search--mobile">
+            <a class="ps-search__close" href="#" id="close-search"><i class="icon-cross"></i></a>
+            <h3>Search</h3>
+            <form action="http://nouthemes.net/html/mymedi/do_action" method="post">
+                <div class="ps-search-table">
+                    <div class="input-group">
+                        <input class="form-control ps-input" type="text" placeholder="Search for products">
+                        <div class="input-group-append"><a href="#"><i class="fa fa-search"></i></a></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="ps-navigation--footer">
+        <div class="ps-nav__item"><a href="#" id="open-menu"><i class="icon-menu"></i></a><a href="#" id="close-menu"><i
+                    class="icon-cross"></i></a></div>
+        <div class="ps-nav__item"><a href="index.html"><i class="icon-home2"></i></a></div>
+        <div class="ps-nav__item"><a href="my-account.html"><i class="icon-user"></i></a></div>
+        <div class="ps-nav__item"><a href="cart.html"><i class="icon-cart-empty"></i><span class="badge">2</span></a>
+        </div>
+    </div>
+
+    <div class="ps-menu--slidebar">
+        <div class="ps-menu__content">
+            <ul class="menu--mobile">
+                <li class="menu-item-has-children"><a href="products.html">Nut Mixes</a></li>
+                <li class="menu-item-has-children"><a href="products.html">Nuts & Kernels</a>
+                    <span class="sub-toggle"><i class="fa fa-chevron-down"></i></span>
+                    <ul class="sub-menu">
+                        <li><a href="products.html">Nuts & Seeds</a></li>
+                        <li><a href="products.html">Raw Nuts & Seeds</a></li>
+                        <li><a href="products.html">Lifestyle Mixes</a></li>
+                        <li><a href="products.html">Fruits & Nuts Mixes</a></li>
+                        <li><a href="products.html">Sugared Nuts & Kernels</a></li>
+                        <li><a href="products.html">Nuts Dragées</a></li>
+                        <li><a href="products.html">Prepacks</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item-has-children"><a href="products.html">Confectionery</a>
+                    <span class="sub-toggle"><i class="fa fa-chevron-down"></i></span>
+                    <ul class="sub-menu">
+                        <li><a href="products.html">Chocolates</a></li>
+                        <li><a href="products.html">Malban & Nougat</a></li>
+                        <li><a href="products.html">Marzipan</a></li>
+                        <li><a href="products.html">Man Wa Salwa</a></li>
+                        <li><a href="products.html">Gifts</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item-has-children"><a href="products.html">Fruits</a>
+                    <span class="sub-toggle"><i class="fa fa-chevron-down"></i></span>
+                    <ul class="sub-menu">
+                        <li><a href="products.html">Dried Fruits</a></li>
+                        <li><a href="products.html">Fruits & Nuts Mixes</a></li>
+                        <li><a href="products.html">Dates</a></li>
+                        <li><a href="products.html">Fruit Paste</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item-has-children"><a href="products.html">Healthy Choice</a>
+                    <span class="sub-toggle"><i class="fa fa-chevron-down"></i></span>
+                    <ul class="sub-menu">
+                        <li><a href="products.html">Sugar Free Nut Bars</a></li>
+                        <li><a href="products.html">Healthy Mixes</a></li>
+                        <li><a href="products.html">Nut Butters</a></li>
+                        <li><a href="products.html">Nut Flours</a></li>
+                        <li><a href="products.html">Protein</a></li>
+                        <li><a href="products.html">Super Seeds & Grains</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item-has-children"><a href="products.html">Local & Traditional</a>
+                    <span class="sub-toggle"><i class="fa fa-chevron-down"></i></span>
+                    <ul class="sub-menu">
+                        <li><a href="products.html">Oriental Sweets</a></li>
+                        <li><a href="products.html">Thyme - Zaa'tar</a></li>
+                        <li><a href="products.html">Aromatic Herbs & Spices</a></li>
+                        <li><a href="products.html">Bakery</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item-has-children"><a href="products.html">Coffee & Tea</a></li>
+                <li class="menu-item-has-children"><a href="products.html">Our Selection</a></li>
+            </ul>
+        </div>
+
+        <div class="ps-menu__footer">
+            <div class="ps-menu__item">
+                <ul class="ps-language-currency">
+                    <li class="menu-item-has-children"><a href="#" class="lang-a">English</a>
+                        <span class="sub-toggle"><i class="fa fa-chevron-down"></i></span>
+                        <ul class="sub-menu">
+                            <li><a href="#">English</a></li>
+                            <li><a href="#">Arabic</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <button class="btn scroll-top"><i class="fa fa-angle-double-up"></i></button>
+
+    <div class="ps-preloader" id="preloader">
+        <div class="ps-preloader-section ps-preloader-left"></div>
+        <div class="ps-preloader-section ps-preloader-right"></div>
+    </div>
+
+    <div class="modal fade" id="popupQuickview">
+        <div class="modal-dialog modal-xl modal-dialog-centered ps-quickview">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="wrap-modal-slider ps-quickview__body">
+                        <button class="close ps-quickview__close" type="button" data-dismiss="modal"
+                            aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <div class="ps-product--detail">
+                            <div class="row">
+                                <div class="col-12 col-xl-6">
+                                    <div class="ps-product--gallery">
+                                        <div class="ps-product__thumbnail">
+                                            <div class="slide"><img src="assets/img/products/1.jpg" alt="alt" /></div>
+                                            <div class="slide"><img src="assets/img/products/2.jpg" alt="alt" /></div>
+                                            <div class="slide"><img src="assets/img/products/3.jpg" alt="alt" /></div>
+                                            <div class="slide"><img src="assets/img/products/4.jpg" alt="alt" /></div>
+                                            <div class="slide"><img src="assets/img/products/5.jpg" alt="alt" /></div>
+                                        </div>
+                                        <div class="ps-gallery--image">
+                                            <div class="slide">
+                                                <div class="ps-gallery__item"><img src="assets/img/products/1.jpg"
+                                                        alt="alt" /></div>
+                                            </div>
+                                            <div class="slide">
+                                                <div class="ps-gallery__item"><img src="assets/img/products/2.jpg"
+                                                        alt="alt" /></div>
+                                            </div>
+                                            <div class="slide">
+                                                <div class="ps-gallery__item"><img src="assets/img/products/3.jpg"
+                                                        alt="alt" /></div>
+                                            </div>
+                                            <div class="slide">
+                                                <div class="ps-gallery__item"><img src="assets/img/products/4.jpg"
+                                                        alt="alt" /></div>
+                                            </div>
+                                            <div class="slide">
+                                                <div class="ps-gallery__item"><img src="assets/img/products/5.jpg"
+                                                        alt="alt" /></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-xl-6">
+                                    <div class="ps-product__info">
+                                        <div class="ps-product__badge">
+                                            <span class="ps-badge ps-badge--instock"> IN STOCK</span>
+                                            <!-- <span class="ps-badge ps-badge--outstock"> OUT OF STOCK</span> -->
+                                        </div>
+                                        <div class="ps-product__branch"><a href="#">RIFAI</a></div>
+                                        <div class="ps-product__type">
+                                            <ul class="ps-product__list">
+                                                <li> <span class="ps-list__title">SKU: </span><a class="ps-list__text"
+                                                        href="#">SF-006</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="ps-product__title"><a href="#">Walnuts Super Extra</a></div>
+                                        <div class="ps-product__desc">
+                                            <span class="product-form__option-name">Sold and packed in:
+                                                <span class="product-form__selected-value">250g</span>
+                                            </span>
+                                            <div class="flex-choose">
+                                                <div class="radio-label">
+                                                    <input type="radio" name="radio" id="one" checked>
+                                                    <label for="one">
+                                                        250g
+                                                    </label>
+                                                </div>
+                                                <div class="radio-label">
+                                                    <input type="radio" name="radio" id="two">
+                                                    <label for="two">
+                                                        500g
+                                                    </label>
+                                                </div>
+                                                <div class="radio-label">
+                                                    <input type="radio" name="radio" id="three" disabled>
+                                                    <label for="three">
+                                                        1 Kg
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="ps-product__meta"><span class="ps-product__price">77.065 EGP</span>
+                                        </div>
+                                        <div class="ps-product__quantity">
+                                            <h6>Quantity</h6>
+                                            <div class="def-number-input number-input safari_only">
+                                                <button class="minus"
+                                                    onclick="this.parentNode.querySelector('input[type=number]').stepDown()"><i
+                                                        class="icon-minus"></i></button>
+                                                <input class="quantity" min="0" name="quantity" value="1"
+                                                    type="number" />
+                                                <button class="plus"
+                                                    onclick="this.parentNode.querySelector('input[type=number]').stepUp()"><i
+                                                        class="icon-plus"></i></button>
+                                            </div>
+
+                                        </div>
+                                        <div class="btn-add-buy">
+                                            <a class="ps-btn ps-btn--warning" href="javascript:;" data-dismiss="modal">Add to cart</a>
+                                            <a class="ps-btn ps-btn--danger" href="checkout.html">Buy it now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="popupLanguage">
+        <div class="modal-dialog modal-dialog-centered ps-popup--select">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="wrap-modal-slider container-fluid">
+                        <button class="close ps-popup__close" type="button" data-dismiss="modal"
+                            aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <div class="ps-popup__body">
+                            <h2 class="ps-popup__title">Select language</h2>
+                            <ul class="ps-popup__list">
+                                <li class="language-item"> <a class="active btn" href="javascript:void(0);"
+                                        data-value="English">English</a></li>
+                                <li class="language-item"> <a class="btn" href="javascript:void(0);"
+                                        data-value="Arabic">Arabic</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade modal-custom" id="address">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button class="close ps-popup__close" type="button" data-dismiss="modal" aria-label="Close">
+                        <svg class="icon icon--close" viewBox="0 0 19 19" role="presentation">
+                            <path
+                                d="M9.1923882 8.39339828l7.7781745-7.7781746 1.4142136 1.41421357-7.7781746 7.77817459 7.7781746 7.77817456L16.9705627 19l-7.7781745-7.7781746L1.41421356 19 0 17.5857864l7.7781746-7.77817456L0 2.02943725 1.41421356.61522369 9.1923882 8.39339828z"
+                                fill="currentColor" fill-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                    <div class="ps-popup__body">
+                        <h2 class="ps-popup__title">Add a new address</h2>
+                        <p>Please fill in the information below</p>
+
+                        <div class="row custom-input">
+                            <div class="col-12">
+                                <div class="ps-checkout__group">
+                                    <label class="ps-checkout__label">First name</label>
+                                    <input class="ps-input" type="text">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="ps-checkout__group">
+                                    <label class="ps-checkout__label">Last name</label>
+                                    <input class="ps-input" type="text">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="ps-checkout__group">
+                                    <label class="ps-checkout__label">Phone</label>
+                                    <input class="ps-input" type="text">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="ps-checkout__group">
+                                    <label class="ps-checkout__label">Address</label>
+                                    <input class="ps-input" type="text" placeholder="">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="ps-checkout__group">
+                                    <label class="ps-checkout__label">Governorate</label>
+                                    <select name="zone" class="select2">
+                                        <option value="KW-AH">Al Ahmadi</option>
+                                        <option value="KW-KU">Al Asimah</option>
+                                        <option value="KW-FA">Al Farwaniyah</option>
+                                        <option value="KW-JA">Al Jahra</option>
+                                        <option value="KW-HA">Hawalli</option>
+                                        <option value="KW-MU">Mubarak Al-Kabeer</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-3">
+                                <div class="form-check"><input class="form-check-input" type="checkbox" value=""
+                                        id="check"><label class="form-check-label" for="check">Set as default
+                                        address</label></div>
+                            </div>
+                        </div>
+                        <button type="button" class="ps-btn ps-btn--primary">Add a new address</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/plugins/jquery.min.js"></script>
+    <script src="assets/plugins/popper.min.js"></script>
+    <script src="assets/plugins/bootstrap4/js/bootstrap.min.js"></script>
+    <script src="assets/plugins/select2/dist/js/select2.full.min.js"></script>
+    <script src="assets/plugins/owl-carousel/owl.carousel.min.js"></script>
+    <script src="assets/plugins/jquery-bar-rating/dist/jquery.barrating.min.js"></script>
+    <script src="assets/plugins/lightGallery/dist/js/lightgallery-all.min.js"></script>
+    <script src="assets/plugins/slick/slick/slick.min.js"></script>
+    <script src="assets/plugins/noUiSlider/nouislider.min.js"></script>
+    <!-- custom code-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
