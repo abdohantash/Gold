@@ -489,11 +489,6 @@ $(window).resize(function(){
             });
         }
 
-        $('.modal').on('shown.bs.modal', function (e) {
-            $('.ps-product--gallery .ps-product__thumbnail').slick('setPosition');
-            $('.ps-gallery--image').slick('setPosition');
-            $('.wrap-modal-slider').addClass('open');
-        })
     }
 
     function slidePriceWidget() {
