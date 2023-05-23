@@ -13858,7 +13858,7 @@ textarea.form-control {
   position: sticky;
   z-index: 3;
   top: 0;
-  background-image: linear-gradient(90deg, #ffffff 0%, #c9b36e 50%, #ffffff 100%);
+  background-image: linear-gradient(90deg, #f5f1e7 0%, #d1bd7d 50%, #f5f1e7 100%);
 }
 
 .ps-header .ps-header__middle {
