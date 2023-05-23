@@ -139,7 +139,7 @@ p {
 }
 @font-face {
 	font-family: 'Linearicons';
-	src: url('../Linearicons.ttf') format('truetype');
+	src: url('Linearicons.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }

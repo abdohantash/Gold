@@ -2,317 +2,316 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="assets/img/logo.svg" rel="shortcut icon" type="image/png">
-    <link rel="stylesheet" href="assets/plugins/bootstrap4/css/bootstrap.min.css">
-    <title>Gold</title>
-    <style>
-        .row {
-            flex-wrap: nowrap;
-        }
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="assets/img/logo.svg" rel="shortcut icon" type="image/png">
+  <link rel="stylesheet" href="assets/plugins/bootstrap4/css/bootstrap.min.css">
+  <title>Bandar Al Debeyan</title>
+  <style>
+    .row {
+      flex-wrap: nowrap;
+    }
 
-        .invoice-container {
-            width: 1200px;
-            padding: 20px 15px;
-            position: relative;
-            margin: auto;
-        }
+    .invoice-container {
+      width: 1200px;
+      padding: 20px 15px;
+      position: relative;
+      margin: auto;
+    }
 
-        .header-logo img {
-            height: 65px;
-        }
+    .header-logo img {
+      height: 65px;
+    }
 
-        .as-invoice .big-title {
-            font-size: 44px;
-            margin-bottom: 0;
-            text-align: right;
-            line-height: initial;
-        }
+    .as-invoice .big-title {
+      font-size: 44px;
+      margin-bottom: 0;
+      text-align: right;
+      line-height: initial;
+    }
 
-        .border-line img {
-            width: 100%;
-            height: 10px;
-            object-fit: cover;
-            filter: grayscale(.5);
-        }
+    .border-line img {
+      width: 100%;
+      height: 10px;
+      object-fit: cover;
+      filter: grayscale(.5);
+    }
 
-        .as-invoice .header-bottom {
-            margin: 20px 0;
-        }
+    .as-invoice .header-bottom {
+      margin: 20px 0;
+    }
 
-        .as-invoice address {
-            margin-bottom: 0;
-        }
+    .as-invoice address {
+      margin-bottom: 0;
+    }
 
-        .invoice-table {
-            border: none;
-            margin-bottom: 25px;
-            width: 100%;
-        }
+    .invoice-table {
+      border: none;
+      margin-bottom: 25px;
+      width: 100%;
+    }
 
-        .invoice-table thead th:first-child,
-        .invoice-table thead td:first-child {
-            border-radius: 5px 0 0 5px;
-        }
+    .invoice-table thead th:first-child,
+    .invoice-table thead td:first-child {
+      border-radius: 5px 0 0 5px;
+    }
 
-        .invoice-table thead th,
-        .invoice-table thead td {
-            background-color: #eff2f7;
-        }
+    .invoice-table thead th,
+    .invoice-table thead td {
+      background-color: #eff2f7;
+    }
 
-        .invoice-table th,
-        .invoice-table td {
-            padding: 11px 20px;
-            border: none;
-        }
+    .invoice-table th,
+    .invoice-table td {
+      padding: 11px 20px;
+      border: none;
+    }
 
-        .invoice-table tr {
-            border-bottom: 1px solid #CFD3DC;
-            position: relative;
-        }
+    .invoice-table tr {
+      border-bottom: 1px solid #CFD3DC;
+      position: relative;
+    }
 
-        .invoice-table thead th:last-child,
-        .invoice-table thead td:last-child {
-            border-radius: 0 5px 5px 0;
-        }
+    .invoice-table thead th:last-child,
+    .invoice-table thead td:last-child {
+      border-radius: 0 5px 5px 0;
+    }
 
-        .invoice-table th:last-child,
-        .invoice-table td:last-child {
-            text-align: right;
-        }
+    .invoice-table th:last-child,
+    .invoice-table td:last-child {
+      text-align: right;
+    }
 
-        .invoice-table thead tr {
-            border-bottom: none;
-        }
+    .invoice-table thead tr {
+      border-bottom: none;
+    }
 
-        .total-table {
-            border: none;
-            margin-bottom: 0;
-            margin-top: -4px;
-        }
+    .total-table {
+      border: none;
+      margin-bottom: 0;
+      margin-top: -4px;
+    }
 
-        .total-table th,
-        .total-table td {
-            border: none;
-            padding: 4px 20px;
-        }
+    .total-table th,
+    .total-table td {
+      border: none;
+      padding: 4px 20px;
+    }
 
-        .total-table th:nth-child(2),
-        .total-table td:nth-child(2) {
-            text-align: right;
-        }
+    .total-table th:nth-child(2),
+    .total-table td:nth-child(2) {
+      text-align: right;
+    }
 
-        .invoice-right {
-            text-align: right;
-        }
+    .invoice-right {
+      text-align: right;
+    }
 
 
-        .footer-info {
-            text-align: center;
-            margin-top: 45px;
-            margin-bottom: 0;
-            border-top: 1px solid #ddd;
-            padding-top: 15px;
-            display: flex;
-            justify-content: space-between;
-            font-size: 17px;
-        }
+    .footer-info {
+      text-align: center;
+      margin-top: 45px;
+      margin-bottom: 0;
+      border-top: 1px solid #ddd;
+      padding-top: 15px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 17px;
+    }
 
-        .footer-info p {
-            margin: 0;
-        }
+    .footer-info p {
+      margin: 0;
+    }
 
-        .footer-info .flex-call {
-            display: flex;
-            gap: 50px;
-        }
+    .footer-info .flex-call {
+      display: flex;
+      gap: 50px;
+    }
 
-        .invoice-buttons {
-            display: -webkit-box;
-            display: -webkit-flex;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-align: center;
-            -webkit-align-items: center;
-            -ms-flex-align: center;
-            align-items: center;
-            -webkit-box-pack: center;
-            -webkit-justify-content: center;
-            -ms-flex-pack: center;
-            justify-content: center;
-            margin-top: 30px;
-        }
+    .invoice-buttons {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      margin-top: 30px;
+    }
 
-        .invoice-buttons a,
-        .invoice-buttons button {
-            font-weight: bold;
-            color: #fff;
-            border: none;
-            background-color: #010F1C;
-            display: -webkit-box;
-            display: -webkit-flex;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-align: center;
-            -webkit-align-items: center;
-            -ms-flex-align: center;
-            align-items: center;
-            padding: 10px 35px;
-            cursor: pointer;
-        }
+    .invoice-buttons a,
+    .invoice-buttons button {
+      font-weight: bold;
+      color: #fff;
+      border: none;
+      background-color: #010F1C;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      padding: 10px 35px;
+      cursor: pointer;
+    }
 
-        .invoice-buttons .print_btn {
-            border-radius: 99px 0 0 99px;
-        }
+    .invoice-buttons .print_btn {
+      border-radius: 99px 0 0 99px;
+    }
 
-        .invoice-buttons .download_btn {
-            background-color: #1CB9C8;
-            border-radius: 0 99px 99px 0;
-        }
+    .invoice-buttons .download_btn {
+      background-color: #1CB9C8;
+      border-radius: 0 99px 99px 0;
+    }
 
-        .invoice-buttons a svg,
-        .invoice-buttons button svg {
-            margin-right: 5px;
-        }
+    .invoice-buttons a svg,
+    .invoice-buttons button svg {
+      margin-right: 5px;
+    }
 
-        .invoice-number {
-            margin-bottom: 0;
-        }
+    .invoice-number {
+      margin-bottom: 0;
+    }
 
-        .me-4 {
-            margin-right: 1.5rem !important;
-        }
+    .me-4 {
+      margin-right: 1.5rem !important;
+    }
 
-        .invoice-date {
-            margin-bottom: 0;
-        }
+    .invoice-date {
+      margin-bottom: 0;
+    }
 
-        .invoice-left p {
-            margin: 0;
-        }
-    </style>
+    .invoice-left p {
+      margin: 0;
+    }
+  </style>
 </head>
 
 <body>
-    <div class="invoice-container-wrap">
-        <div class="invoice-container">
-            <main>
-                <div class="as-invoice invoice_style1">
-                    <div class="download-inner">
-                        <header class="as-header header-layout1">
-                            <div class="row align-items-center justify-content-between">
-                                <div class="col-auto">
-                                    <div class="header-logo"><a href="index.html"><img src="assets/img/logo.svg"
-                                                alt="Invce"></a></div>
-                                </div>
-                                <div class="col-auto">
-                                    <h1 class="big-title">Invoice</h1>
-                                </div>
-                            </div>
-                            <div class="header-bottom">
-                                <div class="row align-items-center">
-                                    <div class="col">
-                                        <div class="border-line"><img src="assets/img/line_pattern.svg" alt="line">
-                                        </div>
-                                    </div>
-                                    <div class="col-auto">
-                                        <p class="invoice-number me-4"><b>Invoice No: </b>#935648</p>
-                                    </div>
-                                    <div class="col-auto">
-                                        <p class="invoice-date"><b>Date: </b>24/07/2022</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </header>
-                        <div class="row justify-content-between mb-4">
-                            <div class="col-auto">
-                                <div class="invoice-left"><b>Invoiced To:</b>
-                                    <p>Mohamed Ahmed Ali</p>
-                                    <p>5555 4444</p>
-                                    <p>info@gmail.com</p>
-                                    <address>Al-Rai 5th Ring Road - Ghazali Street Kuwait</address>
-                                </div>
-                            </div>
-                            <div class="col-auto">
-                                <div class="invoice-right"><b>Payment Method:</b>
-                                    <br>
-                                    <span>Credit Card</span>
-                                </div>
-                            </div>
-                        </div>
-                        <table class="invoice-table">
-                            <thead>
-                                <tr>
-                                    <th>Product No.</th>
-                                    <th>Product Description</th>
-                                    <th>Price</th>
-                                    <th>Qty</th>
-                                    <th>Total</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>711010</td>
-                                    <td>Malban Mix - Regular</td>
-                                    <td>100 SAR</td>
-                                    <td>8</td>
-                                    <td>800 SAR</td>
-                                </tr>
-                                <tr>
-                                    <td>711010</td>
-                                    <td>Malban Mix - Regular</td>
-                                    <td>100 SAR</td>
-                                    <td>8</td>
-                                    <td>800 SAR</td>
-                                </tr>
-                                <tr>
-                                    <td>711010</td>
-                                    <td>Malban Mix - Regular</td>
-                                    <td>100 SAR</td>
-                                    <td>8</td>
-                                    <td>800 SAR</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <div class="row justify-content-between">
-                            <div class="col-auto">
-                                <div class="invoice-left"><b>Payment Info:</b>
-                                    <p class="mb-0">Credit Card No: 2456**********<br>A/C Name: Abdo Mohamed</p>
-                                </div>
-                            </div>
-                            <div class="col-auto">
-                                <table class="total-table">
-                                    <tbody>
-                                        <tr>
-                                            <th>Sub Total:</th>
-                                            <td>2400 SAR</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Shipping:</th>
-                                            <td>10 SAR</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Total:</th>
-                                            <td>2410 SAR</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                        <div class="footer-info">
-                            <p>Al-Rai, 5th Ring Road - Ghazali Street, Kuwait</p>
-                            <div class="flex-call">
-                                <span>Call: 5555 4444</span>
-                                <span>www.Gold.com</span>
-                            </div>
-                        </div>
-                    </div>
+  <div class="invoice-container-wrap">
+    <div class="invoice-container">
+      <main>
+        <div class="as-invoice invoice_style1">
+          <div class="download-inner">
+            <header class="as-header header-layout1">
+              <div class="row align-items-center justify-content-between">
+                <div class="col-auto">
+                  <div class="header-logo"><a href="index.html"><img src="assets/img/logo.svg" alt="Invce"></a></div>
                 </div>
-            </main>
+                <div class="col-auto">
+                  <h1 class="big-title">Invoice</h1>
+                </div>
+              </div>
+              <div class="header-bottom">
+                <div class="row align-items-center">
+                  <div class="col">
+                    <div class="border-line"><img src="assets/img/line_pattern.svg" alt="line">
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <p class="invoice-number me-4"><b>Invoice No: </b>#935648</p>
+                  </div>
+                  <div class="col-auto">
+                    <p class="invoice-date"><b>Date: </b>24/07/2022</p>
+                  </div>
+                </div>
+              </div>
+            </header>
+            <div class="row justify-content-between mb-4">
+              <div class="col-auto">
+                <div class="invoice-left"><b>Invoiced To:</b>
+                  <p>Mohamed Ahmed Ali</p>
+                  <p>5555 4444</p>
+                  <p>info@gmail.com</p>
+                  <address>Al-Rai 5th Ring Road - Ghazali Street Kuwait</address>
+                </div>
+              </div>
+              <div class="col-auto">
+                <div class="invoice-right"><b>Payment Method:</b>
+                  <br>
+                  <span>Credit Card</span>
+                </div>
+              </div>
+            </div>
+            <table class="invoice-table">
+              <thead>
+                <tr>
+                  <th>Product No.</th>
+                  <th>Product Description</th>
+                  <th>Price</th>
+                  <th>Qty</th>
+                  <th>Total</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>711010</td>
+                  <td>Malban Mix - Regular</td>
+                  <td>100 SAR</td>
+                  <td>8</td>
+                  <td>800 SAR</td>
+                </tr>
+                <tr>
+                  <td>711010</td>
+                  <td>Malban Mix - Regular</td>
+                  <td>100 SAR</td>
+                  <td>8</td>
+                  <td>800 SAR</td>
+                </tr>
+                <tr>
+                  <td>711010</td>
+                  <td>Malban Mix - Regular</td>
+                  <td>100 SAR</td>
+                  <td>8</td>
+                  <td>800 SAR</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="row justify-content-between">
+              <div class="col-auto">
+                <div class="invoice-left"><b>Payment Info:</b>
+                  <p class="mb-0">Credit Card No: 2456**********<br>A/C Name: Abdo Mohamed</p>
+                </div>
+              </div>
+              <div class="col-auto">
+                <table class="total-table">
+                  <tbody>
+                    <tr>
+                      <th>Sub Total:</th>
+                      <td>2400 SAR</td>
+                    </tr>
+                    <tr>
+                      <th>Shipping:</th>
+                      <td>10 SAR</td>
+                    </tr>
+                    <tr>
+                      <th>Total:</th>
+                      <td>2410 SAR</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="footer-info">
+              <p>Al-Rai, 5th Ring Road - Ghazali Street, Kuwait</p>
+              <div class="flex-call">
+                <span>Call: 5555 4444</span>
+                <span>www.BandarAlDebeyan.com</span>
+              </div>
+            </div>
+          </div>
         </div>
+      </main>
     </div>
+  </div>
 </body>
 
 </html>

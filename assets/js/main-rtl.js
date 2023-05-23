@@ -523,10 +523,6 @@ $(window).resize(function(){
         }
     }
 
-    function lightgalleryVideos() {
-        $('#ps-video-gallery').lightGallery();
-    }
-
     function backgroundImage() {
         var databackground = $('[data-background]');
         databackground.each(function () {
@@ -548,7 +544,6 @@ $(window).resize(function(){
         subMenuToggle();
         slickCarousel();
         slidePriceWidget();
-        lightgalleryVideos();
         smoothScrollingTo(location.hash);
         backgroundImage();
     });
@@ -560,11 +555,3 @@ $(window).resize(function(){
 
 
 $('.countdown').attr('data-date');
-
-$('.datepicker').daterangepicker({
-    singleDatePicker: true,
-    timePicker: true,
-    locale: {
-      format: 'DD-MM-YYYY ---- hh:mm A'
-    }
-  });
