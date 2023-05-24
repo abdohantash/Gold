@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="assets/fonts/Linearicons/linearicons.css">
   <link rel="stylesheet" href="assets/plugins/bootstrap4/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/plugins/owl-carousel/assets/owl.carousel.css">
-  <link rel="stylesheet" href="assets/plugins/slick/slick/slick.css">
+  <link rel="stylesheet" href="assets/plugins/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="assets/plugins/select2/dist/css/select2.min.css">
   <link rel="stylesheet" href="assets/css/style-rtl.css">
 </head>
@@ -71,11 +71,25 @@
                   </div>
                 </form>
               </div>
-              <div class="ps-language-currency"><a class="ps-dropdown-value" href="javascript:void(0);"
-                  data-toggle="modal" data-target="#popupLanguage">عربي</a>
+              <div class="ps-language-currency">
+                <a class="ps-dropdown-value" id="language-modal" href="javascript:void(0);">عربي</a>
+                <div class="ps-language--modal">
+                  <ul class="drop-menu-profile">
+                    <li>
+                      <a href="#">
+                        <img src="assets/img/saudi-arabia.png" alt="">
+                        عربي</a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img src="assets/img/united-kingdom.png" alt="">
+                        انجليزي</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
               <ul class="ps-header__icons">
-                <li>
+                <!-- <li>
                   <a class="ps-header__item account-btn" href="login.html">
                     <i class="icon-user"></i>
                     <div class="log-acc">
@@ -83,9 +97,9 @@
                       <p>حسابي</p>
                     </div>
                   </a>
-                </li>
-                <!-- <li>
-                  <a class="ps-header__item account-btn" href="#" id="login-modal">
+                </li> -->
+                <li>
+                  <a class="ps-header__item account-btn" href="my-account.html" id="login-modal">
                     <i class="icon-user"></i>
                     <div class="log-acc">
                       <span>مرحبا abdelrahman</span>
@@ -121,7 +135,7 @@
                       </li>
                     </ul>
                   </div>
-                </li> -->
+                </li>
                 <li>
                   <a class="ps-header__item cart-btn-header" href="wishlist.html">
                     <i class="icon-heart"></i>
@@ -263,31 +277,138 @@
         </ul>
         <div class="ps-page__content">
           <div class="ps-product--detail ps-product--full">
-            <div class="row">
-              <div class="col-12 col-lg-7">
-                <div class="ps-product--gallery">
-                  <div class="ps-product__thumbnail">
-                    <div class="slide"><img src="assets/img/products/1.jpg" alt="alt" /></div>
-                    <div class="slide"><img src="assets/img/products/2.jpg" alt="alt" /></div>
-                    <div class="slide"><img src="assets/img/products/3.jpg" alt="alt" /></div>
-                    <div class="slide"><img src="assets/img/products/4.jpg" alt="alt" /></div>
+            <div class="dts-page">
+              <div class="right-sec">
+                <div class="g-d-sec">
+                  <div class="g-view">
+                    <div class="thumbs">
+                      <div class="swiper thumbs-img">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <img src="assets/img/products/1.jpg" alt="">
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="assets/img/products/2.jpg" alt="">
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="assets/img/products/20.jpg" alt="">
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="assets/img/products/25.jpg" alt="">
+                          </div>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                      </div>
+                    </div>
+                    <div class="view-div">
+                      <div class="swiper view-img">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide" id="img-1">
+                            <img src="assets/img/products/1.jpg" alt="">
+                          </div>
+                          <div class="swiper-slide" id="img-2">
+                            <img src="assets/img/products/2.jpg" alt="">
+                          </div>
+                          <div class="swiper-slide" id="img-3">
+                            <img src="assets/img/products/20.jpg" alt="">
+                          </div>
+                          <div class="swiper-slide" id="img-4">
+                            <img src="assets/img/products/25.jpg" alt="">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="ps-gallery--image">
-                    <div class="slide">
-                      <div class="ps-gallery__item"><img src="assets/img/products/1.jpg" alt="alt" />
+                  <div class="ps-product__info">
+                    <div class="stockandshare">
+                      <div class="ps-product__badge">
+                        <span class="ps-badge ps-badge--instock">متوفر</span>
+                        <!-- <span class="ps-badge ps-badge--outstock">غير متوفرة</span> -->
                       </div>
+                      <div class="dropdown p-share">
+                        <a href="#" role="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="icon-share2"></i>
+                            مشاركة
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <li>
+                                <a class="dropdown-item facebook" href="#">
+                                    <i class="fa fa-facebook-f"></i>
+                                    فيس بوك
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item twitter" href="#">
+                                    <i class="fa fa-twitter"></i>
+                                    تويتر
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="slide">
-                      <div class="ps-gallery__item"><img src="assets/img/products/2.jpg" alt="alt" />
-                      </div>
                     </div>
-                    <div class="slide">
-                      <div class="ps-gallery__item"><img src="assets/img/products/3.jpg" alt="alt" />
-                      </div>
+                    <div class="ps-product__title">خاتم ذهب عيار 18 قيراط برأس مزدوجة مزينة بألماس وأحجار ملونة</div>
+                    <div class="ps-product__meta">
+                      <span class="ps-product__price">9000 SAR</span>
+                      <span class="ps-product__del">10000 SAR</span>
                     </div>
-                    <div class="slide">
-                      <div class="ps-gallery__item"><img src="assets/img/products/4.jpg" alt="alt" />
+                    <span class="vat">شاملاً ضريبة القيمة المضافة</span>
+                    <ul class="weight-gold-diamond">
+                      <li>
+                        <p>وزن الذهب</p>
+                        <span>
+                          <img src="assets/img/gold.png" alt="">
+                          6.7g
+                        </span>
+                      </li>
+                      <li>
+                        <p>وزن الماس</p>
+                        <span>
+                          <img src="assets/img/diamond.png" alt="">
+                          1.29c
+                        </span>
+                      </li>
+                    </ul>
+    
+                    <div class="size">
+                      <h6>المقاس</h6>
+                      <select class="form-select">
+                        <option value="">EU 49 - US 5</option>
+                        <option value="">EU 50 - US 5.25</option>
+                        <option value="">EU 51 - US 5.50</option>
+                        <option value="">EU 52 - US 5.75</option>
+                        <option value="">EU 53 - US 6</option>
+                        <option value="">EU 54 - US 6.25</option>
+                        <option value="">EU 55 - US 6.50</option>
+                        <option value="">EU 56 - US 6.75</option>
+                        <option value="">EU 56 - US 7</option>
+                      </select>
+                    </div>
+    
+                    <div class="ps-product__quantity">
+                      <h6>الكمية</h6>
+                      <div class="def-number-input number-input safari_only">
+                        <button class="plus" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"><i
+                            class="icon-plus"></i></button>
+                        <input class="quantity" min="0" name="quantity" value="1" type="number" />
+                        <button class="minus" onclick="this.parentNode.querySelector('input[type=number]').stepDown()"><i
+                            class="icon-minus"></i></button>
                       </div>
+    
+                    </div>
+                    <button class="add-wishlist">
+                      <i class="fa fa-heart-o"></i>
+                      اضف الي المفضلة
+                    </button>
+                    <div class="btn-add-buy">
+                      <a class="ps-btn ps-btn--warning" href="javascript:;" data-dismiss="modal">اضف الى السلة</a>
+                      <a class="ps-btn ps-btn--danger" href="checkout.html">شراء الآن</a>
+                    </div>
+                    <div class="ps-product__desc">
+                      <p>SKU<span>LPS23187-R</span></p>
+                      <p>نوع المعدن<span>ذهب</span></p>
+                      <p>العيار<span>18</span></p>
+                      <p>اللون<span>ذهبي</span></p>
                     </div>
                   </div>
                 </div>
@@ -306,79 +427,31 @@
                   </div>
                 </div>
               </div>
-              <div class="col-12 col-lg-5">
-                <ul class="ps-product__info">
-                  <div class="ps-product__title">خاتم ذهب عيار 18 قيراط برأس مزدوجة مزينة بألماس وأحجار ملونة</div>
-                  <div class="ps-product__meta">
-                    <span class="ps-product__price">9000 SAR</span>
-                    <span class="ps-product__del">10000 SAR</span>
-                  </div>
-                  <span class="vat">شاملاً ضريبة القيمة المضافة</span>
-
-                  <div class="ps-product__badge">
-                    <span class="ps-badge ps-badge--instock">متوفر</span>
-                    <!-- <span class="ps-badge ps-badge--outstock">غير متوفرة</span> -->
-                  </div>
-
-                  <ul class="weight-gold-diamond">
-                    <li>
-                      <p>وزن الذهب</p>
-                      <span>
-                        <img src="assets/img/gold.png" alt="">
-                        6.7g
-                      </span>
-                    </li>
-                    <li>
-                      <p>وزن الماس</p>
-                      <span>
-                        <img src="assets/img/diamond.png" alt="">
-                        1.29c
-                      </span>
-                    </li>
-                  </ul>
-
-                  <div class="size">
-                    <h6>المقاس</h6>
-                    <select class="form-select">
-                      <option value="">EU 49 - US 5</option>
-                      <option value="">EU 50 - US 5.25</option>
-                      <option value="">EU 51 - US 5.50</option>
-                      <option value="">EU 52 - US 5.75</option>
-                      <option value="">EU 53 - US 6</option>
-                      <option value="">EU 54 - US 6.25</option>
-                      <option value="">EU 55 - US 6.50</option>
-                      <option value="">EU 56 - US 6.75</option>
-                      <option value="">EU 56 - US 7</option>
-                    </select>
-                  </div>
-
-                  <div class="ps-product__quantity">
-                    <h6>الكمية</h6>
-                    <div class="def-number-input number-input safari_only">
-                      <button class="plus" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"><i
-                          class="icon-plus"></i></button>
-                      <input class="quantity" min="0" name="quantity" value="1" type="number" />
-                      <button class="minus" onclick="this.parentNode.querySelector('input[type=number]').stepDown()"><i
-                          class="icon-minus"></i></button>
-                    </div>
-
-                  </div>
-                  <button class="add-wishlist">
-                    <i class="fa fa-heart-o"></i>
-                    اضف الي المفضلة
-                  </button>
-                  <div class="btn-add-buy">
-                    <a class="ps-btn ps-btn--warning" href="javascript:;" data-dismiss="modal">اضف الى السلة</a>
-                    <a class="ps-btn ps-btn--danger" href="checkout.html">شراء الآن</a>
-                  </div>
-                  <div class="ps-product__desc">
-                    <p>SKU<span>LPS23187-R</span></p>
-                    <p>نوع المعدن<span>ذهب</span></p>
-                    <p>العيار<span>18</span></p>
-                    <p>اللون<span>ذهبي</span></p>
-                  </div>
+              <div class="left-sec">
+                <ul class="store-features">
+                  <li>
+                    <i class="icon-truck"></i>
+                    <p>
+                      <span>شحن مجاني</span>
+                      شحن مجاني لجميع مناطق المملكة
+                    </p>
+                  </li>
+                  <li>
+                    <i class="icon-medal-empty"></i>
+                    <p>
+                      <span>ضمان مدي الحياة</span>
+                      نضمن لك الجودة في جميع المنتجات
+                    </p>
+                  </li>
+                  <li>
+                    <i class="icon-credit-card"></i>
+                    <p>
+                      <span>طرق دفع متعددة</span>
+                      العديد من رق الدفع التي تناسبكم
+                    </p>
+                  </li>
+                </ul>
               </div>
-            </div>
           </div>
         </div>
 
@@ -418,6 +491,8 @@
                   <span class="ps-product__del">10000 SAR</span>
                 </div>
 
+                <span class="in-out-stock instock">متوفر</span>
+                <!-- <span class="in-out-stock outstock">غير متوفر</span> -->
                 <button class="add-cart" type="button">
                   <i class="icon-cart-add"></i>
                   اضف الي السلة
@@ -445,6 +520,8 @@
                   <span class="ps-product__price">6000 SAR</span>
                 </div>
 
+                <span class="in-out-stock instock">متوفر</span>
+                <!-- <span class="in-out-stock outstock">غير متوفر</span> -->
                 <button class="add-cart" type="button">
                   <i class="icon-cart-add"></i>
                   اضف الي السلة
@@ -475,6 +552,8 @@
                   <span class="ps-product__del">10000 SAR</span>
                 </div>
 
+                <span class="in-out-stock instock">متوفر</span>
+                <!-- <span class="in-out-stock outstock">غير متوفر</span> -->
                 <button class="add-cart" type="button">
                   <i class="icon-cart-add"></i>
                   اضف الي السلة
@@ -502,6 +581,8 @@
                   <span class="ps-product__price">6000 SAR</span>
                 </div>
 
+                <span class="in-out-stock instock">متوفر</span>
+                <!-- <span class="in-out-stock outstock">غير متوفر</span> -->
                 <button class="add-cart" type="button">
                   <i class="icon-cart-add"></i>
                   اضف الي السلة
@@ -532,6 +613,8 @@
                   <span class="ps-product__del">10000 SAR</span>
                 </div>
 
+                <span class="in-out-stock instock">متوفر</span>
+                <!-- <span class="in-out-stock outstock">غير متوفر</span> -->
                 <button class="add-cart" type="button">
                   <i class="icon-cart-add"></i>
                   اضف الي السلة
@@ -559,6 +642,8 @@
                   <span class="ps-product__price">6000 SAR</span>
                 </div>
 
+                <span class="in-out-stock instock">متوفر</span>
+                <!-- <span class="in-out-stock outstock">غير متوفر</span> -->
                 <button class="add-cart" type="button">
                   <i class="icon-cart-add"></i>
                   اضف الي السلة
@@ -589,6 +674,8 @@
                   <span class="ps-product__del">10000 SAR</span>
                 </div>
 
+                <span class="in-out-stock instock">متوفر</span>
+                <!-- <span class="in-out-stock outstock">غير متوفر</span> -->
                 <button class="add-cart" type="button">
                   <i class="icon-cart-add"></i>
                   اضف الي السلة
@@ -788,29 +875,6 @@
     </div>
   </div>
 
-  <!-- change lang -->
-  <div class="modal fade" id="popupLanguage">
-    <div class="modal-dialog modal-dialog-centered ps-popup--select">
-      <div class="modal-content">
-        <div class="modal-body">
-          <div class="wrap-modal-slider container-fluid">
-            <button class="close ps-popup__close" type="button" data-dismiss="modal" aria-label="Close"><span
-                aria-hidden="true">&times;</span></button>
-            <div class="ps-popup__body">
-              <h2 class="ps-popup__title">اختر اللغة</h2>
-              <ul class="ps-popup__list">
-                <li class="language-item"> <a class="btn" href="javascript:void(0);" data-value="English">English</a>
-                </li>
-                <li class="language-item"> <a class="active btn" href="javascript:void(0);" data-value="عربي">عربي</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <!-- add address -->
   <div class="modal fade modal-custom" id="address">
     <div class="modal-dialog modal-dialog-centered">
@@ -830,25 +894,39 @@
             <div class="row custom-input">
               <div class="col-12">
                 <div class="ps-checkout__group">
-                  <label class="ps-checkout__label">الاسم الاول</label>
+                  <label class="ps-checkout__label">المنطقة</label>
+                  <select name="zone" class="select2">
+                    <option value="0" disabled selected>- اختر -</option>
+                    <option value="1">الرياض</option>
+                    <option value="2">جدة</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="ps-checkout__group">
+                  <label class="ps-checkout__label">المدينة</label>
+                  <select name="zone" class="select2">
+                    <option value="0" disabled selected>- اختر -</option>
+                    <option value="1">الرياض</option>
+                    <option value="2">جدة</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="ps-checkout__group">
+                  <label class="ps-checkout__label">الحي</label>
                   <input class="ps-input" type="text">
                 </div>
               </div>
               <div class="col-12">
                 <div class="ps-checkout__group">
-                  <label class="ps-checkout__label">الاسم الاخير</label>
-                  <input class="ps-input" type="text">
+                  <label class="ps-checkout__label">اسم الشارع</label>
+                  <input class="ps-input" type="text" placeholder="">
                 </div>
               </div>
               <div class="col-12">
                 <div class="ps-checkout__group">
-                  <label class="ps-checkout__label">رقم الهاتف</label>
-                  <input class="ps-input" type="text">
-                </div>
-              </div>
-              <div class="col-12">
-                <div class="ps-checkout__group">
-                  <label class="ps-checkout__label">العنوان</label>
+                  <label class="ps-checkout__label">رقم المنشأة</label>
                   <input class="ps-input" type="text" placeholder="">
                 </div>
               </div>
@@ -867,9 +945,11 @@
 
   <script src="assets/plugins/jquery.min.js"></script>
   <script src="assets/plugins/bootstrap4/js/bootstrap.min.js"></script>
+  <script src="assets/plugins/popper.min.js"></script>
   <script src="assets/plugins/select2/dist/js/select2.full.min.js"></script>
   <script src="assets/plugins/owl-carousel/owl.carousel.min.js"></script>
-  <script src="assets/plugins/slick/slick/slick.min.js"></script>
+  <script src="assets/plugins/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/plugins/js-image-zoom.js"></script>
   <script src="assets/js/main-rtl.js"></script>
 </body>
 

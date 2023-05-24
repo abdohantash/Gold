@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="assets/fonts/Linearicons/linearicons.css">
   <link rel="stylesheet" href="assets/plugins/bootstrap4/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/plugins/owl-carousel/assets/owl.carousel.css">
-  <link rel="stylesheet" href="assets/plugins/slick/slick/slick.css">
+  <link rel="stylesheet" href="assets/plugins/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="assets/plugins/select2/dist/css/select2.min.css">
   <link rel="stylesheet" href="assets/css/style-rtl.css">
 </head>
@@ -71,11 +71,25 @@
                   </div>
                 </form>
               </div>
-              <div class="ps-language-currency"><a class="ps-dropdown-value" href="javascript:void(0);"
-                  data-toggle="modal" data-target="#popupLanguage">عربي</a>
+              <div class="ps-language-currency">
+                <a class="ps-dropdown-value" id="language-modal" href="javascript:void(0);">عربي</a>
+                <div class="ps-language--modal">
+                  <ul class="drop-menu-profile">
+                    <li>
+                      <a href="#">
+                        <img src="assets/img/saudi-arabia.png" alt="">
+                        عربي</a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img src="assets/img/united-kingdom.png" alt="">
+                        انجليزي</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
               <ul class="ps-header__icons">
-                <li>
+                <!-- <li>
                   <a class="ps-header__item account-btn" href="login.html">
                     <i class="icon-user"></i>
                     <div class="log-acc">
@@ -83,9 +97,9 @@
                       <p>حسابي</p>
                     </div>
                   </a>
-                </li>
-                <!-- <li>
-                  <a class="ps-header__item account-btn" href="#" id="login-modal">
+                </li> -->
+                <li>
+                  <a class="ps-header__item account-btn" href="my-account.html" id="login-modal">
                     <i class="icon-user"></i>
                     <div class="log-acc">
                       <span>مرحبا abdelrahman</span>
@@ -121,7 +135,7 @@
                       </li>
                     </ul>
                   </div>
-                </li> -->
+                </li>
                 <li>
                   <a class="ps-header__item cart-btn-header" href="wishlist.html">
                     <i class="icon-heart"></i>
@@ -324,6 +338,8 @@
                         <span class="ps-product__price sale">9000 SAR</span>
                         <span class="ps-product__del">10000 SAR</span>
                       </div>
+                      <span class="in-out-stock instock">متوفر</span>
+                      <!-- <span class="in-out-stock outstock">غير متوفر</span> -->
                       <button class="add-cart" type="button">
                         <i class="icon-cart-add"></i>
                         اضف الي السلة
@@ -352,6 +368,8 @@
 
                         <span class="ps-product__price">6000 SAR</span>
                       </div>
+                      <span class="in-out-stock instock">متوفر</span>
+                      <!-- <span class="in-out-stock outstock">غير متوفر</span> -->
                       <button class="add-cart" type="button">
                         <i class="icon-cart-add"></i>
                         اضف الي السلة
@@ -382,6 +400,8 @@
                         <span class="ps-product__del">10000 SAR</span>
                       </div>
 
+                      <span class="in-out-stock instock">متوفر</span>
+                      <!-- <span class="in-out-stock outstock">غير متوفر</span> -->
                       <button class="add-cart" type="button">
                         <i class="icon-cart-add"></i>
                         اضف الي السلة
@@ -409,6 +429,8 @@
                         <span class="ps-product__price">6000 SAR</span>
                       </div>
 
+                      <span class="in-out-stock instock">متوفر</span>
+                      <!-- <span class="in-out-stock outstock">غير متوفر</span> -->
                       <button class="add-cart" type="button">
                         <i class="icon-cart-add"></i>
                         اضف الي السلة
@@ -439,6 +461,8 @@
                         <span class="ps-product__del">10000 SAR</span>
                       </div>
 
+                      <span class="in-out-stock instock">متوفر</span>
+                      <!-- <span class="in-out-stock outstock">غير متوفر</span> -->
                       <button class="add-cart" type="button">
                         <i class="icon-cart-add"></i>
                         اضف الي السلة
@@ -466,6 +490,8 @@
                         <span class="ps-product__price">6000 SAR</span>
                       </div>
 
+                      <span class="in-out-stock instock">متوفر</span>
+                      <!-- <span class="in-out-stock outstock">غير متوفر</span> -->
                       <button class="add-cart" type="button">
                         <i class="icon-cart-add"></i>
                         اضف الي السلة
@@ -496,6 +522,8 @@
                         <span class="ps-product__del">10000 SAR</span>
                       </div>
 
+                      <span class="in-out-stock instock">متوفر</span>
+                      <!-- <span class="in-out-stock outstock">غير متوفر</span> -->
                       <button class="add-cart" type="button">
                         <i class="icon-cart-add"></i>
                         اضف الي السلة
@@ -526,6 +554,8 @@
                         <span class="ps-product__del">10000 SAR</span>
                       </div>
 
+                      <span class="in-out-stock instock">متوفر</span>
+                      <!-- <span class="in-out-stock outstock">غير متوفر</span> -->
                       <button class="add-cart" type="button">
                         <i class="icon-cart-add"></i>
                         اضف الي السلة
@@ -553,6 +583,8 @@
                         <span class="ps-product__price">6000 SAR</span>
                       </div>
 
+                      <span class="in-out-stock instock">متوفر</span>
+                      <!-- <span class="in-out-stock outstock">غير متوفر</span> -->
                       <button class="add-cart" type="button">
                         <i class="icon-cart-add"></i>
                         اضف الي السلة
@@ -583,6 +615,8 @@
                         <span class="ps-product__del">10000 SAR</span>
                       </div>
 
+                      <span class="in-out-stock instock">متوفر</span>
+                      <!-- <span class="in-out-stock outstock">غير متوفر</span> -->
                       <button class="add-cart" type="button">
                         <i class="icon-cart-add"></i>
                         اضف الي السلة
@@ -610,6 +644,8 @@
                         <span class="ps-product__price">6000 SAR</span>
                       </div>
 
+                      <span class="in-out-stock instock">متوفر</span>
+                      <!-- <span class="in-out-stock outstock">غير متوفر</span> -->
                       <button class="add-cart" type="button">
                         <i class="icon-cart-add"></i>
                         اضف الي السلة
@@ -640,6 +676,8 @@
                         <span class="ps-product__del">10000 SAR</span>
                       </div>
 
+                      <span class="in-out-stock instock">متوفر</span>
+                      <!-- <span class="in-out-stock outstock">غير متوفر</span> -->
                       <button class="add-cart" type="button">
                         <i class="icon-cart-add"></i>
                         اضف الي السلة
@@ -667,6 +705,8 @@
                         <span class="ps-product__price">6000 SAR</span>
                       </div>
 
+                      <span class="in-out-stock instock">متوفر</span>
+                      <!-- <span class="in-out-stock outstock">غير متوفر</span> -->
                       <button class="add-cart" type="button">
                         <i class="icon-cart-add"></i>
                         اضف الي السلة
@@ -697,6 +737,8 @@
                         <span class="ps-product__del">10000 SAR</span>
                       </div>
 
+                      <span class="in-out-stock instock">متوفر</span>
+                      <!-- <span class="in-out-stock outstock">غير متوفر</span> -->
                       <button class="add-cart" type="button">
                         <i class="icon-cart-add"></i>
                         اضف الي السلة
@@ -725,6 +767,8 @@
 
                         <span class="ps-product__price">6000 SAR</span>
                       </div>
+                      <span class="in-out-stock instock">متوفر</span>
+                      <!-- <span class="in-out-stock outstock">غير متوفر</span> -->
                       <button class="add-cart" type="button">
                         <i class="icon-cart-add"></i>
                         اضف الي السلة
@@ -936,29 +980,6 @@
     </div>
   </div>
 
-  <!-- change lang -->
-  <div class="modal fade" id="popupLanguage">
-    <div class="modal-dialog modal-dialog-centered ps-popup--select">
-      <div class="modal-content">
-        <div class="modal-body">
-          <div class="wrap-modal-slider container-fluid">
-            <button class="close ps-popup__close" type="button" data-dismiss="modal" aria-label="Close"><span
-                aria-hidden="true">&times;</span></button>
-            <div class="ps-popup__body">
-              <h2 class="ps-popup__title">اختر اللغة</h2>
-              <ul class="ps-popup__list">
-                <li class="language-item"> <a class="btn" href="javascript:void(0);" data-value="English">English</a>
-                </li>
-                <li class="language-item"> <a class="active btn" href="javascript:void(0);" data-value="عربي">عربي</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <!-- add address -->
   <div class="modal fade modal-custom" id="address">
     <div class="modal-dialog modal-dialog-centered">
@@ -978,25 +999,39 @@
             <div class="row custom-input">
               <div class="col-12">
                 <div class="ps-checkout__group">
-                  <label class="ps-checkout__label">الاسم الاول</label>
+                  <label class="ps-checkout__label">المنطقة</label>
+                  <select name="zone" class="select2">
+                    <option value="0" disabled selected>- اختر -</option>
+                    <option value="1">الرياض</option>
+                    <option value="2">جدة</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="ps-checkout__group">
+                  <label class="ps-checkout__label">المدينة</label>
+                  <select name="zone" class="select2">
+                    <option value="0" disabled selected>- اختر -</option>
+                    <option value="1">الرياض</option>
+                    <option value="2">جدة</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="ps-checkout__group">
+                  <label class="ps-checkout__label">الحي</label>
                   <input class="ps-input" type="text">
                 </div>
               </div>
               <div class="col-12">
                 <div class="ps-checkout__group">
-                  <label class="ps-checkout__label">الاسم الاخير</label>
-                  <input class="ps-input" type="text">
+                  <label class="ps-checkout__label">اسم الشارع</label>
+                  <input class="ps-input" type="text" placeholder="">
                 </div>
               </div>
               <div class="col-12">
                 <div class="ps-checkout__group">
-                  <label class="ps-checkout__label">رقم الهاتف</label>
-                  <input class="ps-input" type="text">
-                </div>
-              </div>
-              <div class="col-12">
-                <div class="ps-checkout__group">
-                  <label class="ps-checkout__label">العنوان</label>
+                  <label class="ps-checkout__label">رقم المنشأة</label>
                   <input class="ps-input" type="text" placeholder="">
                 </div>
               </div>
@@ -1015,9 +1050,11 @@
 
   <script src="assets/plugins/jquery.min.js"></script>
   <script src="assets/plugins/bootstrap4/js/bootstrap.min.js"></script>
+  <script src="assets/plugins/popper.min.js"></script>
   <script src="assets/plugins/select2/dist/js/select2.full.min.js"></script>
   <script src="assets/plugins/owl-carousel/owl.carousel.min.js"></script>
-  <script src="assets/plugins/slick/slick/slick.min.js"></script>
+  <script src="assets/plugins/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/plugins/js-image-zoom.js"></script>
   <script src="assets/js/main-rtl.js"></script>
 </body>
 

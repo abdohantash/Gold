@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="assets/fonts/Linearicons/linearicons.css">
   <link rel="stylesheet" href="assets/plugins/bootstrap4/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/plugins/owl-carousel/assets/owl.carousel.css">
-  <link rel="stylesheet" href="assets/plugins/slick/slick/slick.css">
+  <link rel="stylesheet" href="assets/plugins/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="assets/plugins/select2/dist/css/select2.min.css">
   <link rel="stylesheet" href="assets/css/style-rtl.css">
 </head>
@@ -71,11 +71,25 @@
                   </div>
                 </form>
               </div>
-              <div class="ps-language-currency"><a class="ps-dropdown-value" href="javascript:void(0);"
-                  data-toggle="modal" data-target="#popupLanguage">عربي</a>
+              <div class="ps-language-currency">
+                <a class="ps-dropdown-value" id="language-modal" href="javascript:void(0);">عربي</a>
+                <div class="ps-language--modal">
+                  <ul class="drop-menu-profile">
+                    <li>
+                      <a href="#">
+                        <img src="assets/img/saudi-arabia.png" alt="">
+                        عربي</a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img src="assets/img/united-kingdom.png" alt="">
+                        انجليزي</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
               <ul class="ps-header__icons">
-                <li>
+                <!-- <li>
                   <a class="ps-header__item account-btn" href="login.html">
                     <i class="icon-user"></i>
                     <div class="log-acc">
@@ -83,9 +97,9 @@
                       <p>حسابي</p>
                     </div>
                   </a>
-                </li>
-                <!-- <li>
-                  <a class="ps-header__item account-btn" href="#" id="login-modal">
+                </li> -->
+                <li>
+                  <a class="ps-header__item account-btn" href="my-account.html" id="login-modal">
                     <i class="icon-user"></i>
                     <div class="log-acc">
                       <span>مرحبا abdelrahman</span>
@@ -121,7 +135,7 @@
                       </li>
                     </ul>
                   </div>
-                </li> -->
+                </li>
                 <li>
                   <a class="ps-header__item cart-btn-header" href="wishlist.html">
                     <i class="icon-heart"></i>
@@ -258,26 +272,30 @@
           <li class="ps-breadcrumb__item"><a href="index.html">الرئيسية</a></li>
           <li class="ps-breadcrumb__item active" aria-current="page">نبذه عن شركة بندر الدبيان</li>
         </ul>
-        <h1 class="ps-page-name">نبذه عن شركة بندر الدبيان</h1>
-        <div class="content">
-          <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن
-            تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
-            إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو
-            مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من
-            الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.
-            ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل كاملاً،دور مولد النص العربى أن يوفر
-            على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع الذى يتحدث عنه التصميم فيظهر بشكل لا يليق.
-            هذا النص يمكن أن يتم تركيبه على أي تصميم دون مشكلة فلن يبدو وكأنه نص منسوخ، غير منظم، غير منسق، أو حتى غير
-            مفهوم. لأنه مازال نصاً بديلاً ومؤقتاً.
-            هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن
-            تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
-            إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو
-            مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من
-            الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.
-            ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل كاملاً،دور مولد النص العربى أن يوفر
-            على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع الذى يتحدث عنه التصميم فيظهر بشكل لا يليق.
-            هذا النص يمكن أن يتم تركيبه على أي تصميم دون مشكلة فلن يبدو وكأنه نص منسوخ، غير منظم، غير منسق، أو حتى غير
-            مفهوم. لأنه مازال نصاً بديلاً ومؤقتاً.</p>
+        
+        <div class="about-page">
+          <img src="assets/img/about.jpg" alt="">
+          <div class="content">
+            <h1 class="ps-page-name">نبذه عن شركة بندر الدبيان</h1>
+            <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن
+              تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+              إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو
+              مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من
+              الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.
+              ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل كاملاً،دور مولد النص العربى أن يوفر
+              على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع الذى يتحدث عنه التصميم فيظهر بشكل لا يليق.
+              هذا النص يمكن أن يتم تركيبه على أي تصميم دون مشكلة فلن يبدو وكأنه نص منسوخ، غير منظم، غير منسق، أو حتى غير
+              مفهوم. لأنه مازال نصاً بديلاً ومؤقتاً.
+              هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن
+              تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+              إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو
+              مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من
+              الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.
+              ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل كاملاً،دور مولد النص العربى أن يوفر
+              على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع الذى يتحدث عنه التصميم فيظهر بشكل لا يليق.
+              هذا النص يمكن أن يتم تركيبه على أي تصميم دون مشكلة فلن يبدو وكأنه نص منسوخ، غير منظم، غير منسق، أو حتى غير
+              مفهوم. لأنه مازال نصاً بديلاً ومؤقتاً.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -470,29 +488,6 @@
     </div>
   </div>
 
-  <!-- change lang -->
-  <div class="modal fade" id="popupLanguage">
-    <div class="modal-dialog modal-dialog-centered ps-popup--select">
-      <div class="modal-content">
-        <div class="modal-body">
-          <div class="wrap-modal-slider container-fluid">
-            <button class="close ps-popup__close" type="button" data-dismiss="modal" aria-label="Close"><span
-                aria-hidden="true">&times;</span></button>
-            <div class="ps-popup__body">
-              <h2 class="ps-popup__title">اختر اللغة</h2>
-              <ul class="ps-popup__list">
-                <li class="language-item"> <a class="btn" href="javascript:void(0);" data-value="English">English</a>
-                </li>
-                <li class="language-item"> <a class="active btn" href="javascript:void(0);" data-value="عربي">عربي</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <!-- add address -->
   <div class="modal fade modal-custom" id="address">
     <div class="modal-dialog modal-dialog-centered">
@@ -512,25 +507,39 @@
             <div class="row custom-input">
               <div class="col-12">
                 <div class="ps-checkout__group">
-                  <label class="ps-checkout__label">الاسم الاول</label>
+                  <label class="ps-checkout__label">المنطقة</label>
+                  <select name="zone" class="select2">
+                    <option value="0" disabled selected>- اختر -</option>
+                    <option value="1">الرياض</option>
+                    <option value="2">جدة</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="ps-checkout__group">
+                  <label class="ps-checkout__label">المدينة</label>
+                  <select name="zone" class="select2">
+                    <option value="0" disabled selected>- اختر -</option>
+                    <option value="1">الرياض</option>
+                    <option value="2">جدة</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="ps-checkout__group">
+                  <label class="ps-checkout__label">الحي</label>
                   <input class="ps-input" type="text">
                 </div>
               </div>
               <div class="col-12">
                 <div class="ps-checkout__group">
-                  <label class="ps-checkout__label">الاسم الاخير</label>
-                  <input class="ps-input" type="text">
+                  <label class="ps-checkout__label">اسم الشارع</label>
+                  <input class="ps-input" type="text" placeholder="">
                 </div>
               </div>
               <div class="col-12">
                 <div class="ps-checkout__group">
-                  <label class="ps-checkout__label">رقم الهاتف</label>
-                  <input class="ps-input" type="text">
-                </div>
-              </div>
-              <div class="col-12">
-                <div class="ps-checkout__group">
-                  <label class="ps-checkout__label">العنوان</label>
+                  <label class="ps-checkout__label">رقم المنشأة</label>
                   <input class="ps-input" type="text" placeholder="">
                 </div>
               </div>
@@ -549,9 +558,11 @@
 
   <script src="assets/plugins/jquery.min.js"></script>
   <script src="assets/plugins/bootstrap4/js/bootstrap.min.js"></script>
+  <script src="assets/plugins/popper.min.js"></script>
   <script src="assets/plugins/select2/dist/js/select2.full.min.js"></script>
   <script src="assets/plugins/owl-carousel/owl.carousel.min.js"></script>
-  <script src="assets/plugins/slick/slick/slick.min.js"></script>
+  <script src="assets/plugins/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/plugins/js-image-zoom.js"></script>
   <script src="assets/js/main-rtl.js"></script>
 </body>
 
