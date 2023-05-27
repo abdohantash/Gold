@@ -35,7 +35,7 @@
                 </div>
               </a>
             </div>
-            <a class="ps-menu--sticky" href="#"><i class="fa fa-bars"></i></a>
+            <a class="ps-menu--sticky" href="#"><i class="icon-menu"></i></a>
             <div class="ps-header__right">
               <div class="ps-header__search">
                 <form action="#" method="post">
@@ -94,7 +94,6 @@
                     <i class="icon-user"></i>
                     <div class="log-acc">
                       <span>تسجيل / تسجيل دخول</span>
-                      <p>حسابي</p>
                     </div>
                   </a>
                 </li> -->
@@ -103,12 +102,6 @@
                     <i class="icon-user"></i>
                     <div class="log-acc">
                       <span>مرحبا abdelrahman</span>
-                      <p>حسابي
-                        <svg class="icon icon--arrow-bottom" viewBox="0 0 12 8" role="presentation">
-                          <path stroke="currentColor" stroke-width="2" d="M10 2L6 6 2 2" fill="none"
-                            stroke-linecap="square"></path>
-                        </svg>
-                      </p>
                     </div>
                   </a>
                   <div class="ps-login--modal">
@@ -124,9 +117,14 @@
                           طلباتي</a>
                       </li>
                       <li>
-                        <a href="addresses.html" class="active">
+                        <a href="addresses.html">
                           <i class="icon-map-marker"></i>
                           عناويني</a>
+                      </li>
+                      <li>
+                        <a href="credit-card.html">
+                          <i class="icon-credit-card"></i>
+                          بطاقاتي</a>
                       </li>
                       <li>
                         <a href="index.html">
@@ -327,25 +325,38 @@
                         <!-- <span class="ps-badge ps-badge--outstock">غير متوفرة</span> -->
                       </div>
                       <div class="dropdown p-share">
-                        <a href="#" role="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="icon-share2"></i>
-                            مشاركة
+                        <a href="#" role="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                          aria-expanded="false">
+                          <i class="icon-share2"></i>
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <li>
-                                <a class="dropdown-item facebook" href="#">
-                                    <i class="fa fa-facebook-f"></i>
-                                    فيس بوك
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item twitter" href="#">
-                                    <i class="fa fa-twitter"></i>
-                                    تويتر
-                                </a>
-                            </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              <i class="fa fa-facebook-f"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              <i class="fa fa-instagram"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              <i class="fa fa-snapchat"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              <i class="fa fa-whatsapp"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              <i class="fa fa-link"></i>
+                            </a>
+                          </li>
                         </ul>
-                    </div>
+                      </div>
                     </div>
                     <div class="ps-product__title">خاتم ذهب عيار 18 قيراط برأس مزدوجة مزينة بألماس وأحجار ملونة</div>
                     <div class="ps-product__meta">
@@ -369,7 +380,7 @@
                         </span>
                       </li>
                     </ul>
-    
+
                     <div class="size">
                       <h6>المقاس</h6>
                       <select class="form-select">
@@ -384,15 +395,16 @@
                         <option value="">EU 56 - US 7</option>
                       </select>
                     </div>
-    
+
                     <div class="quantity--wish">
-                    <div class="ps-product__quantity">
-                      <h6>الكمية</h6>
+                      <div class="ps-product__quantity">
+                        <h6>الكمية</h6>
                         <div class="def-number-input number-input safari_only">
                           <button class="plus" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"><i
                               class="icon-plus"></i></button>
                           <input class="quantity" min="0" name="quantity" value="1" type="number" />
-                          <button class="minus" onclick="this.parentNode.querySelector('input[type=number]').stepDown()"><i
+                          <button class="minus"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepDown()"><i
                               class="icon-minus"></i></button>
                         </div>
                       </div>
@@ -461,347 +473,350 @@
                   </li>
                 </ul>
               </div>
+            </div>
           </div>
+
+
         </div>
-
-
       </div>
     </div>
-  </div>
 
-  <div class="container-fluid">
-    <section class="ps-section--latest">
-      <h3 class="ps-section__title">قد يعجبك ايضا</h3>
-      <div class="ps-section__carousel">
-        <div class="owl-carousel" data-owl-auto="false" data-owl-loop="false" data-owl-gap="0" data-owl-nav="true"
-          data-owl-dots="false" data-owl-slide="page" data-owl-item="5" data-owl-item-xxs="1" data-owl-item-xs="2"
-          data-owl-item-sm="2" data-owl-item-md="3" data-owl-item-lg="4" data-owl-item-xl="5" data-owl-duration="300"
-          data-owl-mousedrag="on">
-          <div class="ps-section__product">
-            <div class="ps-product ps-product--standard">
-              <div class="ps-product__thumbnail">
-                <a class="ps-product__image" href="product-details.html">
-                  <figure>
-                    <img src="assets/img/products/8.jpg" alt="alt" />
-                  </figure>
-                </a>
-                <div class="ps-product__actions">
-                  <div class="ps-product__item"><a href="#"><i class="fa fa-heart-o"></i></a></div>
-                </div>
-                <div class="ps-product__badge">
-                  <div class="ps-badge ps-badge--sale"><span>خصم</span> 15%</div>
-                </div>
-              </div>
-              <div class="ps-product__content">
-                <h5 class="ps-product__title"><a href="product-details.html">خاتم ذهب عيار 18 قيراط برأس مزدوجة
-                    مزينة بألماس وأحجار ملونة</a></h5>
-                <div class="ps-product__meta">
-                  <span class="ps-product__price sale">9000 SAR</span>
-                  <span class="ps-product__del">10000 SAR</span>
-                </div>
-
-                <span class="in-out-stock instock">متوفر</span>
-                <!-- <span class="in-out-stock outstock">غير متوفر</span> -->
-                <button class="add-cart" type="button">
-                  <i class="icon-cart-add"></i>
-                  اضف الي السلة
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="ps-section__product">
-            <div class="ps-product ps-product--standard">
-              <div class="ps-product__thumbnail">
-                <a class="ps-product__image" href="product-details.html">
-                  <figure>
-                    <img src="assets/img/products/9.jpg" alt="alt" />
-                  </figure>
-                </a>
-                <div class="ps-product__actions">
-                  <div class="ps-product__item"><a href="#"><i class="fa fa-heart-o"></i></a></div>
-                </div>
-              </div>
-              <div class="ps-product__content">
-                <h5 class="ps-product__title"><a href="product-details.html">خاتم ستيتمنت مرصع بالالماس و حجر أزرق
-                    مائي من الذهب الابيض</a></h5>
-                <div class="ps-product__meta">
-
-                  <span class="ps-product__price">6000 SAR</span>
-                </div>
-
-                <span class="in-out-stock instock">متوفر</span>
-                <!-- <span class="in-out-stock outstock">غير متوفر</span> -->
-                <button class="add-cart" type="button">
-                  <i class="icon-cart-add"></i>
-                  اضف الي السلة
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="ps-section__product">
-            <div class="ps-product ps-product--standard">
-              <div class="ps-product__thumbnail">
-                <a class="ps-product__image" href="product-details.html">
-                  <figure>
-                    <img src="assets/img/products/10.jpg" alt="alt" />
-                  </figure>
-                </a>
-                <div class="ps-product__actions">
-                  <div class="ps-product__item"><a href="#"><i class="fa fa-heart-o"></i></a></div>
-                </div>
-                <div class="ps-product__badge">
-                  <div class="ps-badge ps-badge--sale"><span>خصم</span> 15%</div>
-                </div>
-              </div>
-              <div class="ps-product__content">
-                <h5 class="ps-product__title"><a href="product-details.html">خاتم ذهب عيار 18 قيراط برأس مزدوجة
-                    مزينة بألماس وأحجار ملونة</a></h5>
-                <div class="ps-product__meta">
-                  <span class="ps-product__price sale">9000 SAR</span>
-                  <span class="ps-product__del">10000 SAR</span>
-                </div>
-
-                <span class="in-out-stock instock">متوفر</span>
-                <!-- <span class="in-out-stock outstock">غير متوفر</span> -->
-                <button class="add-cart" type="button">
-                  <i class="icon-cart-add"></i>
-                  اضف الي السلة
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="ps-section__product">
-            <div class="ps-product ps-product--standard">
-              <div class="ps-product__thumbnail">
-                <a class="ps-product__image" href="product-details.html">
-                  <figure>
-                    <img src="assets/img/products/11.jpg" alt="alt" />
-                  </figure>
-                </a>
-                <div class="ps-product__actions">
-                  <div class="ps-product__item"><a href="#"><i class="fa fa-heart-o"></i></a></div>
-                </div>
-              </div>
-              <div class="ps-product__content">
-                <h5 class="ps-product__title"><a href="product-details.html">خاتم ستيتمنت مرصع بالالماس و حجر أزرق
-                    مائي من الذهب الابيض</a></h5>
-                <div class="ps-product__meta">
-
-                  <span class="ps-product__price">6000 SAR</span>
-                </div>
-
-                <span class="in-out-stock instock">متوفر</span>
-                <!-- <span class="in-out-stock outstock">غير متوفر</span> -->
-                <button class="add-cart" type="button">
-                  <i class="icon-cart-add"></i>
-                  اضف الي السلة
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="ps-section__product">
-            <div class="ps-product ps-product--standard">
-              <div class="ps-product__thumbnail">
-                <a class="ps-product__image" href="product-details.html">
-                  <figure>
-                    <img src="assets/img/products/12.jpg" alt="alt" />
-                  </figure>
-                </a>
-                <div class="ps-product__actions">
-                  <div class="ps-product__item"><a href="#"><i class="fa fa-heart-o"></i></a></div>
-                </div>
-                <div class="ps-product__badge">
-                  <div class="ps-badge ps-badge--sale"><span>خصم</span> 15%</div>
-                </div>
-              </div>
-              <div class="ps-product__content">
-                <h5 class="ps-product__title"><a href="product-details.html">خاتم ذهب عيار 18 قيراط برأس مزدوجة
-                    مزينة بألماس وأحجار ملونة</a></h5>
-                <div class="ps-product__meta">
-                  <span class="ps-product__price sale">9000 SAR</span>
-                  <span class="ps-product__del">10000 SAR</span>
-                </div>
-
-                <span class="in-out-stock instock">متوفر</span>
-                <!-- <span class="in-out-stock outstock">غير متوفر</span> -->
-                <button class="add-cart" type="button">
-                  <i class="icon-cart-add"></i>
-                  اضف الي السلة
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="ps-section__product">
-            <div class="ps-product ps-product--standard">
-              <div class="ps-product__thumbnail">
-                <a class="ps-product__image" href="product-details.html">
-                  <figure>
-                    <img src="assets/img/products/13.png" alt="alt" />
-                  </figure>
-                </a>
-                <div class="ps-product__actions">
-                  <div class="ps-product__item"><a href="#"><i class="fa fa-heart-o"></i></a></div>
-                </div>
-              </div>
-              <div class="ps-product__content">
-                <h5 class="ps-product__title"><a href="product-details.html">خاتم ستيتمنت مرصع بالالماس و حجر أزرق
-                    مائي من الذهب الابيض</a></h5>
-                <div class="ps-product__meta">
-
-                  <span class="ps-product__price">6000 SAR</span>
-                </div>
-
-                <span class="in-out-stock instock">متوفر</span>
-                <!-- <span class="in-out-stock outstock">غير متوفر</span> -->
-                <button class="add-cart" type="button">
-                  <i class="icon-cart-add"></i>
-                  اضف الي السلة
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="ps-section__product">
-            <div class="ps-product ps-product--standard">
-              <div class="ps-product__thumbnail">
-                <a class="ps-product__image" href="product-details.html">
-                  <figure>
-                    <img src="assets/img/products/14.png" alt="alt" />
-                  </figure>
-                </a>
-                <div class="ps-product__actions">
-                  <div class="ps-product__item"><a href="#"><i class="fa fa-heart-o"></i></a></div>
-                </div>
-                <div class="ps-product__badge">
-                  <div class="ps-badge ps-badge--sale"><span>خصم</span> 15%</div>
-                </div>
-              </div>
-              <div class="ps-product__content">
-                <h5 class="ps-product__title"><a href="product-details.html">خاتم ذهب عيار 18 قيراط برأس مزدوجة
-                    مزينة بألماس وأحجار ملونة</a></h5>
-                <div class="ps-product__meta">
-                  <span class="ps-product__price sale">9000 SAR</span>
-                  <span class="ps-product__del">10000 SAR</span>
-                </div>
-
-                <span class="in-out-stock instock">متوفر</span>
-                <!-- <span class="in-out-stock outstock">غير متوفر</span> -->
-                <button class="add-cart" type="button">
-                  <i class="icon-cart-add"></i>
-                  اضف الي السلة
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
-
-  <footer class="ps-footer ps-footer--1">
-    <div class="ps-footer__middle">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12 col-md-7">
-            <div class="row">
-              <div class="col-12 col-md-5">
-                <div class="ps-footer--address">
-                  <div class="ps-logo">
-                    <a href="index.html">
-                      <img src="assets/img/logo.svg">
-                    </a>
+    <div class="container-fluid">
+      <section class="ps-section--latest">
+        <h3 class="ps-section__title">قد يعجبك ايضا</h3>
+        <div class="ps-section__carousel">
+          <div class="owl-carousel" data-owl-auto="false" data-owl-loop="false" data-owl-gap="0" data-owl-nav="true"
+            data-owl-dots="false" data-owl-slide="page" data-owl-item="5" data-owl-item-xxs="1" data-owl-item-xs="2"
+            data-owl-item-sm="2" data-owl-item-md="3" data-owl-item-lg="4" data-owl-item-xl="5" data-owl-duration="300"
+            data-owl-mousedrag="on">
+            <div class="ps-section__product">
+              <div class="ps-product ps-product--standard">
+                <div class="ps-product__thumbnail">
+                  <a class="ps-product__image" href="product-details.html">
+                    <figure>
+                      <img src="assets/img/products/8.jpg" alt="alt" />
+                    </figure>
+                  </a>
+                  <div class="ps-product__actions">
+                    <div class="ps-product__item"><a href="#"><i class="fa fa-heart-o"></i></a></div>
                   </div>
-                  <p>Royal Mall, 8112 طريق الملك فهد الفرعي، الرحمانية، الرياض 12343، المملكة العربية السعودية</p>
-                  <p><a target="_blank" href="https://goo.gl/maps/heyXpUNEyKpQyoCx5">عرض العنوان على الخريطة</a></p>
-                  <ul class="ps-social">
-                    <li><a class="ps-social__link facebook" href="#"><i class="fa fa-facebook">
-                        </i><span class="ps-tooltip">فيس بوك</span></a></li>
-                    <li><a class="ps-social__link instagram" href="#"><i class="fa fa-instagram"></i><span
-                          class="ps-tooltip">انستجرام</span></a></li>
-                    <li><a class="ps-social__link youtube" href="#"><i class="fa fa-youtube-play"></i><span
-                          class="ps-tooltip">يوتيوب</span></a></li>
-                    <li><a class="ps-social__link linkedin" href="#"><i class="fa fa-twitter"></i><span
-                          class="ps-tooltip">تويتر</span></a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-12 col-md-7">
-                <div class="ps-footer--contact">
-                  <h5 class="ps-footer__title">تواصل معنا</h5>
-                  <a href="tel:96617717171717" class="ps-footer__fax"><i class="icon-telephone"></i>+96617717171717</a>
-                  <p class="ps-footer__work">من الأحد إلى الخميس من الساعة 9:30 صباحًا حتى 5:30 مساءً</p>
-                  <hr>
-                  <p>
-                    <a class="ps-footer__email" href="mailto:contact@example.com"> <i
-                        class="icon-envelope"></i>contact@example.com </a>
-                  </p>
-                  <div class="flex-logos">
-                    <img src="assets/img/tamara-logo.png" alt="">
-                    <img src="assets/img/tabby.png" alt="">
-                    <a href="#">
-                      <img src="assets/img/maroof.png" alt="">
-                    </a>
+                  <div class="ps-product__badge">
+                    <div class="ps-badge ps-badge--sale"><span>خصم</span> 15%</div>
                   </div>
                 </div>
+                <div class="ps-product__content">
+                  <h5 class="ps-product__title"><a href="product-details.html">خاتم ذهب عيار 18 قيراط برأس مزدوجة
+                      مزينة بألماس وأحجار ملونة</a></h5>
+                  <div class="ps-product__meta">
+                    <span class="ps-product__price sale">9000 SAR</span>
+                    <span class="ps-product__del">10000 SAR</span>
+                  </div>
+
+                  <span class="in-out-stock instock">متوفر</span>
+                  <!-- <span class="in-out-stock outstock">غير متوفر</span> -->
+                  <button class="add-cart" type="button">
+                    <i class="icon-cart-add"></i>
+                    اضف الي السلة
+                  </button>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-12 col-md-5">
-            <div class="row">
-              <div class="col-6 col-md-4">
-                <div class="ps-footer--block">
-                  <h5 class="ps-block__title">بيانات</h5>
-                  <ul class="ps-block__list">
-                    <li><a href="about.html">من نحن</a></li>
-                    <li><a href="contact.html">تواصل معنا</a></li>
-                    <li><a href="static-page.html">سياسة الخصوصية</a></li>
-                    <li><a href="static-page.html">سياسة الاسترجاع</a></li>
-                    <li><a href="static-page.html">الشحن والتوصيل</a></li>
-                  </ul>
+            <div class="ps-section__product">
+              <div class="ps-product ps-product--standard">
+                <div class="ps-product__thumbnail">
+                  <a class="ps-product__image" href="product-details.html">
+                    <figure>
+                      <img src="assets/img/products/9.jpg" alt="alt" />
+                    </figure>
+                  </a>
+                  <div class="ps-product__actions">
+                    <div class="ps-product__item"><a href="#"><i class="fa fa-heart-o"></i></a></div>
+                  </div>
+                </div>
+                <div class="ps-product__content">
+                  <h5 class="ps-product__title"><a href="product-details.html">خاتم ستيتمنت مرصع بالالماس و حجر أزرق
+                      مائي من الذهب الابيض</a></h5>
+                  <div class="ps-product__meta">
+
+                    <span class="ps-product__price">6000 SAR</span>
+                  </div>
+
+                  <span class="in-out-stock instock">متوفر</span>
+                  <!-- <span class="in-out-stock outstock">غير متوفر</span> -->
+                  <button class="add-cart" type="button">
+                    <i class="icon-cart-add"></i>
+                    اضف الي السلة
+                  </button>
                 </div>
               </div>
-              <div class="col-6 col-md-4">
-                <div class="ps-footer--block">
-                  <h5 class="ps-block__title">حسابي</h5>
-                  <ul class="ps-block__list">
-                    <li><a href="my-account.html">حسابي</a></li>
-                    <li><a href="orders.html">طلباتي</a></li>
-                    <li><a href="cart.html">السلة</a></li>
-                    <li><a href="addresses.html">عناويني</a></li>
-                  </ul>
+            </div>
+            <div class="ps-section__product">
+              <div class="ps-product ps-product--standard">
+                <div class="ps-product__thumbnail">
+                  <a class="ps-product__image" href="product-details.html">
+                    <figure>
+                      <img src="assets/img/products/10.jpg" alt="alt" />
+                    </figure>
+                  </a>
+                  <div class="ps-product__actions">
+                    <div class="ps-product__item"><a href="#"><i class="fa fa-heart-o"></i></a></div>
+                  </div>
+                  <div class="ps-product__badge">
+                    <div class="ps-badge ps-badge--sale"><span>خصم</span> 15%</div>
+                  </div>
+                </div>
+                <div class="ps-product__content">
+                  <h5 class="ps-product__title"><a href="product-details.html">خاتم ذهب عيار 18 قيراط برأس مزدوجة
+                      مزينة بألماس وأحجار ملونة</a></h5>
+                  <div class="ps-product__meta">
+                    <span class="ps-product__price sale">9000 SAR</span>
+                    <span class="ps-product__del">10000 SAR</span>
+                  </div>
+
+                  <span class="in-out-stock instock">متوفر</span>
+                  <!-- <span class="in-out-stock outstock">غير متوفر</span> -->
+                  <button class="add-cart" type="button">
+                    <i class="icon-cart-add"></i>
+                    اضف الي السلة
+                  </button>
                 </div>
               </div>
-              <div class="col-6 col-md-4">
-                <div class="ps-footer--block">
-                  <h5 class="ps-block__title">المتجر</h5>
-                  <ul class="ps-block__list">
-                    <li><a href="products.html">كل الاصناف</a></li>
-                    <li><a href="products.html">مجوهرات فاخرة</a></li>
-                    <li><a href="products.html">الخطوبة والزفاف</a></li>
-                    <li><a href="products.html">مجموعة تنس</a></li>
-                    <li><a href="products.html">العروض والخصومات</a></li>
-                  </ul>
+            </div>
+            <div class="ps-section__product">
+              <div class="ps-product ps-product--standard">
+                <div class="ps-product__thumbnail">
+                  <a class="ps-product__image" href="product-details.html">
+                    <figure>
+                      <img src="assets/img/products/11.jpg" alt="alt" />
+                    </figure>
+                  </a>
+                  <div class="ps-product__actions">
+                    <div class="ps-product__item"><a href="#"><i class="fa fa-heart-o"></i></a></div>
+                  </div>
+                </div>
+                <div class="ps-product__content">
+                  <h5 class="ps-product__title"><a href="product-details.html">خاتم ستيتمنت مرصع بالالماس و حجر أزرق
+                      مائي من الذهب الابيض</a></h5>
+                  <div class="ps-product__meta">
+
+                    <span class="ps-product__price">6000 SAR</span>
+                  </div>
+
+                  <span class="in-out-stock instock">متوفر</span>
+                  <!-- <span class="in-out-stock outstock">غير متوفر</span> -->
+                  <button class="add-cart" type="button">
+                    <i class="icon-cart-add"></i>
+                    اضف الي السلة
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="ps-section__product">
+              <div class="ps-product ps-product--standard">
+                <div class="ps-product__thumbnail">
+                  <a class="ps-product__image" href="product-details.html">
+                    <figure>
+                      <img src="assets/img/products/12.jpg" alt="alt" />
+                    </figure>
+                  </a>
+                  <div class="ps-product__actions">
+                    <div class="ps-product__item"><a href="#"><i class="fa fa-heart-o"></i></a></div>
+                  </div>
+                  <div class="ps-product__badge">
+                    <div class="ps-badge ps-badge--sale"><span>خصم</span> 15%</div>
+                  </div>
+                </div>
+                <div class="ps-product__content">
+                  <h5 class="ps-product__title"><a href="product-details.html">خاتم ذهب عيار 18 قيراط برأس مزدوجة
+                      مزينة بألماس وأحجار ملونة</a></h5>
+                  <div class="ps-product__meta">
+                    <span class="ps-product__price sale">9000 SAR</span>
+                    <span class="ps-product__del">10000 SAR</span>
+                  </div>
+
+                  <span class="in-out-stock instock">متوفر</span>
+                  <!-- <span class="in-out-stock outstock">غير متوفر</span> -->
+                  <button class="add-cart" type="button">
+                    <i class="icon-cart-add"></i>
+                    اضف الي السلة
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="ps-section__product">
+              <div class="ps-product ps-product--standard">
+                <div class="ps-product__thumbnail">
+                  <a class="ps-product__image" href="product-details.html">
+                    <figure>
+                      <img src="assets/img/products/13.png" alt="alt" />
+                    </figure>
+                  </a>
+                  <div class="ps-product__actions">
+                    <div class="ps-product__item"><a href="#"><i class="fa fa-heart-o"></i></a></div>
+                  </div>
+                </div>
+                <div class="ps-product__content">
+                  <h5 class="ps-product__title"><a href="product-details.html">خاتم ستيتمنت مرصع بالالماس و حجر أزرق
+                      مائي من الذهب الابيض</a></h5>
+                  <div class="ps-product__meta">
+
+                    <span class="ps-product__price">6000 SAR</span>
+                  </div>
+
+                  <span class="in-out-stock instock">متوفر</span>
+                  <!-- <span class="in-out-stock outstock">غير متوفر</span> -->
+                  <button class="add-cart" type="button">
+                    <i class="icon-cart-add"></i>
+                    اضف الي السلة
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="ps-section__product">
+              <div class="ps-product ps-product--standard">
+                <div class="ps-product__thumbnail">
+                  <a class="ps-product__image" href="product-details.html">
+                    <figure>
+                      <img src="assets/img/products/14.png" alt="alt" />
+                    </figure>
+                  </a>
+                  <div class="ps-product__actions">
+                    <div class="ps-product__item"><a href="#"><i class="fa fa-heart-o"></i></a></div>
+                  </div>
+                  <div class="ps-product__badge">
+                    <div class="ps-badge ps-badge--sale"><span>خصم</span> 15%</div>
+                  </div>
+                </div>
+                <div class="ps-product__content">
+                  <h5 class="ps-product__title"><a href="product-details.html">خاتم ذهب عيار 18 قيراط برأس مزدوجة
+                      مزينة بألماس وأحجار ملونة</a></h5>
+                  <div class="ps-product__meta">
+                    <span class="ps-product__price sale">9000 SAR</span>
+                    <span class="ps-product__del">10000 SAR</span>
+                  </div>
+
+                  <span class="in-out-stock instock">متوفر</span>
+                  <!-- <span class="in-out-stock outstock">غير متوفر</span> -->
+                  <button class="add-cart" type="button">
+                    <i class="icon-cart-add"></i>
+                    اضف الي السلة
+                  </button>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </div>
 
-    <div class="ps-footer--bottom">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12 col-md-6">
-            <p>جميع الحقوق محفوظة لمتجر جولد © 2023</p>
-          </div>
-          <div class="col-12 col-md-6 flex-payment">
-            <img src="assets/img/payment_options.png" alt="">
+    <footer class="ps-footer ps-footer--1">
+      <div class="ps-footer__middle">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12 col-md-7">
+              <div class="row">
+                <div class="col-12 col-md-5">
+                  <div class="ps-footer--address">
+                    <div class="ps-logo">
+                      <a href="index.html">
+                        <img src="assets/img/logo.svg">
+                      </a>
+                    </div>
+                    <p>Royal Mall, 8112 طريق الملك فهد الفرعي، الرحمانية، الرياض 12343، المملكة العربية السعودية</p>
+                    <p><a target="_blank" href="https://goo.gl/maps/heyXpUNEyKpQyoCx5">عرض العنوان على الخريطة</a></p>
+                    <ul class="ps-social">
+                      <li><a class="ps-social__link facebook" href="#"><i class="fa fa-facebook">
+                          </i><span class="ps-tooltip">فيس بوك</span></a></li>
+                      <li><a class="ps-social__link instagram" href="#"><i class="fa fa-instagram"></i><span
+                            class="ps-tooltip">انستجرام</span></a></li>
+                      <li><a class="ps-social__link youtube" href="#"><i class="fa fa-youtube-play"></i><span
+                            class="ps-tooltip">يوتيوب</span></a></li>
+                      <li><a class="ps-social__link linkedin" href="#"><i class="fa fa-twitter"></i><span
+                            class="ps-tooltip">تويتر</span></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-12 col-md-7">
+                  <div class="ps-footer--contact">
+                    <h5 class="ps-footer__title">تواصل معنا</h5>
+                    <a href="tel:96617717171717" class="ps-footer__fax"><i
+                        class="icon-telephone"></i>+96617717171717</a>
+                    <p class="ps-footer__work">من الأحد إلى الخميس من الساعة 9:30 صباحًا حتى 5:30 مساءً</p>
+                    <hr>
+                    <p>
+                      <a class="ps-footer__email" href="mailto:contact@example.com"> <i
+                          class="icon-envelope"></i>contact@example.com </a>
+                    </p>
+                    <div class="flex-logos">
+                      <img src="assets/img/tamara-logo.png" alt="">
+                      <img src="assets/img/tabby.png" alt="">
+                      <a href="#">
+                        <img src="assets/img/maroof.png" alt="">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-5">
+              <div class="row">
+                <div class="col-6 col-md-4">
+                  <div class="ps-footer--block">
+                    <h5 class="ps-block__title">بيانات</h5>
+                    <ul class="ps-block__list">
+                      <li><a href="about.html">من نحن</a></li>
+                      <li><a href="contact.html">تواصل معنا</a></li>
+                      <li><a href="static-page.html">سياسة الخصوصية</a></li>
+                      <li><a href="static-page.html">سياسة الاسترجاع</a></li>
+                      <li><a href="static-page.html">الشحن والتوصيل</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4">
+                  <div class="ps-footer--block">
+                    <h5 class="ps-block__title">حسابي</h5>
+                    <ul class="ps-block__list">
+                      <li><a href="my-account.html">حسابي</a></li>
+                      <li><a href="orders.html">طلباتي</a></li>
+                      <li><a href="cart.html">السلة</a></li>
+                      <li><a href="addresses.html">عناويني</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4">
+                  <div class="ps-footer--block">
+                    <h5 class="ps-block__title">المتجر</h5>
+                    <ul class="ps-block__list">
+                      <li><a href="products.html">كل الاصناف</a></li>
+                      <li><a href="products.html">مجوهرات فاخرة</a></li>
+                      <li><a href="products.html">الخطوبة والزفاف</a></li>
+                      <li><a href="products.html">مجموعة تنس</a></li>
+                      <li><a href="products.html">العروض والخصومات</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </footer>
+
+      <div class="ps-footer--bottom">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <p>جميع الحقوق محفوظة لمتجر جولد © 2023</p>
+            </div>
+            <div class="col-12 col-md-6 flex-payment">
+              <img src="assets/img/payment_options.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </div>
+
+  <button class="btn scroll-top"><i class="fa fa-angle-double-up"></i></button>
 
   <a href="tel:+96617717171717" class="float-call">
     <i class="fa fa-phone"></i>
@@ -812,8 +827,8 @@
 
   <!-- loader -->
   <div class="ps-preloader" id="preloader">
-    <div class="ps-preloader-section ps-preloader-left"></div>
-    <div class="ps-preloader-section ps-preloader-right"></div>
+    <img src="assets/img/logo.svg" alt="">
+    <span class="loader"></span>
   </div>
 
   <!-- mobile navigation -->
@@ -924,7 +939,11 @@
               <div class="col-12">
                 <div class="ps-checkout__group">
                   <label class="ps-checkout__label">الحي</label>
-                  <input class="ps-input" type="text">
+                  <select name="zone" class="select2">
+                    <option value="0" disabled selected>- اختر -</option>
+                    <option value="1">تست</option>
+                    <option value="2">تست</option>
+                  </select>
                 </div>
               </div>
               <div class="col-12">
@@ -951,6 +970,42 @@
     </div>
   </div>
 
+  <!-- add credit card -->
+  <div class="modal fade modal-custom" id="credit">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button class="close ps-popup__close" type="button" data-dismiss="modal" aria-label="Close">
+            <svg class="icon icon--close" viewBox="0 0 19 19" role="presentation">
+              <path
+                d="M9.1923882 8.39339828l7.7781745-7.7781746 1.4142136 1.41421357-7.7781746 7.77817459 7.7781746 7.77817456L16.9705627 19l-7.7781745-7.7781746L1.41421356 19 0 17.5857864l7.7781746-7.77817456L0 2.02943725 1.41421356.61522369 9.1923882 8.39339828z"
+                fill="currentColor" fill-rule="evenodd"></path>
+            </svg>
+          </button>
+          <div class="ps-popup__body">
+            <h2 class="ps-popup__title">اضافة بطاقة جديدة</h2>
+            <p>من فضلك ادخل بيانات البطاقة</p>
+
+            <div class="row custom-input">
+              <div class="col-12">
+                <div class="ps-checkout__group">
+                  <label class="ps-checkout__label">الاسم</label>
+                  <input class="ps-input" type="text">
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="ps-checkout__group">
+                  <label class="ps-checkout__label">رقم الحساب</label>
+                  <input class="ps-input" type="number" placeholder="">
+                </div>
+              </div>
+            </div>
+            <button type="button" class="ps-btn ps-btn--primary">اضافة البطاقة</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="assets/plugins/jquery.min.js"></script>
   <script src="assets/plugins/popper.min.js"></script>
@@ -959,6 +1014,7 @@
   <script src="assets/plugins/owl-carousel/owl.carousel.min.js"></script>
   <script src="assets/plugins/swiper/swiper-bundle.min.js"></script>
   <script src="assets/plugins/js-image-zoom.js"></script>
+  <script src="assets/plugins/multi-countdown.js"></script>
   <script src="assets/js/main-rtl.js"></script>
 </body>
 

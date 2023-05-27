@@ -265,86 +265,87 @@
     </header>
 
     <div class="container-fluid">
-      <div class="ps-categogy">
+      <div class="page-content">
         <ul class="ps-breadcrumb">
           <li class="ps-breadcrumb__item"><a href="index.html">الرئيسية</a></li>
-          <li class="ps-breadcrumb__item active" aria-current="page">المفضلة</li>
+          <li class="ps-breadcrumb__item active" aria-current="page">حسابي</li>
         </ul>
-        <h1 class="ps-page-name">المفضلة<sup>(5)</sup></h1>
-        <div class="ps-categogy__content">
-          <div class="flex--product">
-            <div class="right-sec">
-              <div class="ps-categogy--grid grid-product">
-                <div class="ps-section__product">
-                  <div class="ps-product ps-product--standard">
-                    <div class="ps-product__thumbnail">
-                      <a class="ps-product__image" href="product-details.html">
-                        <figure>
-                          <img src="assets/img/products/1.jpg" alt="alt" />
-                        </figure>
-                      </a>
-                      <div class="ps-product__actions">
-                        <div class="ps-product__item active"><a href="#"><i class="fa fa-heart-o"></i></a></div>
-                      </div>
-                      <div class="ps-product__badge">
-                        <div class="ps-badge ps-badge--sale"><span>خصم</span> 15%</div>
-                      </div>
-                    </div>
-                    <div class="ps-product__content">
-                      <h5 class="ps-product__title"><a href="product-details.html">خاتم ذهب عيار 18 قيراط برأس مزدوجة
-                          مزينة بألماس وأحجار ملونة</a></h5>
-                      <div class="ps-product__meta">
-                        <span class="ps-product__price sale">9000 SAR</span>
-                        <span class="ps-product__del">10000 SAR</span>
-                      </div>
-                      <span class="in-out-stock instock">متوفر</span>
-                      <!-- <span class="in-out-stock outstock">غير متوفر</span> -->
-                      <button class="add-cart" type="button">
-                        <i class="icon-cart-add"></i>
-                        اضف الي السلة
-                      </button>
-                      <button class="delete-from-wishlist">
-                        <i class="fa fa-trash-o"></i>
-                        حذف من السلة
-                      </button>
+        <h1 class="ps-page-name">الحساب الخاص بك</h1>
+        <div class="account-content">
+          <div class="row">
+            <div class="col-lg-3 col-md-4">
+              <ul class="list-pages">
+                <li>
+                  <a href="my-account.html">
+                    <i class="icon-user"></i>
+                    تعديل الحساب</a>
+                </li>
+                <li>
+                  <a href="orders.html">
+                    <i class="icon-bag2"></i>
+                    طلباتي</a>
+                </li>
+                <li>
+                  <a href="addresses.html">
+                    <i class="icon-map-marker"></i>
+                    عناوين الشحن</a>
+                </li>
+                <li>
+                  <a href="wishlist.html">
+                    <i class="icon-heart"></i>
+                    المفضلة</a>
+                </li>
+                <li>
+                  <a href="credit-card.html" class="active">
+                    <i class="icon-credit-card"></i>
+                    بطاقات الدفع</a>
+                </li>
+                <li>
+                  <a href="index.html">
+                    <i class="icon-exit"></i>
+                    تسجيل خروج</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-9 col-md-8">
+              <div class="addresses">
+                <h5 class="address-hint">
+                  قم بإدارة بطاقاتك المحفوظة لتتمكن من إنهاء عمليات الشراء بسرعة وسهولة عبر متاجرنا
+                  <button class="ps-btn ps-btn--primary" data-toggle="modal" data-target="#credit">اضافة بطاقة
+                    جديدة</button>
+                </h5>
+                <div class="address-sec">
+                  <div class="address-details credit-dts">
+                    <h3>abdelrahman Mohamed</h3>
+                    <p>51515154522454</p>
+                    <div class="btns">
+                      <button type="button" data-toggle="modal" data-target="#credit">تعديل</button>
+                      <button type="button">حذف</button>
                     </div>
                   </div>
-                </div>
-                <div class="ps-section__product">
-                  <div class="ps-product ps-product--standard">
-                    <div class="ps-product__thumbnail">
-                      <a class="ps-product__image" href="product-details.html">
-                        <figure>
-                          <img src="assets/img/products/2.jpg" alt="alt" />
-                        </figure>
-                      </a>
-                      <div class="ps-product__actions">
-                        <div class="ps-product__item active">
-                          <a href="#"><i class="fa fa-heart-o"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="ps-product__content">
-                      <h5 class="ps-product__title"><a href="product-details.html">خاتم ستيتمنت مرصع بالالماس و حجر أزرق
-                          مائي من الذهب الابيض</a></h5>
-                      <div class="ps-product__meta">
-
-                        <span class="ps-product__price">6000 SAR</span>
-                      </div>
-                      <span class="in-out-stock instock">متوفر</span>
-                      <!-- <span class="in-out-stock outstock">غير متوفر</span> -->
-                      <button class="add-cart" type="button">
-                        <i class="icon-cart-add"></i>
-                        اضف الي السلة
-                      </button>
-                      <button class="delete-from-wishlist">
-                        <i class="fa fa-trash-o"></i>
-                        حذف من السلة
-                      </button>
+                  <div class="address-details credit-dts">
+                    <h3>abdelrahman Mohamed</h3>
+                    <p>23542584354524</p>
+                    <div class="btns">
+                      <button type="button" data-toggle="modal" data-target="#credit">تعديل</button>
+                      <button type="button">حذف</button>
                     </div>
                   </div>
                 </div>
               </div>
+
+              <!-- تظهر عندما لا يكون هناك بطاقات مسجله -->
+              <!-- <div class="empty-state">
+                <div class="empty-state__icon">
+                  <i class="icon-credit-card"></i>
+                </div>
+                <p class="empty-state__heading h2">لا يوجد بطاقات</p>
+                <div class="empty-state__button-container">
+                  <a href="javascript:;" class="ps-btn ps-btn--primary" data-toggle="modal" data-target="#credit">اضافة
+                    بطاقة</a>
+                </div>
+              </div> -->
+
             </div>
           </div>
         </div>

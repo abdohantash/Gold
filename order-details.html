@@ -265,91 +265,150 @@
     </header>
 
     <div class="container-fluid">
-      <div class="ps-categogy">
+      <div class="page-content">
         <ul class="ps-breadcrumb">
           <li class="ps-breadcrumb__item"><a href="index.html">الرئيسية</a></li>
-          <li class="ps-breadcrumb__item active" aria-current="page">المفضلة</li>
+          <li class="ps-breadcrumb__item active" aria-current="page">حسابي</li>
         </ul>
-        <h1 class="ps-page-name">المفضلة<sup>(5)</sup></h1>
-        <div class="ps-categogy__content">
-          <div class="flex--product">
-            <div class="right-sec">
-              <div class="ps-categogy--grid grid-product">
-                <div class="ps-section__product">
-                  <div class="ps-product ps-product--standard">
-                    <div class="ps-product__thumbnail">
-                      <a class="ps-product__image" href="product-details.html">
-                        <figure>
-                          <img src="assets/img/products/1.jpg" alt="alt" />
-                        </figure>
-                      </a>
-                      <div class="ps-product__actions">
-                        <div class="ps-product__item active"><a href="#"><i class="fa fa-heart-o"></i></a></div>
-                      </div>
-                      <div class="ps-product__badge">
-                        <div class="ps-badge ps-badge--sale"><span>خصم</span> 15%</div>
-                      </div>
+        <h1 class="ps-page-name">الحساب الخاص بك</h1>
+        <div class="account-content">
+          <div class="row">
+            <div class="col-lg-3 col-md-4">
+              <ul class="list-pages">
+                <li>
+                  <a href="my-account.html">
+                    <i class="icon-user"></i>
+                    تعديل الحساب</a>
+                </li>
+                <li>
+                  <a href="orders.html" class="active">
+                    <i class="icon-bag2"></i>
+                    طلباتي</a>
+                </li>
+                <li>
+                  <a href="addresses.html">
+                    <i class="icon-map-marker"></i>
+                    عناوين الشحن</a>
+                </li>
+                <li>
+                  <a href="wishlist.html">
+                    <i class="icon-heart"></i>
+                    المفضلة</a>
+                </li>
+                <li>
+                  <a href="credit-card.html">
+                    <i class="icon-credit-card"></i>
+                    بطاقات الدفع</a>
+                </li>
+                <li>
+                  <a href="index.html">
+                    <i class="icon-exit"></i>
+                    تسجيل خروج</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-9 col-md-8">
+              <div class="content-account">
+                <h3 class="title-page">
+                    تفاصيل الطلب
+                </h3>
+                <div class="order-details">
+                    <div class="head-order-details">
+                        <p>
+                            تاريخ الطلب
+                            <span>14 فبراير 2022 - 12:20</span>
+                        </p>
+                        <p>
+                            رقم الطلب
+                            <span>50466</span>
+                        </p>
+                        <a href="#">الفاتورة</a>
                     </div>
-                    <div class="ps-product__content">
-                      <h5 class="ps-product__title"><a href="product-details.html">خاتم ذهب عيار 18 قيراط برأس مزدوجة
-                          مزينة بألماس وأحجار ملونة</a></h5>
-                      <div class="ps-product__meta">
-                        <span class="ps-product__price sale">9000 SAR</span>
-                        <span class="ps-product__del">10000 SAR</span>
-                      </div>
-                      <span class="in-out-stock instock">متوفر</span>
-                      <!-- <span class="in-out-stock outstock">غير متوفر</span> -->
-                      <button class="add-cart" type="button">
-                        <i class="icon-cart-add"></i>
-                        اضف الي السلة
-                      </button>
-                      <button class="delete-from-wishlist">
-                        <i class="fa fa-trash-o"></i>
-                        حذف من السلة
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <div class="ps-section__product">
-                  <div class="ps-product ps-product--standard">
-                    <div class="ps-product__thumbnail">
-                      <a class="ps-product__image" href="product-details.html">
-                        <figure>
-                          <img src="assets/img/products/2.jpg" alt="alt" />
-                        </figure>
-                      </a>
-                      <div class="ps-product__actions">
-                        <div class="ps-product__item active">
-                          <a href="#"><i class="fa fa-heart-o"></i></a>
+                    <ul class="dts-order">
+                        <li>
+                            <h3>عنوان الشحن</h3>
+                            <h5>abdelrahman Mohamed</h5>
+                            <p>برج المروة , الدور الثاني</p>
+                            <p>منتزه الدرعية</p>
+                            <p>الدرعية , الرياض</p>
+                            <p>0558706532</p>
+                        </li>
+                        <li>
+                            <h3>وسيلة الدفع</h3>
+                            <h5>الدفع بالبطاقة</h5>
+                        </li>
+                        <li>
+                            <h3>ملخص الطلب</h3>
+                            <p>
+                                المجموع الفرعي :
+                                <span>135.00 ر.س</span>
+                            </p>
+                            <p>
+                                الشحن :
+                                <span>شحن مجاني</span>
+                            </p>
+                            <p class="order-total-price">
+                                الإجمالي :
+                                <span>135.00 ر.س</span>
+                            </p>
+                        </li>
+                    </ul>
+                    <div class="body-order">
+                        <div class="order-product">
+                            <a href="product-details.html">
+                                <img class="prd-img" src="assets/img/products/1.jpg" alt="">
+                            </a>
+                            <div class="content-prd">
+                              <div class="name-qnt">
+                                <h3>
+                                  <a href="product-details.html">
+                                    خاتم ذهب عيار 18 قيراط برأس مزدوجة مزينة بألماس وأحجار ملونة
+                                  </a>
+                                </h3>
+                                <div class="qunt">
+                                  الكمية : 1
+                                </div>
+                              </div>
+                              <div class="price-prd">
+                                <div class="ps-product__meta">
+                                  <span class="ps-product__price sale">9000 SAR</span>
+                                  <span class="ps-product__del">10000 SAR</span>
+                                </div>
+                              </div>
+                            </div>
                         </div>
+                        <div class="order-product">
+                          <a href="product-details.html">
+                              <img class="prd-img" src="assets/img/products/2.jpg" alt="">
+                          </a>
+                          <div class="content-prd">
+                            <div class="name-qnt">
+                              <h3>
+                                <a href="product-details.html">
+                                  خاتم ذهب عيار 18 قيراط برأس مزدوجة مزينة بألماس وأحجار ملونة
+                                </a>
+                              </h3>
+                              <div class="qunt">
+                                الكمية : 1
+                              </div>
+                            </div>
+                            <div class="price-prd">
+                              <div class="ps-product__meta">
+                                <span class="ps-product__price sale">9000 SAR</span>
+                                <span class="ps-product__del">10000 SAR</span>
+                              </div>
+                            </div>
+                          </div>
                       </div>
                     </div>
-                    <div class="ps-product__content">
-                      <h5 class="ps-product__title"><a href="product-details.html">خاتم ستيتمنت مرصع بالالماس و حجر أزرق
-                          مائي من الذهب الابيض</a></h5>
-                      <div class="ps-product__meta">
-
-                        <span class="ps-product__price">6000 SAR</span>
-                      </div>
-                      <span class="in-out-stock instock">متوفر</span>
-                      <!-- <span class="in-out-stock outstock">غير متوفر</span> -->
-                      <button class="add-cart" type="button">
-                        <i class="icon-cart-add"></i>
-                        اضف الي السلة
-                      </button>
-                      <button class="delete-from-wishlist">
-                        <i class="fa fa-trash-o"></i>
-                        حذف من السلة
-                      </button>
-                    </div>
-                  </div>
                 </div>
-              </div>
+            </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+
 
     <footer class="ps-footer ps-footer--1">
       <div class="ps-footer__middle">

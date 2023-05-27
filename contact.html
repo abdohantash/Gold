@@ -35,7 +35,7 @@
                 </div>
               </a>
             </div>
-            <a class="ps-menu--sticky" href="#"><i class="fa fa-bars"></i></a>
+            <a class="ps-menu--sticky" href="#"><i class="icon-menu"></i></a>
             <div class="ps-header__right">
               <div class="ps-header__search">
                 <form action="#" method="post">
@@ -94,7 +94,6 @@
                     <i class="icon-user"></i>
                     <div class="log-acc">
                       <span>تسجيل / تسجيل دخول</span>
-                      <p>حسابي</p>
                     </div>
                   </a>
                 </li> -->
@@ -103,12 +102,6 @@
                     <i class="icon-user"></i>
                     <div class="log-acc">
                       <span>مرحبا abdelrahman</span>
-                      <p>حسابي
-                        <svg class="icon icon--arrow-bottom" viewBox="0 0 12 8" role="presentation">
-                          <path stroke="currentColor" stroke-width="2" d="M10 2L6 6 2 2" fill="none"
-                            stroke-linecap="square"></path>
-                        </svg>
-                      </p>
                     </div>
                   </a>
                   <div class="ps-login--modal">
@@ -124,9 +117,14 @@
                           طلباتي</a>
                       </li>
                       <li>
-                        <a href="addresses.html" class="active">
+                        <a href="addresses.html">
                           <i class="icon-map-marker"></i>
                           عناويني</a>
+                      </li>
+                      <li>
+                        <a href="credit-card.html">
+                          <i class="icon-credit-card"></i>
+                          بطاقاتي</a>
                       </li>
                       <li>
                         <a href="index.html">
@@ -266,8 +264,8 @@
       </div>
     </header>
 
-    <div class="page-content">
-      <div class="container-fluid">
+    <div class="container-fluid">
+      <div class="page-content">
         <ul class="ps-breadcrumb">
           <li class="ps-breadcrumb__item"><a href="index.html">الرئيسية</a></li>
           <li class="ps-breadcrumb__item active" aria-current="page">تواصل معنا</li>
@@ -449,6 +447,8 @@
     </footer>
   </div>
 
+  <button class="btn scroll-top"><i class="fa fa-angle-double-up"></i></button>
+
   <a href="tel:+96617717171717" class="float-call">
     <i class="fa fa-phone"></i>
   </a>
@@ -458,8 +458,8 @@
 
   <!-- loader -->
   <div class="ps-preloader" id="preloader">
-    <div class="ps-preloader-section ps-preloader-left"></div>
-    <div class="ps-preloader-section ps-preloader-right"></div>
+    <img src="assets/img/logo.svg" alt="">
+    <span class="loader"></span>
   </div>
 
   <!-- mobile navigation -->
@@ -570,7 +570,11 @@
               <div class="col-12">
                 <div class="ps-checkout__group">
                   <label class="ps-checkout__label">الحي</label>
-                  <input class="ps-input" type="text">
+                  <select name="zone" class="select2">
+                    <option value="0" disabled selected>- اختر -</option>
+                    <option value="1">تست</option>
+                    <option value="2">تست</option>
+                  </select>
                 </div>
               </div>
               <div class="col-12">
@@ -597,14 +601,51 @@
     </div>
   </div>
 
+  <!-- add credit card -->
+  <div class="modal fade modal-custom" id="credit">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button class="close ps-popup__close" type="button" data-dismiss="modal" aria-label="Close">
+            <svg class="icon icon--close" viewBox="0 0 19 19" role="presentation">
+              <path
+                d="M9.1923882 8.39339828l7.7781745-7.7781746 1.4142136 1.41421357-7.7781746 7.77817459 7.7781746 7.77817456L16.9705627 19l-7.7781745-7.7781746L1.41421356 19 0 17.5857864l7.7781746-7.77817456L0 2.02943725 1.41421356.61522369 9.1923882 8.39339828z"
+                fill="currentColor" fill-rule="evenodd"></path>
+            </svg>
+          </button>
+          <div class="ps-popup__body">
+            <h2 class="ps-popup__title">اضافة بطاقة جديدة</h2>
+            <p>من فضلك ادخل بيانات البطاقة</p>
+
+            <div class="row custom-input">
+              <div class="col-12">
+                <div class="ps-checkout__group">
+                  <label class="ps-checkout__label">الاسم</label>
+                  <input class="ps-input" type="text">
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="ps-checkout__group">
+                  <label class="ps-checkout__label">رقم الحساب</label>
+                  <input class="ps-input" type="number" placeholder="">
+                </div>
+              </div>
+            </div>
+            <button type="button" class="ps-btn ps-btn--primary">اضافة البطاقة</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="assets/plugins/jquery.min.js"></script>
-  <script src="assets/plugins/bootstrap4/js/bootstrap.min.js"></script>
   <script src="assets/plugins/popper.min.js"></script>
+  <script src="assets/plugins/bootstrap4/js/bootstrap.min.js"></script>
   <script src="assets/plugins/select2/dist/js/select2.full.min.js"></script>
   <script src="assets/plugins/owl-carousel/owl.carousel.min.js"></script>
   <script src="assets/plugins/swiper/swiper-bundle.min.js"></script>
   <script src="assets/plugins/js-image-zoom.js"></script>
+  <script src="assets/plugins/multi-countdown.js"></script>
   <script src="assets/js/main-rtl.js"></script>
 </body>
 

@@ -35,7 +35,7 @@
                 </div>
               </a>
             </div>
-            <a class="ps-menu--sticky" href="#"><i class="fa fa-bars"></i></a>
+            <a class="ps-menu--sticky" href="#"><i class="icon-menu"></i></a>
             <div class="ps-header__right">
               <div class="ps-header__search">
                 <form action="#" method="post">
@@ -94,7 +94,6 @@
                     <i class="icon-user"></i>
                     <div class="log-acc">
                       <span>تسجيل / تسجيل دخول</span>
-                      <p>حسابي</p>
                     </div>
                   </a>
                 </li> -->
@@ -103,12 +102,6 @@
                     <i class="icon-user"></i>
                     <div class="log-acc">
                       <span>مرحبا abdelrahman</span>
-                      <p>حسابي
-                        <svg class="icon icon--arrow-bottom" viewBox="0 0 12 8" role="presentation">
-                          <path stroke="currentColor" stroke-width="2" d="M10 2L6 6 2 2" fill="none"
-                            stroke-linecap="square"></path>
-                        </svg>
-                      </p>
                     </div>
                   </a>
                   <div class="ps-login--modal">
@@ -124,9 +117,14 @@
                           طلباتي</a>
                       </li>
                       <li>
-                        <a href="addresses.html" class="active">
+                        <a href="addresses.html">
                           <i class="icon-map-marker"></i>
                           عناويني</a>
+                      </li>
+                      <li>
+                        <a href="credit-card.html">
+                          <i class="icon-credit-card"></i>
+                          بطاقاتي</a>
                       </li>
                       <li>
                         <a href="index.html">
@@ -293,6 +291,16 @@
                     عناوين الشحن</a>
                 </li>
                 <li>
+                  <a href="wishlist.html">
+                    <i class="icon-heart"></i>
+                    المفضلة</a>
+                </li>
+                <li>
+                  <a href="credit-card.html">
+                    <i class="icon-credit-card"></i>
+                    بطاقات الدفع</a>
+                </li>
+                <li>
                   <a href="index.html">
                     <i class="icon-exit"></i>
                     تسجيل خروج</a>
@@ -300,124 +308,180 @@
               </ul>
             </div>
             <div class="col-lg-9 col-md-8">
-              <table class="table ps-table ps-table--product">
-                <thead>
-                  <tr>
-                    <th># رقم الطلب</th>
-                    <th class="ps-product__name" colspan="2">الصنف</th>
-                    <th class="ps-product__quantity">الكمية</th>
-                    <th class="ps-product__status">حالة الطلب</th>
-                    <th class="ps-product__subtotal">الاجمالي</th>
-                    <th class="invoice">
-                      الفاتورة
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>#154</td>
-                    <td class="ps-product__thumbnail"><a class="ps-product__image" href="product-details.html">
-                        <figure><img src="assets/img/products/1.jpg" alt=""></figure>
-                      </a></td>
-                    <td class="ps-product__name"> <a href="products.html">خاتم ذهب عيار 18 قيراط برأس مزدوجة مزينة
-                        بألماس وأحجار ملونة</a>
-                      <div>
-                        <span class="ps-product__price">399.99 SAR</span>
+              <div class="content-account">
+                <h3 class="title-page">
+                  منتجات قمت بطلبها
+                </h3>
+                <ul class="orders-ul">
+                  <li>
+                    <div class="head-order">
+                      <p>
+                        تاريخ الطلب
+                        <span>14 فبراير 2022 - 12:20</span>
+                      </p>
+                      <p>
+                        الإجمالي
+                        <span>2035.00 ر.س</span>
+                      </p>
+                      <p>
+                        حالة الطلب
+                        <span>تم التوصيل</span>
+                      </p>
+
+                      <div class="left-head">
+                        <p>
+                          رقم الطلب
+                          <span>50466</span>
+                        </p>
+                        <p>
+                          <a href="order-details.html">عرض تفاصيل الطلب</a>
+                          <a href="#">الفاتورة</a>
+                        </p>
                       </div>
-                    </td>
-                    <td class="text-center">1</td>
-                    <td>
-                      <span class="status-span bg-warning">تحت الطلب</span>
-                    </td>
-                    <td class="ps-product__subtotal">399.99 SAR</td>
-                    <td>
-                      <div class="flex-invoice">
-                        <a href="#" class="download-invoice" download="">تحميل</a>
+                    </div>
+                    <div class="body-order">
+                      <div class="order-product">
+                        <a href="product-details.html">
+                          <img class="prd-img" src="assets/img/products/1.jpg" alt="">
+                        </a>
+                        <div class="content-prd">
+                          <div class="name-qnt">
+                            <h3>
+                              <a href="product-details.html">
+                                خاتم ذهب عيار 18 قيراط برأس مزدوجة مزينة بألماس وأحجار ملونة
+                              </a>
+                            </h3>
+                            <div class="qunt">
+                              الكمية : 1
+                            </div>
+                          </div>
+                          <div class="price-prd">
+                            <div class="ps-product__meta">
+                              <span class="ps-product__price sale">9000 SAR</span>
+                              <span class="ps-product__del">10000 SAR</span>
+                            </div>
+                          </div>
+                        </div>
                       </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>#154</td>
-                    <td class="ps-product__thumbnail"><a class="ps-product__image" href="product-details.html">
-                        <figure><img src="assets/img/products/2.jpg" alt=""></figure>
-                      </a></td>
-                    <td class="ps-product__name"> <a href="products.html">خاتم ذهب عيار 18 قيراط برأس مزدوجة مزينة
-                        بألماس وأحجار ملونة</a>
-                      <div>
-                        <span class="ps-product__price">399.99 SAR</span>
+                      <div class="order-product">
+                        <a href="product-details.html">
+                          <img class="prd-img" src="assets/img/products/2.jpg" alt="">
+                        </a>
+                        <div class="content-prd">
+                          <div class="name-qnt">
+                            <h3>
+                              <a href="product-details.html">
+                                خاتم ذهب عيار 18 قيراط برأس مزدوجة مزينة بألماس وأحجار ملونة
+                              </a>
+                            </h3>
+                            <div class="qunt">
+                              الكمية : 1
+                            </div>
+                          </div>
+                          <div class="price-prd">
+                            <div class="ps-product__meta">
+                              <span class="ps-product__price sale">9000 SAR</span>
+                              <span class="ps-product__del">10000 SAR</span>
+                            </div>
+                          </div>
+                        </div>
                       </div>
-                    </td>
-                    <td class="text-center">1</td>
-                    <td>
-                      <span class="status-span bg-info">جاري الشحن</span>
-                    </td>
-                    <td class="ps-product__subtotal">399.99 SAR</td>
-                    <td>
-                      <div class="flex-invoice">
-                        <a href="#" class="download-invoice" download="">تحميل</a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="head-order">
+                      <p>
+                        تاريخ الطلب
+                        <span>14 فبراير 2022 - 12:20</span>
+                      </p>
+                      <p>
+                        الإجمالي
+                        <span>2035.00 ر.س</span>
+                      </p>
+                      <p>
+                        حالة الطلب
+                        <span>تم التوصيل</span>
+                      </p>
+
+                      <div class="left-head">
+                        <p>
+                          رقم الطلب
+                          <span>50466</span>
+                        </p>
+                        <p>
+                          <a href="order-details.html">عرض تفاصيل الطلب</a>
+                          <a href="#">الفاتورة</a>
+                        </p>
                       </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>#154</td>
-                    <td class="ps-product__thumbnail"><a class="ps-product__image" href="product-details.html">
-                        <figure><img src="assets/img/products/2.jpg" alt=""></figure>
-                      </a></td>
-                    <td class="ps-product__name"> <a href="products.html">خاتم ذهب عيار 18 قيراط برأس مزدوجة مزينة
-                        بألماس وأحجار ملونة</a>
-                      <div>
-                        <span class="ps-product__price">399.99 SAR</span>
+                    </div>
+                    <div class="body-order">
+                      <div class="order-product">
+                        <a href="product-details.html">
+                          <img class="prd-img" src="assets/img/products/3.jpg" alt="">
+                        </a>
+                        <div class="content-prd">
+                          <div class="name-qnt">
+                            <h3>
+                              <a href="product-details.html">
+                                خاتم ذهب عيار 18 قيراط برأس مزدوجة مزينة بألماس وأحجار ملونة
+                              </a>
+                            </h3>
+                            <div class="qunt">
+                              الكمية : 1
+                            </div>
+                          </div>
+                          <div class="price-prd">
+                            <div class="ps-product__meta">
+                              <span class="ps-product__price sale">9000 SAR</span>
+                              <span class="ps-product__del">10000 SAR</span>
+                            </div>
+                          </div>
+                        </div>
                       </div>
-                    </td>
-                    <td class="text-center">1</td>
-                    <td>
-                      <span class="status-span bg-success">تم التوصيل</span>
-                    </td>
-                    <td class="ps-product__subtotal">399.99 SAR</td>
-                    <td>
-                      <div class="flex-invoice">
-                        <a href="#" class="download-invoice" download="">تحميل</a>
+                      <div class="order-product">
+                        <a href="product-details.html">
+                          <img class="prd-img" src="assets/img/products/4.jpg" alt="">
+                        </a>
+                        <div class="content-prd">
+                          <div class="name-qnt">
+                            <h3>
+                              <a href="product-details.html">
+                                خاتم ذهب عيار 18 قيراط برأس مزدوجة مزينة بألماس وأحجار ملونة
+                              </a>
+                            </h3>
+                            <div class="qunt">
+                              الكمية : 1
+                            </div>
+                          </div>
+                          <div class="price-prd">
+                            <div class="ps-product__meta">
+                              <span class="ps-product__price sale">9000 SAR</span>
+                              <span class="ps-product__del">10000 SAR</span>
+                            </div>
+                          </div>
+                        </div>
                       </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>#154</td>
-                    <td class="ps-product__thumbnail"><a class="ps-product__image" href="product-details.html">
-                        <figure><img src="assets/img/products/2.jpg" alt=""></figure>
-                      </a></td>
-                    <td class="ps-product__name"> <a href="products.html">خاتم ذهب عيار 18 قيراط برأس مزدوجة مزينة
-                        بألماس وأحجار ملونة</a>
-                      <div>
-                        <span class="ps-product__price">399.99 SAR</span>
-                      </div>
-                    </td>
-                    <td class="text-center">1</td>
-                    <td>
-                      <span class="status-span bg-danger">تم الالغاء</span>
-                    </td>
-                    <td class="ps-product__subtotal">399.99 SAR</td>
-                    <td>
-                      <div class="flex-invoice">
-                        <a href="#" class="download-invoice" download="">تحميل</a>
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- عندما لا يكون هناك طلبات سابقة -->
               <!-- <div class="empty-state">
-                                <div class="empty-state__icon">
-                                    <svg width="80" hight="80" class="icon icon--package" viewBox="0 0 46 46" role="presentation">
-                                        <g stroke="currentColor" stroke-width="2" fill="none" fill-rule="evenodd">
-                                          <path d="M11 8l24 14m10-6L25 28 1 14m24 14v16"></path>
-                                          <path stroke-linecap="square" d="M45 16v14L25 44 1 30V14L21 2z"></path>
-                                        </g>
-                                      </svg>
-                                </div>
-                                <p class="empty-state__icon-description">No orders yet</p>
-                                <div class="empty-state__button-container">
-                                    <a href="products.html" class="ps-btn ps-btn--primary">Make your first order</a>
-                                </div>
-                            </div> -->
+                <div class="empty-state__icon">
+                  <svg width="80" hight="80" class="icon icon--package" viewBox="0 0 46 46" role="presentation">
+                    <g stroke="currentColor" stroke-width="2" fill="none" fill-rule="evenodd">
+                      <path d="M11 8l24 14m10-6L25 28 1 14m24 14v16"></path>
+                      <path stroke-linecap="square" d="M45 16v14L25 44 1 30V14L21 2z"></path>
+                    </g>
+                  </svg>
+                </div>
+                <p class="empty-state__heading h2">لا يوجد طلبات</p>
+                <div class="empty-state__button-container">
+                  <a href="products.html" class="ps-btn ps-btn--primary">تسوق الآن</a>
+                </div>
+              </div> -->
+
             </div>
           </div>
         </div>
@@ -532,6 +596,8 @@
     </footer>
   </div>
 
+  <button class="btn scroll-top"><i class="fa fa-angle-double-up"></i></button>
+
   <a href="tel:+96617717171717" class="float-call">
     <i class="fa fa-phone"></i>
   </a>
@@ -541,8 +607,8 @@
 
   <!-- loader -->
   <div class="ps-preloader" id="preloader">
-    <div class="ps-preloader-section ps-preloader-left"></div>
-    <div class="ps-preloader-section ps-preloader-right"></div>
+    <img src="assets/img/logo.svg" alt="">
+    <span class="loader"></span>
   </div>
 
   <!-- mobile navigation -->
@@ -653,7 +719,11 @@
               <div class="col-12">
                 <div class="ps-checkout__group">
                   <label class="ps-checkout__label">الحي</label>
-                  <input class="ps-input" type="text">
+                  <select name="zone" class="select2">
+                    <option value="0" disabled selected>- اختر -</option>
+                    <option value="1">تست</option>
+                    <option value="2">تست</option>
+                  </select>
                 </div>
               </div>
               <div class="col-12">
@@ -680,14 +750,51 @@
     </div>
   </div>
 
+  <!-- add credit card -->
+  <div class="modal fade modal-custom" id="credit">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button class="close ps-popup__close" type="button" data-dismiss="modal" aria-label="Close">
+            <svg class="icon icon--close" viewBox="0 0 19 19" role="presentation">
+              <path
+                d="M9.1923882 8.39339828l7.7781745-7.7781746 1.4142136 1.41421357-7.7781746 7.77817459 7.7781746 7.77817456L16.9705627 19l-7.7781745-7.7781746L1.41421356 19 0 17.5857864l7.7781746-7.77817456L0 2.02943725 1.41421356.61522369 9.1923882 8.39339828z"
+                fill="currentColor" fill-rule="evenodd"></path>
+            </svg>
+          </button>
+          <div class="ps-popup__body">
+            <h2 class="ps-popup__title">اضافة بطاقة جديدة</h2>
+            <p>من فضلك ادخل بيانات البطاقة</p>
+
+            <div class="row custom-input">
+              <div class="col-12">
+                <div class="ps-checkout__group">
+                  <label class="ps-checkout__label">الاسم</label>
+                  <input class="ps-input" type="text">
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="ps-checkout__group">
+                  <label class="ps-checkout__label">رقم الحساب</label>
+                  <input class="ps-input" type="number" placeholder="">
+                </div>
+              </div>
+            </div>
+            <button type="button" class="ps-btn ps-btn--primary">اضافة البطاقة</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="assets/plugins/jquery.min.js"></script>
-  <script src="assets/plugins/bootstrap4/js/bootstrap.min.js"></script>
   <script src="assets/plugins/popper.min.js"></script>
+  <script src="assets/plugins/bootstrap4/js/bootstrap.min.js"></script>
   <script src="assets/plugins/select2/dist/js/select2.full.min.js"></script>
   <script src="assets/plugins/owl-carousel/owl.carousel.min.js"></script>
   <script src="assets/plugins/swiper/swiper-bundle.min.js"></script>
   <script src="assets/plugins/js-image-zoom.js"></script>
+  <script src="assets/plugins/multi-countdown.js"></script>
   <script src="assets/js/main-rtl.js"></script>
 </body>
 

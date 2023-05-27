@@ -1,4 +1,3 @@
-
 $(document).on("click", ".grid-btn", function () {
   $(".list-btn").removeClass("active");
   $(this).addClass("active");
@@ -301,13 +300,24 @@ $(document).on("click", ".payment-box-div .back-step", function () {
       var scroll = $(window).scrollTop();
       var innerWidth = $(window).innerWidth();
       if (scroll > 100 && innerWidth > 760) {
-          $('.ps-header').addClass('ps-header--sticky');
+        $(".ps-header").addClass("ps-header--sticky");
       } else if (scroll > 700 && innerWidth < 760) {
-          $('.ps-header').addClass('ps-header--sticky');
-          $('.search-bar__inner').removeClass('active');
+        $(".ps-header").addClass("ps-header--sticky");
+        $(".search-bar__inner").removeClass("active");
       } else {
-          $('.ps-header').removeClass('ps-header--sticky')
+        $(".ps-header").removeClass("ps-header--sticky");
       }
+
+      if (scroll > 100) {
+        $(".scroll-top").show();
+      } else {
+        $(".scroll-top").hide();
+      }
+    });
+
+    $(".scroll-top").on("click", function (e) {
+      e.preventDefault();
+      $("html,body").animate({ scrollTop: 0 }, 500);
     });
 
     $(".ps-menu--sticky").on("click", function (event) {
@@ -315,7 +325,6 @@ $(document).on("click", ".payment-box-div .back-step", function () {
       $(".ps-navigation").slideToggle();
     });
   }
-
 
   function subMenuToggle() {
     $(".ps-widget--product .menu--mobile li .parent-name").on(
@@ -489,7 +498,6 @@ new ImageZoom(document.getElementById("img-1"), options2);
 new ImageZoom(document.getElementById("img-2"), options2);
 new ImageZoom(document.getElementById("img-3"), options2);
 
-
 $(document).ready(function () {
   var readURL = function (input) {
     if (input.files && input.files[0]) {
@@ -504,9 +512,8 @@ $(document).ready(function () {
   $(".profile-img input").on("change", function () {
     readURL(this);
   });
-
 });
 
-$(window).on('load', function () {
-  $('#preloader').delay(1000).fadeOut('slow');
+$(window).on("load", function () {
+  $("#preloader").delay(1000).fadeOut("slow");
 });
