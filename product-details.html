@@ -294,7 +294,7 @@
                             <img src="assets/img/products/20.jpg" alt="">
                           </div>
                           <div class="swiper-slide">
-                            <img src="assets/img/products/25.jpg" alt="">
+                            <i class="icon-file-video"></i>
                           </div>
                         </div>
                         <div class="swiper-button-prev"></div>
@@ -313,8 +313,8 @@
                           <div class="swiper-slide" id="img-3">
                             <img src="assets/img/products/20.jpg" alt="">
                           </div>
-                          <div class="swiper-slide" id="img-4">
-                            <img src="assets/img/products/25.jpg" alt="">
+                          <div class="swiper-slide">
+                            <video src="https://into-the-program.com/uploads/sample_video01.mp4" muted autoplay></video>
                           </div>
                         </div>
                       </div>
@@ -385,21 +385,30 @@
                       </select>
                     </div>
     
+                    <div class="quantity--wish">
                     <div class="ps-product__quantity">
                       <h6>الكمية</h6>
-                      <div class="def-number-input number-input safari_only">
-                        <button class="plus" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"><i
-                            class="icon-plus"></i></button>
-                        <input class="quantity" min="0" name="quantity" value="1" type="number" />
-                        <button class="minus" onclick="this.parentNode.querySelector('input[type=number]').stepDown()"><i
-                            class="icon-minus"></i></button>
+                        <div class="def-number-input number-input safari_only">
+                          <button class="plus" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"><i
+                              class="icon-plus"></i></button>
+                          <input class="quantity" min="0" name="quantity" value="1" type="number" />
+                          <button class="minus" onclick="this.parentNode.querySelector('input[type=number]').stepDown()"><i
+                              class="icon-minus"></i></button>
+                        </div>
                       </div>
-    
+
+                      <!-- تظهر عند نفاذ الكمية ويختفي الديف السابق-->
+                      <!-- <a href="https://wa.me/96617717171717" class="contact-us" target="_blank">
+                        <i class="fa fa-whatsapp"></i>
+                        تواصل بنا لتوفيره لك
+                      </a> -->
+
+                      <button class="add-wishlist">
+                        <i class="fa fa-heart-o"></i>
+                        اضف الي المفضلة
+                      </button>
                     </div>
-                    <button class="add-wishlist">
-                      <i class="fa fa-heart-o"></i>
-                      اضف الي المفضلة
-                    </button>
+
                     <div class="btn-add-buy">
                       <a class="ps-btn ps-btn--warning" href="javascript:;" data-dismiss="modal">اضف الى السلة</a>
                       <a class="ps-btn ps-btn--danger" href="checkout.html">شراء الآن</a>
@@ -447,7 +456,7 @@
                     <i class="icon-credit-card"></i>
                     <p>
                       <span>طرق دفع متعددة</span>
-                      العديد من رق الدفع التي تناسبكم
+                      العديد من طرق الدفع التي تناسبكم
                     </p>
                   </li>
                 </ul>
@@ -746,7 +755,7 @@
                     <li><a href="contact.html">تواصل معنا</a></li>
                     <li><a href="static-page.html">سياسة الخصوصية</a></li>
                     <li><a href="static-page.html">سياسة الاسترجاع</a></li>
-                    <li><a href="static-page.html">الشروط والأحكام</a></li>
+                    <li><a href="static-page.html">الشحن والتوصيل</a></li>
                   </ul>
                 </div>
               </div>
@@ -944,8 +953,8 @@
 
 
   <script src="assets/plugins/jquery.min.js"></script>
-  <script src="assets/plugins/bootstrap4/js/bootstrap.min.js"></script>
   <script src="assets/plugins/popper.min.js"></script>
+  <script src="assets/plugins/bootstrap4/js/bootstrap.min.js"></script>
   <script src="assets/plugins/select2/dist/js/select2.full.min.js"></script>
   <script src="assets/plugins/owl-carousel/owl.carousel.min.js"></script>
   <script src="assets/plugins/swiper/swiper-bundle.min.js"></script>

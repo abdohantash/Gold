@@ -314,13 +314,12 @@
         </section>
 
         <div class="ps-home__content">
-          <section class="promo-part">
-            <div class="row">
-              <div class="col-sm-12">
-                <div class="promo-img"><a href="#"><img src="assets/img/payment-banner.png" alt=""></a>
+          <section class="shop-tabby-tamara">
+                <h1>تسوق الآن. وادفع لاحقاً مع </h1>
+                <div class="logos-tby-tm">
+                    <img src="assets/img/tabby.png" alt="">
+                    <img src="assets/img/tamara-logo.png" alt="">
                 </div>
-              </div>
-            </div>
           </section>
 
           <section class="ps-section--deals bg-1">
@@ -1326,7 +1325,7 @@
                       <li><a href="contact.html">تواصل معنا</a></li>
                       <li><a href="static-page.html">سياسة الخصوصية</a></li>
                       <li><a href="static-page.html">سياسة الاسترجاع</a></li>
-                      <li><a href="static-page.html">الشروط والأحكام</a></li>
+                      <li><a href="static-page.html">الشحن والتوصيل</a></li>
                     </ul>
                   </div>
                 </div>
@@ -1383,8 +1382,8 @@
 
   <!-- loader -->
   <div class="ps-preloader" id="preloader">
-    <div class="ps-preloader-section ps-preloader-left"></div>
-    <div class="ps-preloader-section ps-preloader-right"></div>
+    <img src="assets/img/logo.svg" alt="">
+    <span class="loader"></span>
   </div>
 
   <!-- mobile navigation -->
@@ -1495,7 +1494,11 @@
               <div class="col-12">
                 <div class="ps-checkout__group">
                   <label class="ps-checkout__label">الحي</label>
-                  <input class="ps-input" type="text">
+                  <select name="zone" class="select2">
+                    <option value="0" disabled selected>- اختر -</option>
+                    <option value="1">تست</option>
+                    <option value="2">تست</option>
+                  </select>
                 </div>
               </div>
               <div class="col-12">
@@ -1524,12 +1527,13 @@
 
 
   <script src="assets/plugins/jquery.min.js"></script>
-  <script src="assets/plugins/bootstrap4/js/bootstrap.min.js"></script>
   <script src="assets/plugins/popper.min.js"></script>
+  <script src="assets/plugins/bootstrap4/js/bootstrap.min.js"></script>
   <script src="assets/plugins/select2/dist/js/select2.full.min.js"></script>
   <script src="assets/plugins/owl-carousel/owl.carousel.min.js"></script>
   <script src="assets/plugins/swiper/swiper-bundle.min.js"></script>
   <script src="assets/plugins/js-image-zoom.js"></script>
+  <script src="assets/plugins/multi-countdown.js"></script>
   <script src="assets/js/main-rtl.js"></script>
 </body>
 
