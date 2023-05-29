@@ -8019,9 +8019,10 @@ textarea.form-control {
 }
 
 .ps-search-table {
-  background-color: #ffffff;
+  background-color: #ffffff8f;
   border-radius: 30px;
   position: relative;
+  border: 1px solid #dbbf9d;
 }
 
 .ps-search-table .form-control {
@@ -8061,7 +8062,7 @@ textarea.form-control {
 }
 
 .ps-search-table .input-group-append a i {
-  color: #121416;
+  color: #a78d6f;
   font-size: 18px;
 }
 
@@ -8069,6 +8070,7 @@ textarea.form-control {
 .ps-language--modal {
   background-color: white;
   width: 100%;
+  min-width: max-content;
   position: absolute;
   top: 100%;
   left: 0;
@@ -12228,8 +12230,7 @@ textarea.form-control {
   margin-bottom: 30px;
 }
 
-.ps-checkout .ps-checkout__content {
-}
+.ps-checkout .ps-checkout__content {}
 
 .ps-checkout .ps-checkout__group {
   margin-bottom: 10px;
@@ -13848,7 +13849,8 @@ textarea.form-control {
   display: none;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .1), 0 6px 20px 0 rgba(0, 0, 0, .1);
   z-index: 3;
-  background-image: linear-gradient(90deg, #f5f1e7 0%, #d1bd7d 50%, #f5f1e7 100%);
+  /* background-image: linear-gradient(90deg, #f5f1e7 0%, #d1bd7d 50%, #f5f1e7 100%); */
+  background-image: url(../img/bg.png);
 }
 
 .ps-header .ps-header__middle {
@@ -20707,7 +20709,7 @@ input[type=number]::-webkit-inner-spin-button {
   margin-right: auto;
   min-width: max-content;
   font-size: 16px;
-  color: #f40853;
+  color: #cc5d35;
 }
 
 .checkout-parts .list-steps .confirmed-address .change-add:hover {
@@ -20730,7 +20732,7 @@ input[type=number]::-webkit-inner-spin-button {
 
 .checkout-parts .list-steps .choose-payment .choose-radio {
   display: flex;
-  gap: 30px;
+  gap: 20px;
   align-items: start;
 }
 
@@ -20756,22 +20758,22 @@ input[type=number]::-webkit-inner-spin-button {
 
 .checkout-parts .list-steps .choose-payment .choose-radio .checkout-tab label {
   border: 1px solid #ddd;
-  padding: 12px 15px;
+  padding: 20px 10px;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   gap: 10px;
-  font-family: 'Bahij_SemiBold';
   color: #272a32;
   cursor: pointer;
   align-items: center;
   background: #fff;
   transition: .2s;
   font-size: 17px;
+  border-radius: 5px;
 }
 
 .checkout-parts .list-steps .choose-payment .choose-radio .checkout-tab label img {
-  height: 20px;
+  height: 30px;
 }
 
 
@@ -20783,13 +20785,13 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 .checkout-parts .list-steps .choose-payment .choose-radio .checkout-tab input:checked~label {
-  border: 1px solid #f40853;
+  border: 1px solid #cc5d35;
   color: #cc5d35;
   box-shadow: inset 0 0 0 1px;
 }
 
 .checkout-parts .list-steps .choose-payment .choose-radio .checkout-tab label:hover {
-  border: 1px solid #f40853;
+  border: 1px solid #cc5d35;
 }
 
 .bg-choose {
@@ -20805,8 +20807,28 @@ input[type=number]::-webkit-inner-spin-button {
   width: 100%;
 }
 
-.confirmed-address, .choose-payment {
+/* .confirmed-address, .choose-payment {
   display: none;
+} */
+
+.payment-card {
+  background: #fff;
+  margin: 15px 0px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.inputs-Expiry {
+  display: flex;
+  background-color: #ffffff;
+  border: 1px solid #b1b1b1;
+  border-radius: 5px;
+}
+
+.inputs-Expiry input {
+  border: 0 !important;
+  padding: 0 !important;
+  text-align: center;
 }
 
 /* abdo */
