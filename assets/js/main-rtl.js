@@ -312,6 +312,7 @@ $(document).on("click", ".payment-box-div .back-step", function () {
         $(".scroll-top").show();
       } else {
         $(".scroll-top").hide();
+        $(".ps-navigation").show();
       }
     });
 
@@ -438,11 +439,13 @@ $(document).on("click", ".payment-box-div .back-step", function () {
     owlCarouselConfig();
     subMenuToggle();
     slidePriceWidget();
-    smoothScrollingTo(location.hash);
     backgroundImage();
   });
 
-  $(window).on("load", function () {});
+  $(window).on("load", function () {
+    $("#preloader").fadeOut();
+    $("body").removeClass('noscroll');
+  });
 })(jQuery);
 
 $(".countdown").attr("data-date");
@@ -514,6 +517,8 @@ $(document).ready(function () {
   });
 });
 
-$(window).on("load", function () {
-  $("#preloader").delay(1000).fadeOut("slow");
+
+lightGallery(document.getElementById('gallery-imgs'), {
+  thumbnail: true,
+  plugins: [lgZoom, lgThumbnail]
 });
