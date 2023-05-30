@@ -21,28 +21,13 @@ $(window)
   })
   .resize();
 
-$(document).on("click", ".continue-shipping", function () {
-  $(".shipping-address").hide();
-  $(".shipping-box-delivary").show();
-  $("html, body").animate({ scrollTop: 180 }, 500);
-});
-
-$(document).on("click", ".continue-payment", function () {
-  $(".shipping-box-delivary").hide();
-  $(".payment-box-div").show();
-  $("html, body").animate({ scrollTop: 180 }, 500);
-});
-
-$(document).on("click", ".shipping-box-delivary .back-step", function () {
-  $(".shipping-box-delivary").hide();
-  $(".shipping-address").show();
-  $("html, body").animate({ scrollTop: 180 }, 500);
-});
-
-$(document).on("click", ".payment-box-div .back-step", function () {
-  $(".payment-box-div").hide();
-  $(".shipping-box-delivary").show();
-  $("html, body").animate({ scrollTop: 180 }, 500);
+$(document).ready(function() {
+  $('input[name="radio-pay"]').change(function() {
+    $('.payment-card').hide();
+    var selectedRadioId = $(this).attr('id');
+    var contentClass = '.payment-' + selectedRadioId;
+    $(contentClass).show();
+  });
 });
 
 (function ($) {
@@ -444,7 +429,7 @@ $(document).on("click", ".payment-box-div .back-step", function () {
 
   $(window).on("load", function () {
     $("#preloader").fadeOut();
-    $("body").removeClass('noscroll');
+    $("body").removeClass("noscroll");
   });
 })(jQuery);
 
@@ -517,8 +502,7 @@ $(document).ready(function () {
   });
 });
 
-
-lightGallery(document.getElementById('gallery-imgs'), {
+lightGallery(document.getElementById("gallery-imgs"), {
   thumbnail: true,
-  plugins: [lgZoom, lgThumbnail]
+  plugins: [lgZoom, lgThumbnail],
 });

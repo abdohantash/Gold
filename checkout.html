@@ -363,8 +363,8 @@
                           </label>
                         </div>
                         <div class="checkout-tab">
-                          <input type="radio" name="radio-pay" id="Stc-pay">
-                          <label for="Stc-pay">
+                          <input type="radio" name="radio-pay" id="stc-pay">
+                          <label for="stc-pay">
                             <img src="assets/img/Stc_pay.png" alt="">
                           </label>
                         </div>
@@ -381,7 +381,7 @@
                           </label>
                         </div>
                       </div>
-                      <div class="payment-card">
+                      <div class="payment-card payment-mada">
                         <div class="row">
                           <div class="col-md-6">
                               <div class="ps-checkout__group">
@@ -389,7 +389,6 @@
                                   <input class="ps-input" type="text" placeholder="**** **** **** ****">
                               </div>
                           </div>
-                          
                           <div class="col-md-3">
                               <div class="ps-checkout__group">
                                   <label class="ps-checkout__label">تاريخ الصلاحية</label>
@@ -407,6 +406,48 @@
                               </div>
                           </div>
                       </div>
+                      </div>
+                      <div class="payment-card payment-visa-mastercard">
+                        <div class="row">
+                          <div class="col-md-6">
+                              <div class="ps-checkout__group">
+                                  <label class="ps-checkout__label">رقم البطاقة</label>
+                                  <input class="ps-input" type="text" placeholder="**** **** **** ****">
+                              </div>
+                          </div>
+                          <div class="col-md-3">
+                              <div class="ps-checkout__group">
+                                  <label class="ps-checkout__label">تاريخ الصلاحية</label>
+                                  <div class="inputs-Expiry">
+                                    <input class="ps-input" type="text" placeholder="الشهر" pattern="\d*" maxlength="2">
+                                    <input class="ps-input" type="text" placeholder="/" disabled>
+                                    <input class="ps-input" type="text" placeholder="السنة" pattern="\d*" maxlength="2">
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-md-3">
+                              <div class="ps-checkout__group">
+                                  <label class="ps-checkout__label">رمز التحقق (CVV)</label>
+                                  <input class="ps-input" type="password">
+                              </div>
+                          </div>
+                      </div>
+                      </div>
+                      <div class="payment-card payment-stc-pay">
+                        <div class="row">
+                          <div class="col-md-6">
+                              <div class="ps-checkout__group">
+                                  <label class="ps-checkout__label">رقم الجوال</label>
+                                  <input class="ps-input" type="text" placeholder="">
+                              </div>
+                          </div>
+                      </div>
+                      </div>
+                      <div class="payment-card payment-tamara">
+                        
+                      </div>
+                      <div class="payment-card payment-tabby">
+                        
                       </div>
                     </div>
                     <button type="button" class="save-btn" aria-label="btn">اكمال الدفع</button>

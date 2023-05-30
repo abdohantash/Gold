@@ -3807,7 +3807,7 @@ textarea.form-control {
 .ps-product--detail .ps-product__title {
   font-size: 22px;
   line-height: 30px;
-  margin-bottom: 15px;
+  margin-bottom: 0;
   font-family: 'Bahij_SemiBold';
   color: #121416;
 }
@@ -3827,6 +3827,7 @@ textarea.form-control {
   align-items: center;
   gap: 6px;
   flex-wrap: wrap;
+  margin-bottom: 5px;
 }
 
 .ps-product--detail .ps-product__badge .ps-badge {
@@ -4128,6 +4129,8 @@ textarea.form-control {
   margin-bottom: 0;
   font-size: 17px;
   font-family: 'Bahij_SemiBold';
+  display: flex;
+  gap: 5px;
 }
 
 .ps-product--detail .ps-product__quantity {
@@ -18926,16 +18929,6 @@ html .bg--parallax {
   color: #fff !important;
 }
 
-.credit-dts h3 {
-  font-size: 18px;
-}
-
-.credit-dts p {
-
-  font-size: 18px;
-
-  margin-bottom: 20px;
-}
 
 .modal-custom .modal-content {
   border-radius: 7px;
@@ -19639,8 +19632,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .store-features {
-  width: 280px;
-  min-width: 280px;
+  width: 300px;
+  min-width: 299px;
   height: max-content;
   position: sticky;
   top: 135px;
@@ -19699,8 +19692,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .thumbs {
-  width: 60px;
-  min-width: 60px;
+  width: 75px;
+  min-width: 70px;
 }
 
 .thumbs-img {
@@ -19863,13 +19856,11 @@ body::-webkit-scrollbar-thumb {
   color: #a74217;
 }
 
-.p-share .dropdown-menu a i {}
-
-.stockandshare {
+.nameandshare {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 10px;
+  gap: 40px;
   margin-bottom: 5px;
 }
 
@@ -20826,6 +20817,13 @@ input[type=number]::-webkit-inner-spin-button {
   border-radius: 5px;
 }
 
+.payment-visa-mastercard,
+.payment-stc-pay,
+.payment-tamara,
+.payment-tabby {
+  display: none;
+}
+
 .inputs-Expiry {
   display: flex;
   background-color: #ffffff;
@@ -20875,6 +20873,100 @@ input[type=number]::-webkit-inner-spin-button {
   width: 100%;
   object-fit: cover;
 }
+
+.credits {
+  background: #f0f2f5;
+  padding: 15px;
+}
+
+.credits .credit-dts {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+  background: #ffffff;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+.credits .credit-dts:last-child {
+  margin-bottom: 0;
+}
+
+.credits .credit-dts img {
+  height: 50px;
+  width: 80px;
+  object-fit: contain;
+}
+
+.credits .credit-dts h3 {
+  font-size: 18px;
+  font-weight: normal;
+  display: flex;
+  gap: 5px;
+  margin: 0;
+}
+
+.credits .credit-dts h3 b {
+  font-weight: normal;
+  font-family: 'Bahij_SemiBold';
+  font-size: 19px;
+}
+
+.credits .credit-dts .btns {
+  margin-right: auto;
+  display: flex;
+  gap: 8px;
+}
+
+.credits .credit-dts .btns button {
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 15px;
+  border: 1px solid transparent;
+  background: #fff;
+}
+
+.credits .credit-dts .btns button:first-child {
+  background: #468748;
+  border-color: #468748;
+  color: #fff;
+}
+
+.credits .credit-dts .btns button:last-child {
+  background: #bf2a1f;
+  border-color: #bf2a1f;
+  color: #fff;
+}
+
+.colors-list {
+  display: flex;
+  gap: 7px;
+  margin-top: 10px;
+}
+
+.colors-list li input {
+  display: none;
+}
+
+.colors-list li label {
+  margin-bottom: 0;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.colors-list li input:checked~label {
+  border: 1px solid #747070;
+}
+
+.colors-list li img {
+  height: 70px;
+  width: 70px;
+  object-fit: contain;
+  padding: 3px;
+}
+
+
 
 /* abdo */
 
