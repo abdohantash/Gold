@@ -20968,6 +20968,25 @@ input[type=number]::-webkit-inner-spin-button {
   padding: 3px;
 }
 
+.success-div {
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  margin: 0 auto;
+  min-width: 600px;
+  width: max-content;
+  border: 3px solid #e3e3e3;
+}
+
+
+.success-div i {
+  font-size: 123px;
+  margin-bottom: 30px;
+  display: block;
+  color: #4CAF50;
+}
+
+.success-div h5 {font-family: 'Bahij_SemiBold';margin-bottom: 30px !important;}
 
 
 /* abdo */
