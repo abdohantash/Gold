@@ -13,15 +13,51 @@
   <link rel="stylesheet" href="assets/plugins/owl-carousel/assets/owl.carousel.css">
   <link rel="stylesheet" href="assets/plugins/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="assets/plugins/select2/dist/css/select2.min.css">
+  <link rel="stylesheet" href="assets/plugins/lightGallery/css/lightgallery-bundle.min.css">
   <link rel="stylesheet" href="assets/css/style-rtl.css">
 </head>
 
-<body>
+<body class="noscroll">
   <div class="ps-page">
     <header class="ps-header ps-header--1">
       <div class="ps-header__middle">
         <div class="container-fluid">
           <div class="flex-header">
+            <div class="ps-header__search">
+              <form action="#" method="post">
+                <div class="ps-search-table">
+                  <div class="input-group">
+                    <input class="form-control ps-input" type="text" placeholder="ابحث عن الذهب والالماس">
+                    <div class="input-group-append"><a href="#"><i class="fa fa-search"></i></a>
+                    </div>
+                  </div>
+                  <div class="search-bar__inner">
+                    <p class="search-bar__menu-title heading">نتائج البحث</p>
+                    <ul class="search-bar__menu-ul list list--unstyled">
+                      <li>
+                        <a href="products.html" class="search-bar__menu-link">سلاسل</a>
+                      </li>
+                      <li>
+                        <a href="products.html" class="search-bar__menu-link">اساور</a>
+                      </li>
+                      <li>
+                        <a href="products.html" class="search-bar__menu-link">خواتم</a>
+                      </li>
+                      <li>
+                        <a href="products.html" class="search-bar__menu-link">حلقان</a>
+                      </li>
+                      <li>
+                        <a href="products.html" class="search-bar__menu-link">عملات ذهبية</a>
+                      </li>
+                      <li>
+                        <a href="products.html" class="search-bar__menu-link">سبائك ذهبية</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <a class="ps-menu--sticky" href="#"><i class="icon-menu"></i></a>
             <div class="ps-logo">
               <a href="index.html">
                 <div class="right--div">
@@ -35,42 +71,7 @@
                 </div>
               </a>
             </div>
-            <a class="ps-menu--sticky" href="#"><i class="icon-menu"></i></a>
             <div class="ps-header__right">
-              <div class="ps-header__search">
-                <form action="#" method="post">
-                  <div class="ps-search-table">
-                    <div class="input-group">
-                      <input class="form-control ps-input" type="text" placeholder="ابحث عن الذهب والالماس">
-                      <div class="input-group-append"><a href="#"><i class="fa fa-search"></i></a>
-                      </div>
-                    </div>
-                    <div class="search-bar__inner">
-                      <p class="search-bar__menu-title heading">نتائج البحث</p>
-                      <ul class="search-bar__menu-ul list list--unstyled">
-                        <li>
-                          <a href="products.html" class="search-bar__menu-link">سلاسل</a>
-                        </li>
-                        <li>
-                          <a href="products.html" class="search-bar__menu-link">اساور</a>
-                        </li>
-                        <li>
-                          <a href="products.html" class="search-bar__menu-link">خواتم</a>
-                        </li>
-                        <li>
-                          <a href="products.html" class="search-bar__menu-link">حلقان</a>
-                        </li>
-                        <li>
-                          <a href="products.html" class="search-bar__menu-link">عملات ذهبية</a>
-                        </li>
-                        <li>
-                          <a href="products.html" class="search-bar__menu-link">سبائك ذهبية</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </form>
-              </div>
               <div class="ps-language-currency">
                 <a class="ps-dropdown-value" id="language-modal" href="javascript:void(0);">عربي</a>
                 <div class="ps-language--modal">
@@ -153,6 +154,7 @@
                             href="product-details.html"><img src="assets/img/products/1.jpg" alt="alt" /></a>
                           <div class="ps-product__content"><a class="ps-product__name" href="product-details.html">خاتم
                               ذهب عيار 18 قيراط برأس مزدوجة مزينة بألماس وأحجار ملونة</a>
+                              <span class="quantity--cart">الكمية : 1</span>
                             <p class="ps-product__meta"> <span class="ps-product__price">4000 SAR</span></p>
                           </div><a class="ps-product__remove" href="javascript: void(0)"><i class="icon-cross"></i></a>
                         </div>
@@ -162,6 +164,7 @@
                             href="product-details.html"><img src="assets/img/products/3.jpg" alt="alt" /></a>
                           <div class="ps-product__content"><a class="ps-product__name" href="product-details.html">خاتم
                               ستيتمنت مرصع بالالماس و حجر أزرق مائي من الذهب الابيض</a>
+                              <span class="quantity--cart">الكمية : 1</span>
                             <p class="ps-product__meta"> <span class="ps-product__sale">7000 SAR</span><span
                                 class="ps-product__is-price">8000 SAR</span></p>
                           </div><a class="ps-product__remove" href="javascript: void(0)"><i class="icon-cross"></i></a>
@@ -659,6 +662,9 @@
   <script src="assets/plugins/owl-carousel/owl.carousel.min.js"></script>
   <script src="assets/plugins/swiper/swiper-bundle.min.js"></script>
   <script src="assets/plugins/js-image-zoom.js"></script>
+  <script src="assets/plugins/lightGallery/js/lightgallery.umd.js"></script>
+  <script src="assets/plugins/lightGallery/js/lg-thumbnail.umd.js"></script>
+  <script src="assets/plugins/lightGallery/js/lg-zoom.umd.js"></script>
   <script src="assets/plugins/multi-countdown.js"></script>
   <script src="assets/js/main-rtl.js"></script>
 </body>

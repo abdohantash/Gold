@@ -5377,7 +5377,7 @@ textarea.form-control {
 
 @media (min-width: 1280px) {
   .ps-banner {
-    height: calc(100vh - 118px);
+    height: calc(100vh - 135px);
   }
 
   .ps-banner .ps-banner__title {
@@ -8067,6 +8067,8 @@ textarea.form-control {
 .ps-search-table .input-group-append a i {
   color: #a78d6f;
   font-size: 18px;
+  position: relative;
+  top: 1px;
 }
 
 .ps-login--modal,
@@ -13850,7 +13852,7 @@ textarea.form-control {
 .ps-header {
   background-color: white;
   display: none;
-  padding: 0 20px;
+  padding: 0 30px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .1), 0 6px 20px 0 rgba(0, 0, 0, .1);
   z-index: 3;
   background-image: linear-gradient(90deg, #f5f1e7 0%, #d1bd7d 50%, #f5f1e7 100%);
@@ -13929,16 +13931,16 @@ textarea.form-control {
 }
 
 .ps-header .ps-logo a .en-carc {
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .ps-header .ps-logo img {
   max-width: 215px;
-  height: 60px;
+  height: 77px;
 }
 
 .ps-header .ps-logo span {
-  font-size: 22px;
+  font-size: 23px;
   font-family: 'Lemonada';
   color: #3d464f;
   display: block;
@@ -13980,7 +13982,6 @@ textarea.form-control {
 
 .ps-header .ps-header__search {
   display: none;
-  margin-left: 30px;
   width: 100%;
 }
 
@@ -13990,6 +13991,7 @@ textarea.form-control {
   margin-left: 20px;
   position: relative;
   min-width: max-content;
+  margin-right: auto;
 }
 
 .ps-header .ps-language-currency::after {
@@ -17910,8 +17912,8 @@ html .bg--parallax {
 }
 
 .container-fluid {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .flex-header {
