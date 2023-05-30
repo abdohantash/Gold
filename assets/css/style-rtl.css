@@ -5377,7 +5377,7 @@ textarea.form-control {
 
 @media (min-width: 1280px) {
   .ps-banner {
-    height: calc(100vh - 135px);
+    height: calc(100vh - 148px);
   }
 
   .ps-banner .ps-banner__title {
@@ -9707,6 +9707,17 @@ textarea.form-control {
   display: flex;
 }
 
+.ps-section--deals .ps-section__header img {
+  
+width: 100%;
+  
+height: 50px;
+  
+object-fit: cover;
+  
+border-radius: 3px;
+}
+
 .ps-section--deals .ps-section__title {
   margin-bottom: 0;
 }
@@ -13880,6 +13891,11 @@ textarea.form-control {
   margin: 0 auto;
 }
 
+.ps-header .ps-logo {
+  width: 100%;
+    justify-content: center;
+}
+
 .ps-header .ps-header__menu .menu>li {
   margin-left: 10px;
 }
@@ -13936,7 +13952,7 @@ textarea.form-control {
 
 .ps-header .ps-logo img {
   max-width: 215px;
-  height: 77px;
+  height: 90px;
 }
 
 .ps-header .ps-logo span {
@@ -14043,7 +14059,7 @@ textarea.form-control {
 .ps-header .ps-header__icons .ps-header__item {
   position: relative;
   height: 46px;
-  font-size: 30px;
+  font-size: 25px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -14052,7 +14068,7 @@ textarea.form-control {
 .ps-header .ps-header__icons .ps-header__item .badge {
   position: absolute;
   bottom: 50%;
-  right: 20px;
+  right: 15px;
   width: 22px;
   height: 22px;
   font-size: 11px;
@@ -14147,12 +14163,8 @@ textarea.form-control {
   }
 }
 
-.ps-header.ps-header--sticky .ps-navigation {
-  display: none;
-}
-
 .ps-header.ps-header--sticky .ps-menu--sticky {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
 }
@@ -18028,6 +18040,7 @@ html .bg--parallax {
   align-items: center;
   justify-content: space-between;
   font-family: 'Bahij_SemiBold';
+  min-width: max-content;
 }
 
 .view-all {
