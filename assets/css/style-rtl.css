@@ -13998,7 +13998,8 @@ border-radius: 3px;
 
 .ps-header .ps-header__search {
   display: none;
-  width: 100%;
+  width: 520px;
+  min-width: 520px;
 }
 
 .ps-header .ps-language-currency {
@@ -14007,7 +14008,6 @@ border-radius: 3px;
   margin-left: 20px;
   position: relative;
   min-width: max-content;
-  margin-right: auto;
 }
 
 .ps-header .ps-language-currency::after {
@@ -18272,7 +18272,7 @@ html .bg--parallax {
 
 .promo-img a img {
   object-fit: contain;
-  width: auto;
+  width: 100%;
   display: block;
   margin: 0 auto;
 }
@@ -18319,8 +18319,9 @@ html .bg--parallax {
 }
 
 .ps-header__right {
-  width: 100%;
+  width: max-content;
   align-items: center;
+  justify-content: end !important;
 }
 
 .ps-categogy {
