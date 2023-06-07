@@ -1,0 +1,501 @@
+/* Media Query for Large screens */
+@media (min-width: 1281px)
+    .ps-header
+        .ps-header__middle
+            .flex-header
+                .ps-header__search
+                    width: 480px
+                    min-width: 480px
+
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px)
+    .ps-header
+        .ps-header__middle
+            .flex-header
+                .ps-header__search
+                    width: 400px
+                    min-width: 300px
+                .ps-header__right
+                    .ps-header__icons
+                        a > i
+                            font-size: 20px
+                        .log-acc
+                            span
+                                font-size: 15px
+                        .span-hello
+                            display: none
+                        p
+                            display: none
+    /* PRODUCT DETAILS PAGE */
+    .ps-categogy
+        .ps-page__content
+            .ps-product--detail
+                .dts-page
+                    .right-sec
+                        .g-d-sec
+                            .view-div
+                                width: 400px
+                                min-width: 400px
+                        .ps-product__info
+                            .nameandshare
+                                .ps-product__title
+                                    font-size: 17px
+                            .ps-product__meta
+                                .ps-product__price
+                                    font-size: 19px
+                                .ps-product__del
+                                    font-size: 17px
+                            .vat
+                                font-size: 15px
+                            .weight-gold-diamond
+                                li
+                                    p
+                                        font-size: 14px
+                            .size
+                                justify-content: space-between
+                            .quantity--wish
+                                flex-direction: column
+                                padding: 13px 0
+                            .btn-add-buy
+                                a
+                                    font-size: 11px
+                        .ps-product__content
+                            .nav-item
+                                a
+                                    font-size: 18px
+                            .productContent
+                                .description-content
+                                    .ps-desc
+                                        font-size: 15px
+
+/* Common Media Query for Tablets and Mobile Devices*/
+@media (max-width: 1024px)
+    .ps-home
+        .ps-home__content
+            .ps-section--deals
+                padding: 20px
+            .promo-part
+                .promo-img
+                    img
+                        height: 100%
+                        min-height: 130px
+                        max-height: 150px
+            .ps-section--latest
+                padding: 20px
+        .ps-section__header
+            padding: 0 20px
+            .ps-section__carousel
+                padding: 0 30px
+    /* ORDER DETAILS PAGE */
+    .order-details
+        .head-order-details
+            p
+                font-size: 14px
+        .dts-order
+            gap: 10px
+            h3
+                font-size: 16px
+            h5
+                font-size: 14px
+            p
+                font-size: 14px
+        .body-order
+            .order-product
+                .content-prd
+                    h3
+                        font-size: 15px
+                        margin-left: 15px
+                    .qunt
+                        min-width: 60px
+                        margin-left: 10px
+                        font-size: 15px
+    /* ORDER PAGE */
+    .orders-ul
+        li
+            .head-order
+                p
+                    font-size: 16px
+                    span
+                        font-size: 14px
+                a
+                    font-size: 15px
+            .body-order
+                .order-product
+                    .content-prd
+                        h3
+                            font-size: 15px
+                            margin-left: 15px
+                        .qunt
+                            min-width: 60px
+                            margin-left: 10px
+                            font-size: 15px
+    /* PRODUCT DETAILS PAGE */
+    .ps-categogy
+        .ps-page__content
+            .ps-product--detail
+                .dts-page
+                    .right-sec
+                        .g-d-sec
+                            flex-direction: column
+                            .view-div
+                                width: 400px
+                                min-width: 400px
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px)
+    .ps-header
+        padding: 0 20px
+        .ps-header__middle
+            .container-fluid
+                padding: 0 10px
+            .flex-header
+                .ps-header__search
+                    width: 200px
+                    min-width: 200px
+                .ps-header__right
+                    .ps-header__icons
+                        align-items: flex-start
+                        a > i
+                            font-size: 24px
+                        .account-btn
+                            gap: 0
+                        .log-acc
+                            span
+                                display: none
+                        p
+                            display: none
+                .ps-logo
+                    .right--div,
+                    .left--div
+                        span
+                            font-size: 17px
+        .ps-navigation
+            .menu
+                text-align: center
+                > li
+                    margin-left: 12px
+                    padding-left: 0
+                    a
+                        font-size: 14px
+    /* CART PAGE */
+    .ps-shopping
+        .box-prd--cart
+            p
+                font-size: 14px
+    /* CHECKOUT PAGE */
+    .ps-checkout
+        ul.list-steps
+            .list-addresses
+                li
+                    padding: 12px 10px
+                    label
+                        font-size: 16px !important
+                    p
+                        font-size: 14px !important
+    /* CREDIT CARD PAGE */
+
+/* Media Query for Mobile Devices */
+@media (max-width: 991px)
+    /* HOME PAGE */
+    .ps-home
+        .ps-home__content
+            .shop-tabby-tamara
+                h1
+                    font-size: 35px
+                .logos-tby-tm
+                    img
+                        height: 50px
+            .promo-part
+                padding: 0 20px
+                .promo-img
+                    margin-bottom: 0
+    /* ORDER PAGE */
+    .orders-ul
+        li
+            overflow-x: auto
+            .orders-li-content
+                min-width: 600px
+                margin-bottom: 20px
+    /* PRODUCT DETAILS PAGE */
+    .ps-categogy
+        .ps-page__content
+            .ps-product--detail
+                .dts-page
+                    flex-direction: column
+                    .right-sec
+                        .g-d-sec
+                            // flex-direction: row
+                            .view-div
+                                width: 450px
+                                min-width: 450px
+                        .ps-product__info
+                            .nameandshare
+                                .ps-product__title
+                                    font-size: 17px
+                            .ps-product__meta
+                                .ps-product__price
+                                    font-size: 18px
+                                .ps-product__del
+                                    font-size: 16px
+    /* CHECKOUT PAGE */
+    .ps-checkout
+        .ps-checkout__content
+            .checkout-parts
+                flex-direction: column-reverse
+                .ps-checkout__order
+                    width: 97%
+                    position: relative
+                    top: 0
+
+@media (max-width: 767px)
+    .float-call
+        bottom: 120px
+    .float-whts
+        bottom: 65px
+    .ps-header
+        .ps-header__middle
+            .container-fluid
+                .ps-logo
+                    img
+                        height: 75px
+    /* HOME PAGE */
+    .ps-home
+        .ps-home__content
+            .shop-tabby-tamara
+                h1
+                    font-size: 30px
+                .logos-tby-tm
+                    img
+                        height: 45px
+    /* ABOUT PAGE */
+    .about-page
+        .gallery-imgs
+            grid-template-columns: repeat(2, 1fr)
+    /* CART PAGE */
+    .ps-shopping
+        .box-prd--cart
+            position: relative
+            a
+                &:not(.removeproduct)
+                    margin-left: 50px
+                    p
+                        font-size: 14px
+            .total-quantity
+                display: flex
+                justify-content: space-around
+                align-items: center
+                width: 100%
+                margin: 20px 0 10px
+                .quantity-number
+                    margin: 0
+        .removeproduct
+            position: absolute
+            top: 25px
+            left: 20px
+    /* CHECKOUT PAGE */
+    .ps-checkout
+        .list-steps
+            .address-li
+                .list-addresses
+                    grid-template-columns: 1fr !important
+            .payment-li
+                .choose-payment
+                    padding: 0
+                    .choose-radio
+                        grid-template-columns: repeat(3,1fr)
+                        gap: 12px
+                        .checkout-tab
+                            label
+                                height: 50px
+        .ps-checkout__order
+            width: 100%
+            min-width: 200px
+        .save-btn
+            min-width: 150px !important
+    /* CREDIT CARD PAGE */
+    .account-content
+        .addresses
+            .credits
+                .credit-dts
+                    h3
+                        &:first-of-type
+                            flex-direction: column
+                            gap: 3px
+                            font-size: 11px
+    /* INVOICE PAGE */
+    .invoice-container-wrap
+        main
+            .download-inner
+                .invoice-right
+                    text-align: start
+                .footer-info
+                    flex-direction: column
+                    gap: 10px
+                    .flex-call
+                        justify-content: center
+    /* PRODUCT DETAILS PAGE */
+    .ps-categogy
+        .ps-page__content
+            .ps-product--detail
+                .dts-page
+                    .right-sec
+                        .g-d-sec
+                            .view-div
+                                width: 350px
+                                min-width: 350px
+    /* PRODUCT PAGE */
+    .ps-categogy__content
+        flex-direction: column
+        .filter-part
+            display: flex
+            justify-content: space-between
+            width: 100%
+            .price-filter
+                position: relative
+                input
+                    width: 60px
+                button
+                    position: absolute
+                    bottom: -40px
+    /* SUCCESS PAGE */
+    .ps-page__content
+        .success-div
+            min-width: 400px
+            i,svg
+                font-size: 90px
+            h5
+                font-size: 20px
+            .ps-btn
+                min-width: 180px
+                font-size: 15px
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px)
+    /* HOME PAGE */
+    .ps-home
+        .ps-home__content
+            .shop-tabby-tamara
+                h1
+                    font-size: 26px
+                .logos-tby-tm
+                    img
+                        height: 30px
+    /* ABOUT PAGE */
+    .about-page
+        .gallery-imgs
+            grid-template-columns: repeat(1, 1fr)
+    /* ADDRESS PAGE */
+    .container-fluid
+        padding: 0
+    /* CART PAGE */
+    .ps-shopping
+        .box-prd--cart
+            a
+                &:not(.removeproduct)
+                    flex-direction: column
+                    align-items: flex-start
+                    margin: 0
+                    p
+                        padding-right: 20px
+            a.removeproduct
+                top: 35px
+            .total-quantity
+                p
+                    font-size: 12px
+    /* CHECKOUT PAGE */
+    .ps-checkout
+        .list-steps
+            .address-li
+                .choose--address
+                    padding: 0
+            .confirmed-address
+                .confirmed-div
+                    flex-direction: column
+                    text-align: center
+                    .change-add
+                        margin: auto
+            .payment-li
+                .choose-payment
+                    padding: 0
+                    .choose-radio
+                        grid-template-columns: repeat(2,1fr)
+        .save-btn
+            min-width: 100px !important
+            font-size: 14px !important
+    /* CREDIT CARD PAGE */
+    .account-content
+        .addresses
+            .credits
+                .credit-dts
+                    flex-direction: column
+                    align-items: center
+                    h3
+                        &:first-of-type
+                            flex-direction: row
+                            align-items: center
+                            gap: 10px
+                    .btns
+                        margin: 10px auto
+    /* ORDER DETAILS PAGE */
+    .order-details
+        .head-order-details
+            flex-direction: column
+            align-items: flex-start
+            justify-content: center
+            position: relative
+            a
+                position: absolute
+                left: 0
+        .dts-order
+            flex-direction: column
+            gap: 15px
+            text-align: center
+            p
+                justify-content: center
+        .body-order
+            .order-product
+                flex-direction: column
+    /* PRODUCT DETAILS PAGE */
+    .ps-categogy
+        .ps-page__content
+            .ps-product--detail
+                .dts-page
+                    .right-sec
+                        .g-d-sec
+                            .view-div
+                                width: 300px
+                                min-width: 300px
+                            .g-view
+                                flex-direction: column
+                                .thumbs
+                                    width: 100%
+                                    display: flex
+                                    .swiper-vertical
+                                        height: 140px
+                                        min-height: 140px
+                                        max-height: 350px
+                                        .swiper-wrapper
+                                            justify-content: center
+                                            flex-direction: row
+                                            flex-wrap: wrap
+                                            .swiper-slide
+                                                height: 100px !important
+                                                width: fit-content
+                                                min-width: 75px
+                                                width: 75px
+    .ps-section--latest
+        padding: 20px
+    /* PRODUCT PAGE */
+    .ps-categogy__content
+        .filter-part
+            flex-direction: column
+            .price-filter
+                position: relative
+                input
+                    width: 80px
+                button
+                    position: static
+    /* SUCCESS PAGE */
+    .ps-page__content
+        .success-div
+            background: transparent
+            border: 0
