@@ -284,7 +284,7 @@ $(document).ready(function() {
     $(window).scroll(function (event) {
       var scroll = $(window).scrollTop();
       var innerWidth = $(window).innerWidth();
-      if (scroll > 100 && innerWidth > 760) {
+      if (scroll > 0 && innerWidth > 760) {
         $(".ps-header").addClass("ps-header--sticky");
       } else if (scroll > 700 && innerWidth < 760) {
         $(".ps-header").addClass("ps-header--sticky");
@@ -431,6 +431,16 @@ $(document).ready(function() {
     $("#preloader").fadeOut();
     $("body").removeClass("noscroll");
   });
+
+  $(".filter-by").on("click", function () {
+    $(".filter-part").addClass("active");
+  });
+
+  $(".filter-part .close-filter").on("click", function () {
+    $(".filter-part").removeClass("active");
+  });
+
+
 })(jQuery);
 
 $(".countdown").attr("data-date");
