@@ -456,29 +456,6 @@ $(document).ready(function () {
     $(".search-form").toggleClass("active");
   });
 
-  // range price
-  var rangeSlider = document.getElementById("slider-range");
-  var moneyFormat = wNumb({
-    decimals: 0,
-    thousand: ",",
-  });
-  noUiSlider.create(rangeSlider, {
-    start: [0, 20000],
-    direction: "rtl",
-    range: {
-      min: [0],
-      max: [30000],
-    },
-    format: moneyFormat,
-    connect: true,
-  });
-  // Set visual min and max values and also update value hidden form inputs
-  rangeSlider.noUiSlider.on("update", function (values, handle) {
-    document.getElementById("slider-range-value1").innerHTML = values[0];
-    document.getElementById("slider-range-value2").innerHTML = values[1];
-    document.getElementsByName("min-value").value = moneyFormat.from(values[0]);
-    document.getElementsByName("max-value").value = moneyFormat.from(values[1]);
-  });
 })(jQuery);
 
 $(".countdown").attr("data-date");
@@ -554,3 +531,27 @@ lightGallery(document.getElementById("gallery-imgs"), {
   thumbnail: true,
   plugins: [lgZoom, lgThumbnail],
 });
+
+  // range price
+  var rangeSlider = document.getElementById("slider-range");
+  var moneyFormat = wNumb({
+    decimals: 0,
+    thousand: ",",
+  });
+  noUiSlider.create(rangeSlider, {
+    start: [0, 20000],
+    direction: "rtl",
+    range: {
+      min: [0],
+      max: [30000],
+    },
+    format: moneyFormat,
+    connect: true,
+  });
+  // Set visual min and max values and also update value hidden form inputs
+  rangeSlider.noUiSlider.on("update", function (values, handle) {
+    document.getElementById("slider-range-value1").innerHTML = values[0];
+    document.getElementById("slider-range-value2").innerHTML = values[1];
+    document.getElementsByName("min-value").value = moneyFormat.from(values[0]);
+    document.getElementsByName("max-value").value = moneyFormat.from(values[1]);
+  });
