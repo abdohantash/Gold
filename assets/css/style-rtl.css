@@ -23503,7 +23503,7 @@ input[type="number"]::-webkit-inner-spin-button {
     z-index: 9999;
     top: 0;
     right: 0;
-    bottom: 0;
+    bottom: -60px;
     width: 300px;
     padding: 0;
     box-shadow: 0 0 5px #ddd;
@@ -23665,7 +23665,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
   .filter-part .boxes {
     padding: 15px;
-    height: calc(100vh - 93px);
+    height: calc(100vh - 95px);
     overflow: auto;
   }
 
