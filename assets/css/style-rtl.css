@@ -21053,6 +21053,7 @@ input[type="number"]::-webkit-inner-spin-button {
   gap: 7px;
   align-items: center;
   margin-top: 30px;
+    background: #fff;
 }
 
 .apply-filter button {
