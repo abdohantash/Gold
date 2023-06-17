@@ -23665,7 +23665,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
   .filter-part .boxes {
     padding: 15px;
-    height: calc(100vh - 95px);
+    height: calc(100vh - 94px);
     overflow: auto;
   }
 
