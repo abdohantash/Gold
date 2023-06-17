@@ -14,8 +14,8 @@
   <link rel="stylesheet" href="assets/plugins/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="assets/plugins/select2/dist/css/select2.min.css" />
   <link rel="stylesheet" href="assets/plugins/lightGallery/css/lightgallery-bundle.min.css" />
+  <link rel="stylesheet" href="assets/plugins/nouislider/nouislider.css" />
   <link rel="stylesheet" href="assets/css/style-rtl.css" />
-
 </head>
 
 <body class="noscroll">
@@ -305,19 +305,27 @@
         </ul>
         <h1 class="ps-page-name">خواتم<sup>(32)</sup></h1>
         <div class="ps-categogy__content">
-          <button class="filter-by">
-            <i class="fa fa-filter"></i>
-            تصنيف حسب
-          </button>
+          <div class="ps-categogy__wrapper__mobile">
+            <button class="filter-by">
+              <i class="fa fa-filter"></i>
+              تصنيف حسب
+            </button>
+            <button class="sort-by">
+              <i class="fa fa-sort-alpha-asc"></i>
+              ترتيب
+            </button>
+          </div>
           <div class="filter-part">
             <h3>
-              التصنيفات
+              تصفية النتائج
+              <span>اعادة تعيين</span>
               <i class="icon-cross close-filter"></i>
             </h3>
             <div class="boxes">
               <div class="box">
                 <label for="ctg" class="main-ctg">
                   <input id="ctg" class="checkbox-custom" type="checkbox" value="" />
+
                   <h4 class="name-part">الاصناف</h4>
                 </label>
                 <ul class="checkbox-list">
@@ -381,10 +389,12 @@
               </div>
               <div class="box">
                 <h4 class="name-part">السعر</h4>
-                <div class="price-filter">
-                  <input type="number" placeholder="من" />
-                  <input type="number" placeholder="الى" />
-                  <button>ابحث</button>
+                <div class="price-filter-range">
+                  <div id="slider-range" class="sider-price"></div>
+                  <div class="flex-range">
+                    <div class="caption">من : <strong id="slider-range-value1" class="text-brand"></strong></div>
+                    <div class="caption">الى : <strong id="slider-range-value2" class="text-brand"></strong></div>
+                </div>
                 </div>
               </div>
               <div class="box">
@@ -409,6 +419,31 @@
               <button class="apply">تطبيق</button>
               <button class="reset">اعادة تعيين</button>
             </div>
+          </div>
+          <div class="sort-part">
+            <div class="close-sort">
+              <i class="icon-cross"></i>
+            </div>
+            <form>
+              <label for="one">الاعلى سعر الى الاقل سعر
+                <input type="radio" name="price" id="one" checked />
+              </label>
+              <label for="two">الاقل سعر الى الاعلى سعر
+                <input type="radio" name="price" id="two" />
+              </label>
+              <label for="three">العروض من الاعلى الي الاقل
+                <input type="radio" name="price" id="three" />
+              </label>
+              <label for="four">العروض من الاقل الي الاعلى
+                <input type="radio" name="price" id="four" />
+              </label>
+              <label for="five">الاقدم للاحدث
+                <input type="radio" name="price" id="five" />
+              </label>
+              <label for="six">الاحدث للاقدم
+                <input type="radio" name="price" id="six" />
+              </label>
+            </form>
           </div>
           <div class="flex--product">
             <div class="right-sec">
@@ -1147,10 +1182,19 @@
       <a href="#" id="open-menu"><i class="icon-menu"></i></a><a href="#" id="close-menu"><i class="icon-cross"></i></a>
     </div>
     <div class="ps-nav__item">
-      <a href="index.html"><i class="icon-home2"></i></a>
+      <a href="my-account.html"><i class="icon-user"></i></a>
+    </div>
+    <div class="ps-nav__item search-icon">
+      <a href="#"><i class="icon-magnifier"></i></a>
+      <div class="search-form">
+        <form action="">
+          <input type="search" name="" id="" placeholder="ابحث ..." />
+          <input type="submit" value="بحث" />
+        </form>
+      </div>
     </div>
     <div class="ps-nav__item">
-      <a href="my-account.html"><i class="icon-user"></i></a>
+      <a href="wishlist.html"><i class="icon-heart"></i></a>
     </div>
     <div class="ps-nav__item">
       <a href="cart.html"><i class="icon-cart-empty"></i><span class="badge">2</span></a>
@@ -1354,6 +1398,7 @@
   <script src="assets/plugins/lightGallery/js/lg-thumbnail.umd.js"></script>
   <script src="assets/plugins/lightGallery/js/lg-zoom.umd.js"></script>
   <script src="assets/plugins/multi-countdown.js"></script>
+  <script src="assets/plugins/nouislider/nouislider.js"></script>
   <script src="assets/js/main-rtl.js"></script>
 </body>
 

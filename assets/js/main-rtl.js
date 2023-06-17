@@ -21,17 +21,17 @@ $(window)
   })
   .resize();
 
-$(document).ready(function() {
-  $('input[name="radio-pay"]').change(function() {
-    $('.payment-card').hide();
-    var selectedRadioId = $(this).attr('id');
-    var contentClass = '.payment-' + selectedRadioId;
+$(document).ready(function () {
+  $('input[name="radio-pay"]').change(function () {
+    $(".payment-card").hide();
+    var selectedRadioId = $(this).attr("id");
+    var contentClass = ".payment-" + selectedRadioId;
     $(contentClass).show();
   });
 });
 
 (function ($) {
-  "use strict";
+  ("use strict");
 
   function owlCarouselConfig() {
     var target = $(".owl-carousel");
@@ -440,7 +440,45 @@ $(document).ready(function() {
     $(".filter-part").removeClass("active");
   });
 
+  // sort content
 
+  $(".sort-by").on("click", function () {
+    $(".sort-part").addClass("active");
+  });
+
+  $(".sort-part .close-sort").on("click", function () {
+    $(".sort-part").removeClass("active");
+  });
+
+  // search
+
+  $(".search-icon a").on("click", function () {
+    $(".search-form").toggleClass("active");
+  });
+
+  // range price
+  var rangeSlider = document.getElementById("slider-range");
+  var moneyFormat = wNumb({
+    decimals: 0,
+    thousand: ",",
+  });
+  noUiSlider.create(rangeSlider, {
+    start: [0, 20000],
+    direction: "rtl",
+    range: {
+      min: [0],
+      max: [30000],
+    },
+    format: moneyFormat,
+    connect: true,
+  });
+  // Set visual min and max values and also update value hidden form inputs
+  rangeSlider.noUiSlider.on("update", function (values, handle) {
+    document.getElementById("slider-range-value1").innerHTML = values[0];
+    document.getElementById("slider-range-value2").innerHTML = values[1];
+    document.getElementsByName("min-value").value = moneyFormat.from(values[0]);
+    document.getElementsByName("max-value").value = moneyFormat.from(values[1]);
+  });
 })(jQuery);
 
 $(".countdown").attr("data-date");

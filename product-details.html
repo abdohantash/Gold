@@ -15,7 +15,6 @@
   <link rel="stylesheet" href="assets/plugins/select2/dist/css/select2.min.css" />
   <link rel="stylesheet" href="assets/plugins/lightGallery/css/lightgallery-bundle.min.css" />
   <link rel="stylesheet" href="assets/css/style-rtl.css" />
-
 </head>
 
 <body class="noscroll">
@@ -583,7 +582,7 @@
                 <button class="plus" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
                   <i class="icon-plus"></i>
                 </button>
-                <input class="quantity" min="0" name="quantity" value="1" type="number">
+                <input class="quantity" min="0" name="quantity" value="1" type="number" />
                 <button class="minus" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
                   <i class="icon-minus"></i>
                 </button>
@@ -1001,6 +1000,29 @@
       <a href="#" id="open-menu"><i class="icon-menu"></i></a><a href="#" id="close-menu"><i class="icon-cross"></i></a>
     </div>
     <div class="ps-nav__item">
+      <a href="my-account.html"><i class="icon-user"></i></a>
+    </div>
+    <div class="ps-nav__item search-icon">
+      <a href="#"><i class="icon-magnifier"></i></a>
+      <div class="search-form">
+        <form action="">
+          <input type="search" name="" id="" placeholder="ابحث ..." />
+          <input type="submit" value="بحث" />
+        </form>
+      </div>
+    </div>
+    <div class="ps-nav__item">
+      <a href="wishlist.html"><i class="icon-heart"></i></a>
+    </div>
+    <div class="ps-nav__item">
+      <a href="cart.html"><i class="icon-cart-empty"></i><span class="badge">2</span></a>
+    </div>
+  </div>
+  <!-- <div class="ps-navigation--footer">
+    <div class="ps-nav__item">
+      <a href="#" id="open-menu"><i class="icon-menu"></i></a><a href="#" id="close-menu"><i class="icon-cross"></i></a>
+    </div>
+    <div class="ps-nav__item">
       <a href="index.html"><i class="icon-home2"></i></a>
     </div>
     <div class="ps-nav__item">
@@ -1009,7 +1031,7 @@
     <div class="ps-nav__item">
       <a href="cart.html"><i class="icon-cart-empty"></i><span class="badge">2</span></a>
     </div>
-  </div>
+  </div> -->
 
   <!-- mobile slidebar -->
   <div class="ps-menu--slidebar">
